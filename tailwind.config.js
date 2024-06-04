@@ -7,6 +7,7 @@ module.exports = {
       extend: {
         fontFamily: {
           koulen: ['Koulen', 'sans-serif'],
+          'montserrat': ['Montserrat'],
         },
         animation: {
           'typewriter': 'typewriter 3s steps(40, end) infinite alternate',
