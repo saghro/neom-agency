@@ -1,4 +1,3 @@
-// src/components/HomePage.js
 import React from 'react';
 import Slider from 'react-slick';
 import './HomePage.css';
