@@ -21,7 +21,11 @@ const HomePage = () => {
                     <span>2,40 €</span>
                     <span>04-06-2024 - 14:10 (Euronext)</span>
                 </div>
-                <div className="logo">econocom</div>
+            </header>
+            
+<main className="main-content">
+    <div className="logo">econocom</div>
+        <div className='navbar1'>      
                 <nav className="nav">
                     <ul>
                         <li>équipements</li>
@@ -31,12 +35,10 @@ const HomePage = () => {
                     </ul>
                 </nav>
                 <button className="join-button">rejoignez-nous</button>
-                <div className="search-icon"></div>
-                <div className="menu-icon"></div>
-            </header>
-            <main className="main-content">
+        </div>
                 <Slider {...settings}>
                     <div className="service-banner">
+                        
                         <h1>services</h1>
                         <p>
                             Accélérez le déploiement de vos projets digitaux les plus ambitieux avec nos experts :
@@ -53,8 +55,8 @@ const HomePage = () => {
                         </p>
                     </div>
                 </Slider>
-            </main>
-        </div>
+        </main>
+    </div>
     );
 };
 
