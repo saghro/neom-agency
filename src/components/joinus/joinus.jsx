@@ -71,6 +71,7 @@ const JoinusPage = () => {
     </div>
     <p className='text-[#3e0e81] group-hover:text-[#a955f3] mr-20 text-lg border rounded-lg pl-2 pr-2 bg-[#f0f9ff]'>CDI</p>
 </div>
+<button className='bg-[#ff997f] text-white pl-6 pr-6 pt-2.5 pb-2.5 mt-6 mb-6 text-xl font-medium rounded-xl'>Voir toutes les offres</button>
 </div>
 </>
     );
