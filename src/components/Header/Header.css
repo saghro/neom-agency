@@ -1,40 +1,46 @@
-.header {
-    background-color: #4a00b3;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+    .header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: transparent; /* Au lieu de #4a00b3 */
+        transition: background-color 0.3s ease;
+    }
 
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-}
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+    }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
 
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
+    .nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
 
-.nav li {
-    cursor: pointer;
-}
+    .nav li {
+        cursor: pointer;
+    }
 
-.join-button {
-    background-color: orange;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .join-button {
+        background-color: #FF997F;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .header.scrolled .logo,
+    .header.scrolled .nav li,
+    .header.scrolled .join-button {
+        color: #000;
+    }

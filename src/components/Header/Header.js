@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isTopOfPage = window.scrollY < 100; // Ajustez la valeur si nécessaire
+            setIsScrolled(!isTopOfPage);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="header">
-            <div className="top-bar">
-                <span>2,40 €</span>
-                <span>04-06-2024 - 14:10 (Euronext)</span>
-            </div>
+        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className="logo">econocom</div>
             <nav className="nav">
                 <ul>
@@ -18,8 +30,12 @@ const Header = () => {
                 </ul>
             </nav>
             <button className="join-button">rejoignez-nous</button>
-            <div className="search-icon"></div>
-            <div className="menu-icon"></div>
+            <div className="search-icon">
+                <FontAwesomeIcon icon={faSearch} />
+            </div>
+            <div className="menu-icon">
+                <FontAwesomeIcon icon={faBars} />
+            </div>
         </header>
     );
 };

@@ -4,23 +4,52 @@
 }
 
 .main-content {
-    background-color: #00c3ff;
-    padding: 100px 20px 50px 20px; /* Adjusted padding to account for fixed header */
+    background-color: #5FACB2;
+    width: 100%;
+    height: 40rem;
     text-align: center;
 }
 
 .service-banner,
 .équipements-banner {
     padding: 50px 0;
+    margin-top: 10rem;
 }
 
 .service-banner h1,
 .équipements-banner h1 {
-    font-size: 48px;
+    font-size: 80px;
 }
 
 .service-banner p,
 .équipements-banner p {
-    font-size: 18px;
+    font-size: 30px;
+}
+
+/* Custom dot styles */
+.custom-dots {
+    display: flex !important;
+    justify-content: center;
     margin-top: 20px;
+    padding: 0;
+}
+
+.custom-dots li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.custom-dot {
+    width: 12px;
+    height: 12px;
+    margin-top:1rem;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-dot:hover,
+.custom-dot.slick-active {
+    background: #fff;
 }
