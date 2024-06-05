@@ -1,12 +1,19 @@
 import React from 'react';
 import image from '../../assests/z.png';
 import girlimage from '../../assests/portrait-young-beautiful-woman-gesticulating.jpg'
+import logo from "../../assests/image.png"
+import logonobg from "../../assests/logonobg.png"
 import menimage from '../../assests/portrait-handsome-young-man-makes-okay-gesture-demonstrates-agreement-likes-idea-smiles-happily-wears-optical-glasses-yellow-hat-t-shirt-models-indoor-its-fine-thank-you-hand-sign.jpg'
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
 const JoinusPage = () => {
     return (
 <>
     <div className='sticky top-0 z-50 shadow shadow-xl bg-white border flex justify-between flex items-center justify-center p-4'>
-<a href="#" className='text-4xl ml-2 font-montserrat text-[#2e1065] cursor-pointer'>econom</a>
+<a href="#" ><img src={logo} alt="" className='h-16 w-36' /></a>
     <div className='flex gap-12 leading-3 text-[#654a9a] font-medium cursor-pointer'>
         <a href='#' className='list-none hover:underline  hover:text-[#f87171]'>nos offres d'emploi</a>
         <a href='#' className='list-none hover:underline hover:text-[#f87171]'>candidature spontanée</a>
@@ -72,6 +79,58 @@ const JoinusPage = () => {
     <p className='text-[#3e0e81] group-hover:text-[#a955f3] mr-20 text-lg border rounded-lg pl-2 pr-2 bg-[#f0f9ff]'>CDI</p>
 </div>
 <button className='bg-[#ff997f] text-white pl-6 pr-6 pt-2.5 pb-2.5 mt-6 mb-6 text-xl font-medium rounded-xl'>Voir toutes les offres</button>
+</div>
+<div className='mt-8 bg-black text-white h-fut pb-8'>
+<div className='flex justify-between '>
+    <div>
+    <img src={logonobg} alt="" className='mt-6 ml-6 h-16 w-36' />
+    </div>
+    <div>
+        <input type="text" 
+        className='bg-gray-600 mt-8 rounded-2xl pt-2 pb-2 pr-48 pl-6'
+        placeholder='Sub To our Newsletter'
+        />
+        <button type='submit' className='bg-white text-[#6c529e] text-lg font-bold pb-2 pt-2 pb-2 pl-6 ml-16 pr-6 mr-48 mt-8 rounded-2xl' >Subscribe</button>
+    </div>
+</div>
+
+<div className='h-32 flex items-center justify-center'>
+    <div className='flex justify-center mt-48 space-x-8'>
+        <a href="#"><FaLinkedinIn className='text-xl cursor-pointer' /></a>
+        <a href="#"><FaFacebook className=' text-xl cursor-pointer' /></a>
+        <a href="#"><FaInstagram  className=' text-xl cursor-pointer' /></a>
+        <a href="#"><FaYoutube className='text-xl cursor-pointer'  /></a>
+    </div>
+</div>
+<div className='flex justify-between'>
+<div className='mt-32 ml-12'>
+
+    <h2 className='font-bold'>Pages Utils</h2>
+
+    <li className='mt-2'>Services</li>
+    <li className='mt-2'>Nous rejoindre</li>
+    <li className='mt-2'>Demander un devis</li>
+    <li className='mt-2'>FAQ</li>
+
+</div>
+<div className='mt-32'>
+    <h2 className='font-bold mt-2'>Paramètre de confidentialités</h2>
+    <li className='list-none mt-2'>Paramètre de cookies</li>
+    <li className='list-none mt-2'>Mentions légales</li>
+</div>
+<div className='mt-32'>
+    <h2 className='font-bold'>Blog</h2>
+    <li className='list-none mt-2'>Nos actualités</li>
+</div>
+<div className='mt-32 mr-12'>
+    <h2 className='font-bold'>Contact</h2>
+    <li className='list-none mt-2'>neom.contact@gmail.com</li>
+    <li className='list-none mt-2'>+33 00000000</li>
+    <li className='list-none mt-2'>Paris, France</li>
+</div>
+
+</div>
+
 </div>
 </>
     );
