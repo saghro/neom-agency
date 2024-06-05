@@ -80,7 +80,7 @@ const JoinusPage = () => {
 </div>
 <button className='bg-[#ff997f] text-white pl-6 pr-6 pt-2.5 pb-2.5 mt-6 mb-6 text-xl font-medium rounded-xl'>Voir toutes les offres</button>
 </div>
-<div className='mt-8 bg-black text-white h-fut pb-8'>
+<div className='mt-8 bg-[#272D4E] text-white h-fut pb-8'>
 <div className='flex justify-between '>
     <div>
     <img src={logonobg} alt="" className='mt-6 ml-6 h-16 w-36' />
@@ -95,7 +95,7 @@ const JoinusPage = () => {
 </div>
 
 <div className='h-32 flex items-center justify-center'>
-    <div className='flex justify-center mt-48 space-x-8'>
+    <div className='flex justify-center mt-4 space-x-8'>
         <a href="#"><FaLinkedinIn className='text-xl cursor-pointer' /></a>
         <a href="#"><FaFacebook className=' text-xl cursor-pointer' /></a>
         <a href="#"><FaInstagram  className=' text-xl cursor-pointer' /></a>
@@ -103,26 +103,26 @@ const JoinusPage = () => {
     </div>
 </div>
 <div className='flex justify-between'>
-<div className='mt-32 ml-12'>
+<div className='mt-8 ml-12'>
 
     <h2 className='font-bold'>Pages Utils</h2>
 
-    <li className='mt-2'>Services</li>
-    <li className='mt-2'>Nous rejoindre</li>
-    <li className='mt-2'>Demander un devis</li>
-    <li className='mt-2'>FAQ</li>
+    <li className='list-none mt-2'>Services</li>
+    <li className='list-none mt-2'>Nous rejoindre</li>
+    <li className='list-none mt-2'>Demander un devis</li>
+    <li className='list-none mt-2'>FAQ</li>
 
 </div>
-<div className='mt-32'>
+<div className='mt-6'>
     <h2 className='font-bold mt-2'>Paramètre de confidentialités</h2>
     <li className='list-none mt-2'>Paramètre de cookies</li>
     <li className='list-none mt-2'>Mentions légales</li>
 </div>
-<div className='mt-32'>
+<div className='mt-8'>
     <h2 className='font-bold'>Blog</h2>
     <li className='list-none mt-2'>Nos actualités</li>
 </div>
-<div className='mt-32 mr-12'>
+<div className='mt-7 mr-12'>
     <h2 className='font-bold'>Contact</h2>
     <li className='list-none mt-2'>neom.contact@gmail.com</li>
     <li className='list-none mt-2'>+33 00000000</li>
