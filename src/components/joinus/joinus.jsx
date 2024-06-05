@@ -45,6 +45,33 @@ const JoinusPage = () => {
 </div>
 <img className='h-72 mb-24 w-120 mr-8 mt-20 aspect-video' src={menimage} alt="GIRL IMAGE" />
 </div>
+<div className='bg-[#f7f8fc] h-svh'>
+<h1 className='font-extrabold text-[#8627db] text-4xl flex flex-end mb-12 ml-8 pt-8'>Nos dernières offres</h1>
+<div className='bg-white mt-6 h-28 mr-8 ml-8 hover:shadow-xl cursor-pointer flex items-center justify-between group'>
+    <p className='ml-6 font-bold text-[#3e0e81] group-hover:text-[#a955f3] text-xl'>Administrateur Systèmes et Réseaux (H/F)</p>
+    <div className='flex'>
+        <p className='text-[#3e0e81] mr-16 group-hover:text-[#a955f3] text-xl'>06560</p>
+        <p className='text-[#3e0e81] ml-4 group-hover:text-[#a955f3] text-xl'>Valbonne</p>
+    </div>
+    <p className='text-[#3e0e81] mr-20 text-lg border rounded-lg pl-2 pr-2 bg-[#f0f9ff] group-hover:text-[#a955f3]'>CDI</p>
+</div>
+<div className='bg-white mt-8 h-28 mr-8 ml-8 hover:shadow-xl group cursor-pointer hover:text-[#a955f3] flex items-center justify-between'>
+    <p className='ml-6 font-bold text-[#3e0e81] group-hover:text-[#a955f3] text-xl'>Technicien Support Informatique H/F</p>
+    <div className='flex'>
+    <p className='text-[#3e0e81] group-hover:text-[#a955f3] mr-8 text-xl'>31770</p>
+    <p className='text-[#3e0e81] group-hover:text-[#a955f3] ml-8 text-xl'>Colomiers</p>
+    </div>
+    <p className='text-[#3e0e81] mr-20 group-hover:text-[#a955f3] text-lg border rounded-lg pl-2 pr-2 bg-[#f0f9ff]'>CDI</p>
+</div>
+<div className='bg-white mt-8 h-28 mr-8 ml-8 hover:shadow-xl group cursor-pointer hover:text-[#a955f3] flex items-center justify-between'>
+    <p className='ml-6 font-bold text-[#3e0e81] group-hover:text-[#a955f3] text-xl'>Assistant(e)</p>
+    <div className='flex'>
+    <p className='text-[#3e0e81] group-hover:text-[#a955f3] mr-8 ml-64 text-xl'>93160</p>
+    <p className='text-[#3e0e81] group-hover:text-[#a955f3] ml-8 text-xl'>Noisy-le-Grand</p>
+    </div>
+    <p className='text-[#3e0e81] group-hover:text-[#a955f3] mr-20 text-lg border rounded-lg pl-2 pr-2 bg-[#f0f9ff]'>CDI</p>
+</div>
+</div>
 </>
     );
 
