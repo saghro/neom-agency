@@ -9,15 +9,19 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
+import logo1 from "../../assests/Capture d'écran 2024-06-06 094308.png"
+import logo2 from "../../assests/Capture d'écran 2024-06-06 094239.png"
+import logo3 from "../../assests/Capture d'écran 2024-06-06 094214.png"
+
 const JoinusPage = () => {
     return (
 <>
     <div className='sticky top-0 z-50 shadow shadow-xl bg-white border flex justify-between flex items-center justify-center p-4'>
-<a href="#" ><img src={logo} alt="" className='h-16 w-36' /></a>
+        <a href="#" ><img src={logo} alt="logo" className='h-16 w-36' /></a>
     <div className='flex gap-12 leading-3 text-[#654a9a] font-medium cursor-pointer'>
-        <a href='#' className='list-none hover:underline hover:underline-offset-16  hover:text-[#f87171]'>nos offres d'emploi</a>
-        <a href='#' className='list-none hover:underline hover:underline-offset-16 hover:text-[#f87171]'>candidature spontanée</a>
-        <a href='#' className='list-none mr-3 hover:underline hover:underline-offset-16 hover:text-[#f87171]'>Site corporate</a>
+        <a href='#' alt='' className='list-none hover:underline hover:underline-offset-16 hover:text-[#f87171]'>nos offres d'emploi</a>
+        <a href='#' alt='' className='list-none hover:underline hover:underline-offset-16 hover:text-[#f87171]'>candidature spontanée</a>
+        <a href='#' alt='' className='list-none mr-3 hover:underline hover:underline-offset-16 hover:text-[#f87171]'>Site corporate</a>
     </div>
 </div>
 <div className='bg-black h-96'>
@@ -32,7 +36,7 @@ const JoinusPage = () => {
   <button type="button" class="text-white mt-6 mb-6 ml-28 bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-16 mb-2 ">Rechercher</button>
 </div>
 <div className='flex justify-between'>
-<img className='h-72 mb-24 w-120 ml-24 mt-24 aspect-video' src={girlimage} alt="GIRL IMAGE" />
+<img className='h-72 mb-24 w-120 ml-24 mt-24 aspect-video' src={girlimage} alt="GIRL" />
 <div className='text-left ml-24'>
 <p className='text-4xl font-bold text-[#2e1065] mb-6 mt-24'>Plus de 20 métiers</p>
 <p className='text-3xl font-bold font-montserrat text-[#a955f3] mb-6 '>dans les technologies informatiques, de la vente et du support</p>
@@ -50,7 +54,7 @@ const JoinusPage = () => {
 <p className=' text-[#2e1065]'>chaque étape de votre parcours, nous vous aidons à déployer vos talents et</p>
 <p className='text-[#2e1065]'>à identifier les opportunités de carrière.</p>
 </div>
-<img className='h-72 mb-24 w-120 mr-8 mt-20 aspect-video' src={menimage} alt="GIRL IMAGE" />
+<img className='h-72 mb-24 w-120 mr-8 mt-20 aspect-video' src={menimage} alt="GIRL" />
 </div>
 <div className='bg-[#f7f8fc] h-svh'>
 <h1 className='font-extrabold text-[#8627db] text-4xl flex flex-end mb-12 ml-8 pt-8'>Nos dernières offres</h1>
@@ -128,10 +132,31 @@ const JoinusPage = () => {
     <li className='list-none mt-2'>+33 00000000</li>
     <li className='list-none mt-2'>Paris, France</li>
 </div>
-
+</div>
 </div>
 
+<div className='mt-4 bg-black h-screen mb-16 grid grid-cols-1 md:grid-cols-3 md:divide-x divide-y md:divide-y-0'>
+  <div className='bg-[#FFBA49]'><img src={logo1} alt="" className='h-96 -mb-14' /></div>
+  <div className='bg-[#9B5C8F]'><img src={logo2} alt="" className='h-96 -mb-14' /></div>
+  <div className='bg-[#299EF3]'><img src={logo3} alt="" className='h-96 -mb-14' /></div>
+  <div className='-mb-6 bg-[#E8A436] font-bold text-xl text-left pt-8 pl-8'> 
+    <span className='text-white font-bold'> 4 L'innovation</span><br />(pour un avenir <br /> désirable)
+  </div>
+  <div className='-mb-6 bg-[#83537A] font-bold text-xl text-[#fecaca] text-left pt-8 pl-16'> 
+    <span className='text-white font-bold'> 5 La communication </span><br />(une cohérence <br /> entre nos valeurs et <br /> nos actes)
+  </div>
+  <div className='-mb-6 bg-[#248AD4] font-bold text-xl text-left pt-8 pl-16'> 
+    <span className='text-white font-bold'> 6 L'éthique </span><br />(le respect et la <br /> confidentialité)
+  </div>
 </div>
+
+
+
+
+
+
+
+
 </>
     );
 
