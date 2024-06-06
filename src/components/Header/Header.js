@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import { FaPhone } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
+import { PiUserCirclePlusBold } from "react-icons/pi";
+import logo from "../../images/logo.jpeg";
+import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            const isTopOfPage = window.scrollY < 100; // Ajustez la valeur si nécessaire
+            const isTopOfPage = window.scrollY < 100;
             setIsScrolled(!isTopOfPage);
         };
 
@@ -18,25 +23,48 @@ const Header = () => {
         };
     }, []);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-            <div className="logo">econocom</div>
-            <nav className="nav">
-                <ul>
-                    <li>équipements</li>
-                    <li>services</li>
-                    <li>financement</li>
-                    <li>audiovisuel</li>
-                </ul>
-            </nav>
-            <button className="join-button">rejoignez-nous</button>
-            <div className="search-icon">
-                <FontAwesomeIcon icon={faSearch} />
+        <div>
+            <div className="top-bar">
+                <div className="language-selector">FR|EN</div>
+                <div className="contact-info">
+                    <p>
+                        <FaPhone /> +33 122 34 56 78
+                    </p>
+                    <p>
+                        <MdEmail /> contact@neomagency.com
+                    </p>
+                </div>
+                <button className="icon-user"><PiUserCirclePlusBold />
+
+                </button>
             </div>
-            <div className="menu-icon">
-                <FontAwesomeIcon icon={faBars} />
-            </div>
-        </header>
+            <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+                <img className="logo" src={logo} alt="Logo" />
+                <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+                    <ul>
+                        <li>Agence</li>
+                        <li>Expertise</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+                <button className="join-button">
+                    <FontAwesomeIcon size="2x" /> rejoignez-nous
+                </button>
+                <div className="icons">
+                    <div className="search-icon">
+                        <FontAwesomeIcon icon={faSearch} size="2x" />
+                    </div>
+                    <div className="menu-icon" onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" />
+                    </div>
+                </div>
+            </header>
+        </div>
     );
 };
 

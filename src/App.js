@@ -1,19 +1,14 @@
 // src/App.js
 import React from 'react';
-import HomePage from './components/Home/HomePage';
+import Layout from './components/Layout';
 import './App.css';
-import Header from "./components/Header/Header";
-import NewsSection from "./components/Main/NewsSection";
 
 function App() {
-  return (
-      <div className="App">
-          <Header/>
-        <HomePage />
-          <NewsSection />
-
-      </div>
-  );
+    return (
+        <div className="App">
+            <Layout />
+        </div>
+    );
 }
 
 export default App;
