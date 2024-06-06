@@ -1,0 +1,21 @@
+.news-section {
+    padding: 32px;
+    background-color: #f9f9f9;
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.view-all {
+    display: block;
+    margin: 32px auto;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
