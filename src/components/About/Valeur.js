@@ -12,7 +12,7 @@ export default function Valeur() {
             <span className="text-white font-bold">1 La créativité </span>
             (nourrir votre imagination)
           </div>
-          <img src={logo1} alt="az" className="h-96 w  -mb-32 bg-[#FFBA49] pl-6 hidden md:block" />
+          <img src={logo1} alt="az" className="h-70 w-23 mr-96  bg-[#FFBA49] pl-6 hidden md:block" />
         </div>
       
         <div className="flex">
@@ -20,7 +20,7 @@ export default function Valeur() {
             <span className="text-white font-bold">2 Le sens d'écoute </span>
             (comprendre nos clients)
           </div>
-          <img src={logo2} alt="Z" className="h-96 -mr-8 -mb-32 pl-16 bg-[#9B5C8F] hidden md:block" />
+          <img src={logo2} alt="Z" className="mr-8  pl-16 bg-[#9B5C8F] hidden md:block" />
         </div>
       
         <div className="flex bg-[#299EF3]">
@@ -28,7 +28,7 @@ export default function Valeur() {
             <span className="text-white font-bold">3 l'esprit d'équipe </span>
             (pour des projets réussis)
           </div>
-          <img src={logo3} alt="A" className=" w-64 h-96 mr-1 -mb-32 bg-[#299EF3] hidden md:block" />
+          <img src={logo3} alt="A" className="  mr-1  bg-[#299EF3] hidden md:block" />
         </div>
       
         <div className="-mb-16 bg-[#E8A436] font-bold text-xl text-left pt-8 pl-8">
