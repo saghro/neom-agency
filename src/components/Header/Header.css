@@ -1,0 +1,112 @@
+.top-bar {
+    background-color: #272D4E;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-bar .icon-user {
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 2rem;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.top-bar .language-selector {
+    color: white;
+}
+
+.top-bar .contact-info {
+    margin-left: 45rem;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.top-bar .contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin-top: 16px;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav li {
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon, .menu-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #272D4E;
+}
+
+.login-button {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.join-button {
+    background-color: #272D4E;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.header.scrolled .logo,
+.header.scrolled .join-button {
+    color: white;
+}
+.header.scrolled .nav li
+{
+    color: black;
+}
+
+.header.scrolled {
+    background-color: white;
+    margin-top: -4rem;
+}
