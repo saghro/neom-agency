@@ -6,7 +6,6 @@ const home = () => {
     return (
       <>
       <Joinus/>
-
       </>
     )
   }
