@@ -1,5 +1,4 @@
 import React from 'react';
-import About from "../About/About";
 
 function ChevronRightIcon(props) {
     return (
@@ -22,18 +21,18 @@ function ChevronRightIcon(props) {
 
 export default function Solutions() {
     return (
-        <div className="flex flex-col md:flex-row h-screen">
+        <div className="flex flex-col md:flex-row h-auto md:h-screen">
             <div className="w-full md:w-1/2 bg-[#272D4E] p-8 text-white flex flex-col justify-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 md:ml-7">
-                    découvrez nos <br /> solutions,<br /> Seulement avec <br /> <span className="text-[#FF997F]">Neom</span>
+                    Découvrez nos <br /> solutions,<br /> Seulement avec <br /> <span className="text-[#FF997F]">Neom</span>
                 </h1>
             </div>
             <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-                <ul className="space-y-8 md:space-y-16">
+                <ul className="space-y-8 md:space-y-10">
                     <li className="flex flex-col md:flex-row items-center transition-transform duration-300 hover:translate-x-2">
                         <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">01</span>
                         <div className="flex-1">
-                            <h2 className="text-2xl md:text-4xl font-bold mb-1 text-[#272D4E]">Référencement naturel (SEO)</h2>
+                            <h2 className="text-2xl md:text-2xl font-bold mb-1 text-[#272D4E]">Référencement naturel (SEO)</h2>
                             <p className="text-gray-600">Nous vous aidons à élaborer une stratégie de référencement sur mesure en identifiant vos mots-clés, optimisant votre contenu et en structurant votre site web.</p>
                         </div>
                         <ChevronRightIcon className="text-[#6f42c1] h-6 w-6 md:h-8 md:w-8" />

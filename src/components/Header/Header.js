@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { PiUserCirclePlusBold } from 'react-icons/pi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../images/logo.jpeg";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); // Set breakpoint for desktop
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         };
 
         const handleResize = () => {
-            setIsDesktop(window.innerWidth > 768); // Adjust breakpoint as needed
+            setIsDesktop(window.innerWidth > 768);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -36,13 +37,21 @@ const Header = () => {
         <div>
             <div className="top-bar bg-blue-900 text-white flex justify-between p-2 hidden sm:flex">
                 <div className="language-selector">FR|EN</div>
-                <button className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
-                    <PiUserCirclePlusBold />
-                </button>
+                <div className="contact-info hidden sm:flex items-center gap-4">
+                    <div className="phone-icon">
+                        <p> <FontAwesomeIcon icon={faPhone} size="lg" />+33 1 12 34 56 78</p>
+                    </div>
+                    <div className="email-icon">
+                        <p><FontAwesomeIcon icon={faEnvelope} size="lg" /> contact@neom-agency.com </p>
+                    </div>
+                    <div className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
+                        <PiUserCirclePlusBold />
+                    </div>
+                </div>
             </div>
             <header
-                className={`header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-8 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
-                <img className="logo h-10 sm:h-20" src={logo} alt="Logo"/>
+                className={`header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-6 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+                <img className="logo h-10 sm:h-20" src={logo} alt="Logo" />
                 <nav className={`flex flex-row gap-9 ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex flex-row gap-9">
                         <li>Agence</li>
@@ -63,10 +72,10 @@ const Header = () => {
                 </button>
                 <div className="icons flex items-center gap-4">
                     <div className="search-icon">
-                        <FontAwesomeIcon icon={faSearch} size="2x" className="text-blue-900"/>
+                        <FontAwesomeIcon icon={faSearch} size="2x" className="text-blue-900" />
                     </div>
                     <div className="menu-icon" onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900"/>
+                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900" />
                     </div>
                 </div>
             </header>
