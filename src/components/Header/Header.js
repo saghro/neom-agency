@@ -7,7 +7,7 @@ import logo from "../../images/logo.jpeg";
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); // Set breakpoint for desktop
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
 
     useEffect(() => {
         const handleScroll = () => {
