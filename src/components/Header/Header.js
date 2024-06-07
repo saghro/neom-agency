@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import './Header.css';
-import { FaPhone } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { PiUserCirclePlusBold } from 'react-icons/pi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { PiUserCirclePlusBold } from "react-icons/pi";
-import logo from "../../images/logo.jpeg";
 import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import logo from "../../images/logo.jpeg";
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); // Set breakpoint for desktop
 
     useEffect(() => {
         const handleScroll = () => {
@@ -17,9 +15,16 @@ const Header = () => {
             setIsScrolled(!isTopOfPage);
         };
 
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth > 768); // Adjust breakpoint as needed
+        };
+
         window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
         };
     }, []);
 
@@ -29,38 +34,39 @@ const Header = () => {
 
     return (
         <div>
-            <div className="top-bar">
+            <div className="top-bar bg-blue-900 text-white flex justify-between p-2 hidden sm:flex">
                 <div className="language-selector">FR|EN</div>
-                <div className="contact-info">
-                    <p>
-                        <FaPhone /> +33 122 34 56 78
-                    </p>
-                    <p>
-                        <MdEmail /> contact@neomagency.com
-                    </p>
-                </div>
-                <button className="icon-user"><PiUserCirclePlusBold />
-
+                <button className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
+                    <PiUserCirclePlusBold />
                 </button>
             </div>
-            <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-                <img className="logo" src={logo} alt="Logo" />
-                <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-                    <ul>
+            <header
+                className={`header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-8 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+                <img className="logo h-10 sm:h-20" src={logo} alt="Logo"/>
+                <nav className={`flex flex-row gap-9 ${isDesktop ? 'block' : 'hidden'}`}>
+                    <ul className="flex flex-row gap-9">
                         <li>Agence</li>
                         <li>Expertise</li>
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <button className="join-button">
-                    <FontAwesomeIcon size="2x" /> rejoignez-nous
+                <nav
+                    className={`nav ${isMenuOpen ? 'block' : 'hidden'} absolute top-full left-0 w-full bg-blue-900 p-4 sm:p-0`}>
+                    <ul className="flex flex-col gap-4">
+                        <li className="text-white cursor-pointer">Agence</li>
+                        <li className="text-white cursor-pointer">Expertise</li>
+                        <li className="text-white cursor-pointer">Contact</li>
+                    </ul>
+                </nav>
+                <button className="join-button bg-blue-900 text-white px-4 py-2 rounded-full font-bold hidden sm:block">
+                    rejoignez-nous
                 </button>
-                <div className="icons">
+                <div className="icons flex items-center gap-4">
                     <div className="search-icon">
-                        <FontAwesomeIcon icon={faSearch} size="2x" />
+                        <FontAwesomeIcon icon={faSearch} size="2x" className="text-blue-900"/>
                     </div>
                     <div className="menu-icon" onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" />
+                        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900"/>
                     </div>
                 </div>
             </header>
