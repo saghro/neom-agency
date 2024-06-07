@@ -7,7 +7,7 @@ const HomePage = () => {
         <div className="services-section">
             <div className="text-content">
 
-                <h1>Your First Choice </h1>
+                <h1>Your First Choice</h1>
                 <p>
                     Optimisez votre performance en ligne avec nos <br/> Stratégies, pour transformer votre vision en
                     réalité.<br/>
