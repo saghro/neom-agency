@@ -6,7 +6,7 @@ import logo3 from "../../images/logo3.png";
 export default function Valeur() {
   return (
     <div>
-      <div className="mt-9 bg-black h-screen mb-16 grid grid-cols-1 md:grid-cols-3 md:w-fit md:divide-x divide-y md:divide-y-0">
+      <div className="mt-9 bg-black mb-16 grid grid-cols-1 md:grid-cols-3 md:w-fit md:divide-x divide-y md:divide-y-0">
         <div className="flex">
           <div className="-mb-16 bg-[#FFBA49] font-bold text-xl text-left pt-32 pl-6">
             <span className="text-white font-bold">1 La créativité </span>
