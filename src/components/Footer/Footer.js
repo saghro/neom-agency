@@ -1,4 +1,3 @@
-
 import logonobg from '../../images/neomlogowhite.png'
 import { FaLinkedinIn, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
  

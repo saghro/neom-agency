@@ -13,6 +13,9 @@ module.exports = {
           koulen: ['Koulen', 'sans-serif'],
           'montserrat': ['Montserrat'],
         },
+        textUnderlineOffset: {
+          16: '16px',
+        },
         animation: {
           'typewriter': 'typewriter 3s steps(40, end) infinite alternate',
           'blink': 'blink .7s step-end infinite',

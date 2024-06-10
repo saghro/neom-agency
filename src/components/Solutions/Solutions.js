@@ -65,7 +65,7 @@ export default function Solutions() {
                     <li className="flex flex-col md:flex-row items-center transition-transform duration-300 hover:translate-x-2">
                         <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">04</span>
                         <div className="flex-1">
-                            <Link to="/Formations" className="no-underline">
+                            <Link to="/Formation" className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Formations</h2>
                                 <p className="text-gray-600">Neom vous offre des programmes de formations sur mesure afin d’améliorer vos différentes compétences....</p>
                             </Link>
