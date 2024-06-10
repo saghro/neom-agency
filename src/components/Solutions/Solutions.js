@@ -54,7 +54,7 @@ export default function Solutions() {
                     <li className="flex flex-col md:flex-row items-center transition-transform duration-300 hover:translate-x-2">
                         <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">03</span>
                         <div className="flex-1">
-                            <Link to="/DWM" className="no-underline">
+                            <Link to="/web" className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Développement Web et Mobile
                                 </h2>
                                 <p className="text-gray-600">création des sites web, création des applications mobiles...</p>
