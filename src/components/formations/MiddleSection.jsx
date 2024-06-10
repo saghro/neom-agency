@@ -6,7 +6,7 @@ const MiddleSection = () => {
       <div className='pt-20'>
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-2xl md:text-4xl font-bold text-indigo-900 leading-tight text-center px-4 md:px-16 pr-20 pl-20 ">
-          Nous veillons à vous offrir des cours<br /> monde dominé par {' '}
+          Nous veillons à vous offrir des cours<br />  {' '}
             <span className="text-orange-600">
 attrayants et interactifs adaptés au rythme
             </span>{' '}
