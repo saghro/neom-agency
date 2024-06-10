@@ -26,7 +26,7 @@ const WebCards = () => {
         icon={<FaCloudUploadAlt />}
       />
     </div>
-    <button className="mt-8 px-8 py-3  bg-orange-500 border-2 hover:border-orange-500 text-white rounded-full hover:bg-white hover:text-orange-500 transition duration-300">
+    <button className="mt-8 px-8 py-3  bg-[#FFA288] border-2 hover:border-[#FFA288] text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300">
       Vous avez un Projet?
     </button>
   </div>
