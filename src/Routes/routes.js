@@ -3,6 +3,8 @@ import HomePage from '../pages/Homepage';
 import JoinusPage from '../pages/joinus';
 import NewsSection from "../components/Main/NewsSection";
 import Service from "../pages/Service";
+import Seo from "../pages/SEO";
+
 
 const Router = () => {
     return (
@@ -12,6 +14,7 @@ const Router = () => {
                 <Route path="/news" element={<NewsSection />} />
                 <Route path="/joinus" element={<JoinusPage />} />
                 <Route path="/Service" element={<Service />} />
+                <Route path="/Seo" element={<Seo />} />
 
 
 
