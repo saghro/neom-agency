@@ -3,6 +3,7 @@ import logo from "../../images/hero.jpeg";
 
 const HomePage = () => {
     return (
+
         <div
             className="services-section flex flex-col md:flex-row items-center justify-between w-full h-auto md:h-96 px-4 py-36 md:py-72 bg-[#FF997F] md:px-44 mb-0">
             <div

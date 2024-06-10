@@ -12,12 +12,10 @@ const Router = () => {
                 <Route path="/news" element={<NewsSection />} />
                 <Route path="/joinus" element={<JoinusPage />} />
                 <Route path="/Service" element={<Service />} />
+                 <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
 
-
-
-            </Routes>
-        </BrowserRouter>
-    );
 };
 
 export default Router;
