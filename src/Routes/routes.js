@@ -4,6 +4,7 @@ import JoinusPage from "../pages/joinus";
 import NewsSection from "../components/Main/NewsSection";
 import Webdev from "../pages/Webdev";
 import Print from '../pages/Print';
+import Formations from '../pages/Formations';
 
 const Router = () => {
     return (
@@ -14,6 +15,8 @@ const Router = () => {
                 <Route path="/joinus" element={<JoinusPage />} />
                 <Route path="/web" element={<Webdev />} />
                 <Route path="/print" element={<Print />} />
+                <Route path="/formation" element={<Formations />} />
+
             </Routes>
         </BrowserRouter>
     );
