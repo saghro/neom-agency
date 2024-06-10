@@ -15,12 +15,11 @@ const Router = () => {
                 <Route path="/joinus" element={<JoinusPage />} />
                 <Route path="/Service" element={<Service />} />
                 <Route path="/Seo" element={<Seo />} />
+                <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
+)
 
-
-
-            </Routes>
-        </BrowserRouter>
-    );
 };
 
 export default Router;
