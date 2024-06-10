@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from '../components/Devweb/Hero'
+import Hero from '../components/Services/Devweb/Hero'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import MiddleSection from '../components/Devweb/MiddleSection'
-import WebCards from '../components/Devweb/WebCards'
+import MiddleSection from '../components/Services/Devweb/MiddleSection'
+import WebCards from '../components/Services/Devweb/WebCards'
 const Webdev = () => {
     return (
         <>

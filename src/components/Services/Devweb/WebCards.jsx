@@ -1,5 +1,5 @@
 import { FaPaintBrush, FaLaptopCode, FaCog, FaCloudUploadAlt } from 'react-icons/fa';
-import Card from '../Card';
+import Card from '../../Card';
 
 const WebCards = () => {
   return (

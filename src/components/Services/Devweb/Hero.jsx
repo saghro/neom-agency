@@ -1,6 +1,6 @@
     import React from 'react';
-    import background from '../../images/backgroundwebdev.png'; // Adjust the path as necessary
-    import personPlaceholder from '../../images/personwebdev1.png'; // Adjust the path as necessary
+    import background from '../../../images/backgroundwebdev.png'; 
+    import personPlaceholder from '../../../images/personwebdev.png'; 
     import './button.css'
     const Hero = () => {
     return (

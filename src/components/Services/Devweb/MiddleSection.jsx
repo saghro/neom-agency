@@ -1,5 +1,5 @@
 import React from 'react';
-import offers from '../../images/offres.png';
+import offers from '../../../images/offres.png';
 
 const MiddleSection = () => {
   return (
