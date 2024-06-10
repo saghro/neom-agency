@@ -7,8 +7,8 @@ const Card = ({ title, description, icon }) => {
         <div className="flex justify-center mb-4 text-5xl">
           {icon}
         </div>
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-base">
+        <div className="font-bold text-xl mb-2 text-center">{title}</div>
+        <p className="text-base text-center">
           {description}
         </p>
       </div>
