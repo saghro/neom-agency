@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../images/logo.jpeg";
-
+import { Link } from 'react-router-dom'; 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +51,9 @@ const Header = () => {
             </div>
             <header
                 className={`header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-10 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
-                <img className="logo h-10 sm:h-20" src={logo} alt="Logo"/>
+                <Link to="/"> 
+                    <img className="logo h-10 sm:h-20" src={logo} alt="Logo"/>
+                </Link>
                 <nav className={`flex flex-row gap-9 ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex flex-row gap-9 text-xl">
                         <li>Agence</li>
