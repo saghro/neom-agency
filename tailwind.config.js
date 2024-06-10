@@ -5,6 +5,10 @@ module.exports = {
     ],
     theme: {
       extend: {
+        colors: {
+          customBlue: '#272D4E',
+        },
+  
         fontFamily: {
           koulen: ['Koulen', 'sans-serif'],
           'montserrat': ['Montserrat'],
