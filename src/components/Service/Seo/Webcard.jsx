@@ -15,7 +15,7 @@ const WebCards = () => {
             {description}
           </p>
         </div>
-        <button className="mt-4 px-4 py-2 bg-[#F19F00] border-2 border-white text-white rounded-full hover:bg-white hover:text-[#F19F00] transition duration-300">
+        <button className="mt-4 px-4 py-2 bg-[#F19F00] border-2 border-white text-white rounded-full hover:bg-white hover:text-[#F19F00] transition duration-300.">
           Savoir Plus
         </button>
       </div>
