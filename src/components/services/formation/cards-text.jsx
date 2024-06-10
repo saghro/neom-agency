@@ -1,11 +1,11 @@
 import React from 'react';
-import { FaUsers } from "react-icons/fa6";
-import { BiSolidLike } from "react-icons/bi";
-import { FaUserCircle } from "react-icons/fa";
+import { IoIosGitMerge } from "react-icons/io";
+import { FaCloud } from "react-icons/fa";
+import { MdDesktopMac } from "react-icons/md";
  
 const Media = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-8 mt-8">
+    <div className="flex flex-col justify-center items-center px-8 mt-8 mb-6">
       <h1 className="text-3xl font-bold font-Rammetto-One text-[#7854F7] text-center">
         Nous veillons à vous offrir des cours attrayants et interactifs adaptés au rythme de chacun disponibles en ligne et peuvent être suivi à tout moment.
       </h1>
@@ -14,22 +14,22 @@ const Media = () => {
       </h1>
       <div className="flex flex-col md:flex-row justify-around w-full mt-9 space-y-6 md:space-y-0 md:space-x-4">
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <FaUsers className="text-5xl text-[#FFA288]" />
-          <h2 className="text-xl font-bold mt-9">Création de contenu ciblé</h2>
-          <p className='text-center mt-9'>La compréhension, l'analyse, et le suivi des indicateurs de performance de vos plateformes sociaux </p>
+          <FaCloud className="text-5xl text-[#FFA288]" />
+          <h2 className="text-xl font-bold mt-9">Immersive learning</h2>
+          <p className='font-bold text-center mt-9'>Immersive learning : Complétez votre formation avec des cas pratiques dans un environnement virutel</p>
         </div>
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <BiSolidLike className="text-5xl text-[#FFA288]" />
-          <h2 className="text-xl font-bold mt-9">Optimisation des KPIs</h2>
-          <p className='text-center mt-9'>La compréhension, l'analyse, et le suivi des indicateurs de performance de vos plateformes sociaux </p>
+          <MdDesktopMac  className="text-5xl text-[#FFA288]" />
+          <h2 className="text-xl font-bold mt-9">Cours en ligne</h2>
+          <p className='font-bold text-center mt-9'>Grace à la visioconférence, nous vous offrons des formations en ligne incluant des outils collaboratifs.</p>
         </div>
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <FaUserCircle className="text-5xl text-[#FFA288]" />
-          <h2 className="text-xl font-bold mt-9">Des stratégies sur mesure</h2>
-          <p className='text-center mt-9'>Des stratégies alignées avec votre vision et objectifs pour marquer votre personnalité et gagner la confiance de vos clients </p>
+          <IoIosGitMerge className="text-5xl text-[#FFA288]" />
+          <h2 className="text-xl font-bold mt-9">Blended learning</h2>
+          <p className='font-bold text-center mt-9'>Profitez des avantages des cours en ligne et présentiels adaptés à vos attentes et exigences.</p>
         </div>
       </div>
-      <button className="bg-[#FFA288] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 transition duration-300 transform hover:scale-105">
+      <button className="bg-[#FFA288] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl text-xl mt-8 transition duration-300 transform hover:scale-105">
         Savoir plus
       </button>
     </div>
