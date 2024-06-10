@@ -1,4 +1,4 @@
-import Card from '../Card';
+import Card from '../../Card';
 import { MdPrint } from "react-icons/md";
 import { AiFillLike } from "react-icons/ai";
 import { BiSolidPackage } from "react-icons/bi";

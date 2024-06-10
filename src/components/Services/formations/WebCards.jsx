@@ -2,7 +2,7 @@ import { FaPeopleRoof } from "react-icons/fa6";
 import { MdOutlinePermDeviceInformation } from "react-icons/md";
 import { HiComputerDesktop } from "react-icons/hi2";
 
-import Card from '../Card';
+import Card from '../../Card';
 
 const WebCards = () => {
   return (

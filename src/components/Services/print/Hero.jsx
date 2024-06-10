@@ -1,7 +1,7 @@
 import React from 'react';
-import background from '../../images/printbg.png'; // Adjust the path as necessary
-import personPlaceholder from '../../images/printimage.png'; // Adjust the path as necessary
-import './button.css'
+import background from '../../../images/printbg.png';
+import personPlaceholder from '../../../images/printimage.png';
+import "./button.css"
 const Hero = () => {
 return (
     <div
