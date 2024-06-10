@@ -1,24 +1,26 @@
-import { FaPaintBrush, FaLaptopCode, FaCog, FaCloudUploadAlt } from 'react-icons/fa';
 import Card from '../Card';
+import { MdPrint } from "react-icons/md";
+import { AiFillLike } from "react-icons/ai";
+import { BiSolidPackage } from "react-icons/bi";
 
 const WebCards = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center my-8">
+    <div className="mt-20 flex flex-col items-center justify-center my-8">
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <Card
-        title="UI/UX design"
-        description="Un design attrayant et des visuels modernes et créatifs pour capter l’attention des visiteurs."
-        icon={<FaPaintBrush />}
+        title="Impressions Offset "
+        description="Brochures, Catalogues , Magazines et Rapports"
+        icon={<MdPrint  />}
       />
       <Card
-        title="Développement web et mobile"
-        description="Après une analyse de l’ensemble de vos besoins, nous sélectionnons les outils les plus adaptés à vos objectifs."
-        icon={<FaLaptopCode />}
+        title="Impressions numériques "
+        description=" Cartes visite , Flyers et Affiches personnalisées"
+        icon={<AiFillLike />}
       />
       <Card
-        title="Maintenance des sites web et des applications"
-        description="Correction des bugs, mettre à jour de nouvelles fonctionnalités, et surveillance de la sécurité."
-        icon={<FaCog />}
+        title="Impressions packaging"
+        description="Coffrets, Boîtes cadeau, Pochettes et Fonds de boîte"
+        icon={<BiSolidPackage />}
       />
     </div>
     <button className="mt-8 px-8 py-3  bg-orange-500 border-2 hover:border-orange-500 text-white rounded-full hover:bg-white hover:text-orange-500 transition duration-300">

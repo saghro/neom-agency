@@ -1,6 +1,6 @@
 import React from 'react';
-import background from '../../images/printbg.png'; // Adjust the path as necessary
-import personPlaceholder from '../../images/printimage.png'; // Adjust the path as necessary
+import background from '../../images/formationbg.png'; // Adjust the path as necessary
+import personPlaceholder from '../../images/businessman.png'; // Adjust the path as necessary
 import './button.css'
 const Hero = () => {
 return (
@@ -9,10 +9,9 @@ return (
     style={{ backgroundImage: `url(${background})` }}
   >
 <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
-<h1 className="text-4xl lg:text-8xl font-bold mb-4">Formations</h1>
+<h1 className="text-4xl lg:text-6xl font-bold mb-4">Formations</h1>
 <p className="text-lg lg:text-xl mb-8">
-Neom vous proposons des formations variées dans des domaines spécifiques tels que le marketing digital, <br/> développement web et mobile .
-</p>
+Nous vous proposons des formations variées dans des domaines spécifiques tels que le marketing digital, développement web et mobile..</p>
 <button className="custom-button">Play a demo <span className="circle">&gt;</span></button>
 </div>
 

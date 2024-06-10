@@ -1,13 +1,16 @@
-import React from 'react';
+
+
+
+  import React from 'react';
 import { BsBoxArrowInRight } from "react-icons/bs";
 
 const LinkCard = ({ title, links }) => {
     return (
-      <div className="bg-pink-500 text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
+      <div className="bg-customRed text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
         <h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {links.map((link, index) => (
-            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-pink-500 rounded-full hover:bg-pink-600 transition duration-300">
+            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-customRed rounded-full hover:bg-customDeepRed transition duration-300">
               <span>{link.text}</span>
               <BsBoxArrowInRight className="ml-4 text-3xl" />
             </a>
@@ -19,10 +22,10 @@ const LinkCard = ({ title, links }) => {
   
   const PageCards = () => {
     const links = [
-      { text: "Les salons de l'imprimerie et des arts graphiques 2024", url: "#" },
-      { text: "Comment lancer une compagne créative réussie ?", url: "#" },
-      { text: "La place de la communication papier en E-commerce", url: "#" },
-      { text: "Les meilleures compagnes print en 2024", url: "#" }
+      { text: "Pourquoi opter pour le Blended Learning ?", url: "#" },
+      { text: "Webinaire gratuit en marketing digital et relation client", url: "#" },
+      { text: "Comment se former dans le marketing digital ?", url: "#" },
+      { text: "Quels sont les avantages d'Immersive Learning ?", url: "#" }
     ];
   
     return (
