@@ -35,7 +35,7 @@ export default function Solutions() {
                         <div className="flex-1">
                             <Link to="/Social_Media " className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Social Media Marketing</h2>
-                                <p className="text-gray-600">création de contenu, génération de trafic, des Stratégies sur mesure...
+                                <p className="text-gray-600">création de contenu, génération de trafic, des stratégies sur mesure...
                                 </p>
                             </Link>
                         </div>
@@ -46,7 +46,7 @@ export default function Solutions() {
                         <div className="flex-1">
                             <Link to="/Seo" className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Référencement SEO/SEA </h2>
-                                <p className="text-gray-600">Optimisation des sites web, Lancement des compagnes publicitaires, génération des leads...</p>
+                                <p className="text-gray-600">Optimisation des sites web, lancement des compagnes publicitaires, génération des leads...</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className="text-[#6f42c1] h-6 w-6 md:h-8 md:w-8" />
@@ -57,7 +57,7 @@ export default function Solutions() {
                             <Link to="/web" className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Développement Web et Mobile
                                 </h2>
-                                <p className="text-gray-600">création des sites web, création des applications mobiles...</p>
+                                <p className="text-gray-600">Création des sites web, création des applications mobiles...</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className="text-[#6f42c1] h-6 w-6 md:h-8 md:w-8" />

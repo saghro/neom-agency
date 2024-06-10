@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import MiddleSection from '../components/Services/print/MiddleSection'
 import WebCards from '../components/Services/print/WebCards'
 import PageCards from '../components/Services/print/LinkCard'
-import Hero from '../components/Services/Devweb/Hero'
+import Hero from '../components/Services/print/Hero'
 const Webdev = () => {
     return (
         <>

@@ -14,7 +14,7 @@ const About = () => {
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>transformation digitale, pour réussir vos projets dans </p>
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>les meilleures conditions possibles !</p>
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>Qu'attendez-vous pour nous rejoindre ?</p>
-                <p className='font-regular md:ml-12 text-lg md:text-xl'>Demandez un devis dès aujourd'hui et profitez de nos services exceptionnels </p>
+                <p className='font-regular md:ml-12 text-lg md:text-xl'>Demandez un devis dès aujourd'hui et profiter de nos services exceptionnels. </p>
                 <button className='mx-auto md:ml-40 mt-6 px-6 bg-[#ff997f] rounded-3xl py-3 text-white font-bold'>Demander un devis</button>
             </div>
             <div className='text-center md:hidden'>

@@ -9,9 +9,10 @@ return (
     style={{ backgroundImage: `url(${background})` }}
   >
 <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
-<h1 className="text-4xl lg:text-8xl font-bold mb-4">Formations</h1>
+<h1 className="text-4xl lg:text-8xl font-bold mb-4">Print</h1>
 <p className="text-lg lg:text-xl mb-8">
-Neom vous proposons des formations variées dans des domaines spécifiques tels que le marketing digital, <br/> développement web et mobile .
+Neom vous propose une large gamme de services d’imprimerie sur tous types de supports, en combinant des designs innovants avec des techniques d'impression de pointe, dans les plus brefs délais .
+
 </p>
 <button className="custom-button">Play a demo <span className="circle">&gt;</span></button>
 </div>
