@@ -41,7 +41,7 @@ const Header = () => {
                 </button>
             </div>
             <header
-                className={`header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-8 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+                className={`ml-8 header fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 flex justify-between items-center p-4 sm:p-8 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
                 <img className="logo h-10 sm:h-20" src={logo} alt="Logo"/>
                 <nav className={`flex flex-row gap-9 ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex flex-row gap-9">
@@ -62,9 +62,6 @@ const Header = () => {
                     rejoignez-nous
                 </button>
                 <div className="icons flex items-center gap-4">
-                    <div className="search-icon">
-                        <FontAwesomeIcon icon={faSearch} size="2x" className="text-blue-900"/>
-                    </div>
                     <div className="menu-icon" onClick={toggleMenu}>
                         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900"/>
                     </div>
