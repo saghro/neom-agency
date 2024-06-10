@@ -9,7 +9,7 @@
         style={{ backgroundImage: `url(${background})` }}
       >
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
-  <h1 className="text-4xl lg:text-8xl font-bold mb-4">Développement Web et Mobile</h1>
+  <h1 className="text-4xl lg:text-6xl font-bold mb-4">Développement Web et Mobile</h1>
   <p className="text-lg lg:text-xl mb-8">
     Nous vous accompagnons dans le conseil, la mise en place, le suivi et l’optimisation
     des campagnes de référencement organique et payant pour réussir vos projets.
