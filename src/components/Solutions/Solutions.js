@@ -29,7 +29,7 @@ export default function Solutions() {
                 </h1>
             </div>
             <div className="w-full md:w-1/2 p-8 flex flex-col justify-center">
-                <ul className="space-y-6 md:space-y-5">
+                <ul className="space-y-6 md:space-y-8">
                     <li className="flex flex-col md:flex-row items-center transition-transform duration-300 hover:translate-x-2">
                         <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">01</span>
                         <div className="flex-1">
