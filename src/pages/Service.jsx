@@ -1,15 +1,15 @@
 import React from 'react'
-import Service from '../components/Service/Service';
-import Media from '../components/Service/Media';
-import Video from '../components/Service/Video';
-import Actualités from '../components/Service/Actualités';
-import Navbar from '../components/Service/Navbar';
-import Footer from '../components/Service/Footer';
+import Service from '../components/Services/Social/Service';
+import Media from '../components/Services/Social/Media';
+import Video from '../components/Services/Social/Video';
+import Actualités from '../components/Services/Social/Actualités';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
 
 const service = () => {
   return (
     <>
-    <Navbar/>
+     <Header/>
     <Service/>
     <Media />
     <Video/>

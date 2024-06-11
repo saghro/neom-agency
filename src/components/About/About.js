@@ -11,14 +11,14 @@ const About = () => {
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>vos besoins et vos exigences ? </p>
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>Quel que soit votre domaine d'activité, Neom vous </p>
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>accompagne tout au long de votre processus de </p>
-                <p className='font-regular md:ml-12 text-lg md:text-xl'>transformation digiale, pour réussir vos projets dans </p>
-                <p className='font-regular md:ml-12 text-lg md:text-xl'>les meilleurs conditions possibles !</p>
+                <p className='font-regular md:ml-12 text-lg md:text-xl'>transformation digitale, pour réussir vos projets dans </p>
+                <p className='font-regular md:ml-12 text-lg md:text-xl'>les meilleures conditions possibles !</p>
                 <p className='font-regular md:ml-12 text-lg md:text-xl'>Qu'attendez-vous pour nous rejoindre ?</p>
-                <p className='font-regular md:ml-12 text-lg md:text-xl'>Demandez un devis dès aujourd'hui et profitez de nos services exceptionnelles !! </p>
-                <button className='mx-auto md:ml-80 mt-16 px-6 bg-[#ff997f] rounded-xl py-3 text-white font-bold'>Demander un devis</button>
+                <p className='font-regular md:ml-12 text-lg md:text-xl'>Demandez un devis dès aujourd'hui et profitez de nos services exceptionnels. </p>
+                <button className='mx-auto md:ml-40 mt-6 px-6 bg-[#ff997f] rounded-3xl py-3 text-white font-bold'>Demander un devis</button>
             </div>
             <div className='text-center md:hidden'>
-                <img src={image} alt="aze" style={{ display: "none" }} />
+                <img src={image} alt="aze" style={{ display: "block" }} />
             </div>
             <div className='text-center hidden md:block'>
                 <img src={image} alt="aze" style={{ width: "600px", height: "25rem", marginTop: "-100px" }} />
