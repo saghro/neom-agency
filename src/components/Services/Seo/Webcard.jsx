@@ -37,6 +37,7 @@ const WebCards = () => {
         />
       </div>
       <button className="mt-8 px-8 py-3 bg-[#FFA288] text-white rounded-full">
+      <button className="mt-8 px-8 py-3 bg-[#FFA288] text-white rounded-full">
         Vous avez un Projet?
       </button>
     </div>

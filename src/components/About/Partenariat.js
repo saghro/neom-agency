@@ -38,20 +38,20 @@ const responsive = {
 
 const MultiCardCarousel = () => {
     const items = [
-        { id: 1, content: <img className='mt-8' src={tof} alt="" /> },
-        { id: 3, content: <img className='mt-14' src={tof2} alt="" /> },
-        { id: 4, content: <img className='mt-5' src={tof3} alt="" /> },
-        { id: 5, content: <img className='mt-12' src={tof4} alt="" /> },
-        { id: 6, content: <img className='mt-6' src={tof5} alt="" /> },
-        { id: 7, content: <img className='mt-6' src={tof6} alt="" /> },
-        { id: 8, content: <img className='mt-8' src={tof7} alt="" /> },
-        { id: 9, content: <img className='mt-7' src={tof8} alt="" /> },
-        { id: 11, content: <img className='mt-5' src={tof10} alt="" /> },
-        { id: 12, content: <img className='mt-12' src={tof11} alt="" /> },
-        { id: 14, content: <img className='mt-6' src={tof13} alt="" /> },
-        { id: 15, content: <img className='mt-8' src={tof14} alt="" /> },
-        { id: 16, content: <img className='mt-7' src={tof15} alt="" /> },
-        { id: 17, content: <img className='mt-14' src={tof16} alt="" /> },
+        { id: 1, content: <img className='mt-8 w-13 h-12' src={tof} alt="" /> },
+        { id: 3, content: <img className='mt-8 w-13 h-12' src={tof2} alt="" /> },
+        { id: 4, content: <img className='mt-5 w-13 h-12' src={tof3} alt="" /> },
+        { id: 5, content: <img className='mt-12 w-13 h-12' src={tof4} alt="" /> },
+        { id: 6, content: <img className='mt-6 w-13 h-12' src={tof5} alt="" /> },
+        { id: 7, content: <img className='mt-6 w-13 h-12' src={tof6} alt="" /> },
+        { id: 8, content: <img className='mt-8 w-13 h-12' src={tof7} alt="" /> },
+        { id: 9, content: <img className='mt-7 w-13 h-12' src={tof8} alt="" /> },
+        { id: 11, content: <img className='mt-5 w-13 h-12' src={tof10} alt="" /> },
+        { id: 12, content: <img className='mt-12 w-13 h-12' src={tof11} alt="" /> },
+        { id: 14, content: <img className='mt-6 w-13 h-12' src={tof13} alt="" /> },
+        { id: 15, content: <img className='mt-8 w-13 h-12' src={tof14} alt="" /> },
+        { id: 16, content: <img className='mt-7 w-13 h-12' src={tof15} alt="" /> },
+        { id: 17, content: <img className='mt-14 w-13 h-12' src={tof16} alt="" /> },
     ];
 
     return (

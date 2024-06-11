@@ -1,9 +1,13 @@
 import logonobg from '../../images/neomlogowhite.png';
+import logonobg from '../../images/neomlogowhite.png';
 import { FaLinkedinIn, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+
 
 const Footer = () => {
   return (
     <div className="mt-8 bg-[#272D4E] text-white pb-8">
+      <div className="flex flex-col lg:flex-row justify-between items-start p-6 lg:p-0 mx-4 lg:mx-20">
+        <div className="flex justify-center lg:justify-start mt-10 lg:mt-6 w-full lg:w-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start p-6 lg:p-0 mx-4 lg:mx-20">
         <div className="flex justify-center lg:justify-start mt-10 lg:mt-6 w-full lg:w-auto">
           <img src={logonobg} alt="Logo" className="h-16 w-36" />
@@ -76,5 +80,6 @@ const Footer = () => {
     </div>
   );
 }
+
 
 export default Footer;

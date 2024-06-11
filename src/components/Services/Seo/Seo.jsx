@@ -10,7 +10,7 @@ import background from '../../../assests/backgroundorange.png';
       
       >
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
-  <h1 className="text-4xl lg:text-8xl font-bold mb-4">Référencement SEO /SEA
+  <h1 className="text-3xl lg:text-6xl font-bold mb-4">Référencement SEO /SEA
   </h1>
   <p className="text-lg lg:text-xl mb-8">
   L’équipe Neom vous aide à élaborer des stratégies de référencement sur mesure pour votre site web, en vous garantissant une visibilité maximale sur les moteurs de recherche
