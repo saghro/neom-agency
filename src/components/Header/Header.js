@@ -67,7 +67,7 @@ const Header = () => {
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <nav className={`nav ${isMenuOpen ? 'show' : 'hidden'} fixed top-0 left-0 right-0 bottom-0 bg-white p-4 shadow-lg z-50 transition-all duration-1000 ease-in-out`}>
+                <nav className={`nav ${isMenuOpen ? 'show' : ''} fixed top-0 left-0 right-0 bottom-0 bg-white p-4 shadow-lg z-50 transition-all duration-1000 ease-in-out`}>
                     <div className="flex w-full justify-between">
                         <Link to="/"> 
                             <img className="logo h-10 sm:h-20 mt-9" src={logo} alt="Logo"/>
@@ -91,7 +91,7 @@ const Header = () => {
                             <button onClick={toggleMenu} className="absolute top-16 right-7">
                                 <FontAwesomeIcon icon={faTimes} size={isDesktop ? "2x" : "lg"} className="text-blue-900"/>
                             </button>
-                            <img className="mobile-image hidden sm:inline rounded-2xl  mt-6" src={headerimg} alt="Mobile Image"/>
+                            <img className="mobile-image hidden sm:inline rounded-2xl  mt-6 h-96" src={headerimg} alt="Mobile Image"/>
                         </div>
                     </div>
                 </nav>

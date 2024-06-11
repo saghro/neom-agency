@@ -73,7 +73,7 @@ export default function Solutions() {
                         <ChevronRightIcon className="text-[#6f42c1] h-6 w-6 md:h-8 md:w-8" />
                     </li>
                     <li className="flex flex-col md:flex-row items-center transition-transform duration-300 hover:translate-x-2">
-                        <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">04</span>
+                        <span className="text-4xl md:text-5xl font-bold text-gray-300 mr-4">05</span>
                         <div className="flex-1">
                             <Link to="/Print" className="no-underline">
                                 <h2 className="text-2xl md:text-1xl font-bold mb-1 text-[#272D4E]">Print</h2>
