@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ title, description, icon }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg p-6 bg-white transform transition duration-300 hover:bg-[#FFA288] hover:text-white flex flex-col justify-between">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg p-6 bg-white transform transition duration-300 hover:bg-[#FFA288] hover:text-white flex flex-col justify-between m-4">
       <div>
         <div className="flex justify-center mb-4">
           <div className="flex items-center justify-center w-24 h-24 bg-white rounded-full shadow-2xl text-black">

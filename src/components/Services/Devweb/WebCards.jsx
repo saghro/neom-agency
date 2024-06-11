@@ -4,7 +4,7 @@ import Card from '../../Card';
 const WebCards = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center my-8">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       <Card
         title="UI/UX design"
         description="Un design attrayant et des visuels modernes et créatifs pour capter l’attention des visiteurs."
