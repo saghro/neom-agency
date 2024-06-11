@@ -1,20 +1,20 @@
-import React from 'react'
-import Hero from '../components/Services/formations/Hero'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import MiddleSection from '../components/Services/formations/MiddleSection'
-import WebCards from '../components/Services/formations/WebCards'
-import PageCards from '../components/Services/formations/LinkCard'
-const Formations = () => {
-    return (
-        <>
-            <Header />
-            <Hero />
-            <MiddleSection/>
-            <WebCards/>
-            <PageCards/>
-            <Footer />
-        </>)
-}
+import React from "react";
+import Folder from "../components/Services/formation/main";
+import Media from "../components/Services/formation/cards-text";
+import Actualités from "../components/Services/formation/actualites";
+import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
-export default Formations
+const formation = () => {
+  return (
+    <>
+      <Header />
+      <Folder />
+      <Media />
+      <Actualités />
+      <Footer />
+    </>
+  );
+};
+
+export default formation;
