@@ -1,10 +1,10 @@
 import React from 'react'
-import Hero from '../components/formations/Hero'
+import Hero from '../components/Services/formations/Hero'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import MiddleSection from '../components/formations/MiddleSection'
-import WebCards from '../components/formations/WebCards'
-import PageCards from '../components/formations/LinkCard'
+import MiddleSection from '../components/Services/formations/MiddleSection'
+import WebCards from '../components/Services/formations/WebCards'
+import PageCards from '../components/Services/formations/LinkCard'
 const Formations = () => {
     return (
         <>
