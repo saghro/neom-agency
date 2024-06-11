@@ -1,46 +1,47 @@
-import logonobg from '../../images/neomlogowhite.png'
+import logonobg from '../../images/neomlogowhite.png';
 import { FaLinkedinIn, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
- 
+
 const Footer = () => {
   return (
     <div className="mt-8 bg-[#272D4E] text-white pb-8">
-      <div className="flex flex-col lg:flex-row justify-between p-6 lg:p-0 mx-20">
-        <div className="flex justify-center lg:justify-start mt-10">
+      <div className="flex flex-col lg:flex-row justify-between items-start p-6 lg:p-0 mx-4 lg:mx-20">
+        <div className="flex justify-center lg:justify-start mt-10 lg:mt-6 w-full lg:w-auto">
           <img src={logonobg} alt="Logo" className="h-16 w-36" />
         </div>
-        <div className="flex flex-col items-center lg:flex-row lg:items-center lg:mt-6">
-          <input
-            type="text"
-            className="bg-gray-600 mt-6 lg:mt-0 rounded-2xl py-2 px-6 w-full lg:w-auto lg:flex-grow"
-            placeholder="Sub To our Newsletter"
-          />
-          <button
-            type="submit"
-            className="bg-white text-[#6c529e] text-lg font-bold py-2 px-6 mt-4 lg:mt-0 lg:ml-4 rounded-2xl"
-          >
-            Subscribe
-          </button>
+        <div className="flex flex-col items-center lg:items-end mt-6 lg:mt-6 w-full lg:w-auto">
+          <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4 pb-10">
+            <input
+              type="text"
+              className="bg-gray-600 rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96"
+              placeholder="Sub To our Newsletter"
+            />
+            <button
+              type="submit"
+              className="bg-white text-[#6c529e] text-lg font-bold py-2 px-6 rounded-2xl"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div className="flex justify-center lg:justify-end mt-4 space-x-4">
+            <a href="https://linkedin.com">
+              <FaLinkedinIn className="text-xl cursor-pointer" />
+            </a>
+            <a href="https://facebook.com">
+              <FaFacebook className="text-xl cursor-pointer" />
+            </a>
+            <a href="https://instagram.com">
+              <FaInstagram className="text-xl cursor-pointer" />
+            </a>
+            <a href="https://youtube.com">
+              <FaYoutube className="text-xl cursor-pointer" />
+            </a>
+          </div>
         </div>
       </div>
- 
-      <div className="h-32 flex items-center justify-center">
-        <div className="flex justify-center mt-4 space-x-8">
-          <a href="https://linkedin.com">
-            <FaLinkedinIn className="text-xl cursor-pointer" />
-          </a>
-          <a href="https://facebook.com">
-            <FaFacebook className="text-xl cursor-pointer" />
-          </a>
-          <a href="https://instagram.com">
-            <FaInstagram className="text-xl cursor-pointer" />
-          </a>
-          <a href="https://youtube.com">
-            <FaYoutube className="text-xl cursor-pointer" />
-          </a>
-        </div>
-      </div>
- 
-      <div className="flex flex-col lg:flex-row justify-between text-center lg:text-left">
+
+      <hr className="my-8 border-gray-600 mx-4 lg:mx-20" /> {/* Divider with side margins */}
+
+      <div className="flex flex-col lg:flex-row justify-between text-center lg:text-left mx-4 lg:mx-20">
         <div className="mt-8 lg:ml-12">
           <h2 className="font-bold">Pages Utils</h2>
           <ul>
@@ -75,5 +76,5 @@ const Footer = () => {
     </div>
   );
 }
- 
+
 export default Footer;
