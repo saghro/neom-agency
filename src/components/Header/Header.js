@@ -73,7 +73,9 @@ const Header = () => {
                     rejoignez-nous
                 </button>
                 <div className="icons flex items-center gap-9">
-                
+                    <div className="search-icon">
+                        <FontAwesomeIcon icon={faSearch} size="2x" className="text-blue-900"/>
+                    </div>
                     <div className="menu-icon" onClick={toggleMenu}>
                         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900"/>
                     </div>

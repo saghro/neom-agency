@@ -1,42 +1,36 @@
 import React from 'react';
-import { SlLogin } from 'react-icons/sl';
-
-const Actualites = () => {
-  return (
-    <div className="bg-[#7854F7] p-9 h-auto text-white mt-4 mb-16">
-      <h1 className="text-4xl font-bold text-center mb-6 mt-4">Actualités</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div className="space-y-4">
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              Pourquoi opter pour le Blended Learning ?
+import { BsBoxArrowInRight } from "react-icons/bs";
+ 
+const LinkCard = ({ title, links }) => {
+    return (
+      <div className="bg-[#7854F7] text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
+        <h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {links.map((link, index) => (
+            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-[#7854F7] rounded-full hover:bg-[#6e63e7] transition duration-300">
+              <span>{link.text}</span>
+              <BsBoxArrowInRight className="text-3xl mr-24" />
             </a>
-          </div>
-          <div className="flex items-center">
-            <SlLogin className="mr-2"/>
-            <a href="#" className="block hover:underline">
-              Webinaire gratuit en marketing digital et relation client
-            </a>
-          </div>
-        </div>
-        <div className="space-y-4">
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              Comment se former dans le marketing digital ?
-            </a>
-          </div>
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              Quels sont les advantages d'Immersive Learning ?
-            </a>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Actualites;
+    );
+  };
+ 
+  const PageCards = () => {
+    const links = [
+      { text: "Pourquoi opter pour le Blended Learning ?", url: "#" },
+      { text: "Webinaire gratuit en marketing digital et relation client", url: "#" },
+      { text: "Comment se former dans le marketing digital ?", url: "#" },
+      { text: "Quels sont les avantages d'Immersive Learning ?", url: "#" }
+    ];
+ 
+    return (
+      <div className="flex items-center justify-center py-8">
+        <LinkCard title="Actualités" links={links} />
+      </div>
+    );
+  };
+ 
+ 
+  export default PageCards;

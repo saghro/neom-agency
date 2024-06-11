@@ -5,7 +5,7 @@ import { IoEyeSharp } from "react-icons/io5";
 const WebCards = () => {
   const Cards = ({ title, description, icon }) => {
     return (
-      <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-[#FFA288] hover:text-white flex flex-col justify-between ">
+      <div className="-mt-36 max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-[#FFA288] hover:text-white flex flex-col justify-between ">
         <div>
           <div className="flex justify-center mb-4 text-5xl">
             {icon}
