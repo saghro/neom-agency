@@ -16,7 +16,7 @@ const Media = () => {
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
           <FaUsers className="text-5xl text-[#FFA288]" />
           <h2 className="text-xl font-bold mt-9">Création de contenu ciblé</h2>
-          <p className='text-center mt-9'>La compréhension, l'analyse, et le suivi des indicateurs de performance de vos plateformes sociaux </p>
+          <p className='text-center mt-9'>Nous nous engageons à vous fournir un contenu pertinent destiné à votre cible afin de générer des leads de qualité et augmenter vos conversions. </p>
         </div>
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
           <BiSolidLike className="text-5xl text-[#FFA288]" />
@@ -29,7 +29,7 @@ const Media = () => {
           <p className='text-center mt-9'>Des stratégies alignées avec votre vision et objectifs pour marquer votre personnalité et gagner la confiance de vos clients </p>
         </div>
       </div>
-      <button className="bg-[#FFA288] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8 transition duration-300 transform hover:scale-105">
+      <button className="bg-[#FFA288] hover:bg-blue-700 text-white font-bold py-2 px-4 mt-8 transition duration-300 transform hover:scale-105 rounded-full">
         Savoir plus
       </button>
     </div>

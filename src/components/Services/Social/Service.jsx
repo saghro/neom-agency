@@ -11,9 +11,6 @@ return (
 <p className="text-lg lg:text-xl mb-8">
 Propulsez votre présence en ligne avec Neom, des services variés adaptés à vos besoins.
 </p>
-<button className="bg-blue-700 hover:bg-blue text-white font-bold py-2 px-4 rounded mt-8 transition duration-300 transform hover:scale-105">
-        Savoir plus
-      </button>
 </div>
 
 
