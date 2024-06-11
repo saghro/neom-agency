@@ -1,24 +1,3 @@
-// import React from 'react';
-// import womanImage from '../../assests/woman.png'; // Import the image
-
-// const Service = () => {
-//   return (
-//     <div className="bg-[#7854F7] min-h-screen flex flex-col md:flex-row">
-//       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:pl-8 text-white">
-//         <h1 className="text-4xl font-bold mb-4 font-poppins">Social Media Marketing</h1>
-//         <p className="text-lg">Propulsez votre présence en ligne avec Neom, des services variés adaptés à vos besoins.</p>
-//       </div>
-//       <div 
-//         className="w-full md:w-1/2 bg-cover bg-right"
-//         style={{ backgroundImage: `url(${womanImage})`, minHeight: '300px' }} // Use the imported image here
-//       ></div>
-//     </div>
-//   );
-// }
-
-// export default Service;
-
-
 
 import React from 'react';
 import womanImage from '../../assests/woman.png'; // Import the image
@@ -33,9 +12,7 @@ return (
 <p className="text-lg lg:text-xl mb-8">
 Propulsez votre présence en ligne avec Neom, des services variés adaptés à vos besoins.
 </p>
-<button className="bg-blue-700 hover:bg-blue text-white font-bold py-2 px-4 rounded mt-8 transition duration-300 transform hover:scale-105">
-        Savoir plus
-      </button>
+
 </div>
 
 

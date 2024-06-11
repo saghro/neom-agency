@@ -19,9 +19,9 @@ const LinkCard = ({ title, links }) => {
  
   const PageCards = () => {
     const links = [
-      { text: "Comment optimiser son site grâce a l'IA ?", url: "#" },
+      { text: "Comment optimiser son site grâce à l'IA ?", url: "#" },
       { text: "Référencement organique ou payant : Quoi choisir ? ?", url: "#" },
-      { text: "Mis à jour des algorithmes de Google 2024", url: "#" },
+      { text: "Mise à jour des algorithmes de Google 2024", url: "#" },
       { text: "6 Astuces pour booster la visibilité de votre site web  ", url: "#" }
     ];
  

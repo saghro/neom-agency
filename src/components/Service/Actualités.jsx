@@ -1,42 +1,36 @@
 import React from 'react';
-import { SlLogin } from 'react-icons/sl';
-
-const Actualites = () => {
-  return (
-    <div className="bg-[#7854F7] p-9 text-white mt-4 h-80">
-      <h1 className="text-4xl font-bold text-center mb-6 mt-3 ">Actualités</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div className="space-y-4">
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              Marketing d'influence : 3 stratégies pour réussir son projet en 2024
+import { BsBoxArrowInRight } from "react-icons/bs";
+ 
+const LinkCard = ({ title, links }) => {
+    return (
+      <div className="bg-[#7854F7] text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
+        <h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {links.map((link, index) => (
+            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-[#7854F7] rounded-full hover:bg-[#6e63e7] transition duration-300">
+              <span>{link.text}</span>
+              <BsBoxArrowInRight className="ml-4 text-3xl" />
             </a>
-          </div>
-          <div className="flex items-center">
-            <SlLogin className="mr-2"/>
-            <a href="#" className="block hover:underline">
-              Communauté en ligne et marques : quelles stratégies en 2024
-            </a>
-          </div>
-        </div>
-        <div className="space-y-4 sm:pl-4">
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              La place de l'IA dans la génération de contenu
-            </a>
-          </div>
-          <div className="flex items-center">
-            <SlLogin className="mr-2" />
-            <a href="#" className="block hover:underline">
-              L'influence des pratiques UGC sur les consommateurs
-            </a>
-          </div>
+          ))}
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Actualites;
+    );
+  };
+ 
+  const PageCards = () => {
+    const links = [
+      { text: "Marketing d'influence : 3 stratégies pour réussir son projet en 2024", url: "#" },
+      { text: "Communauté en ligne et marques : quelles stratégies en 2024", url: "#" },
+      { text: "La place de l'IA dans la génération de contenu", url: "#" },
+      { text: "L'influence des pratiques UGC sur les consommateurs", url: "#" }
+    ];
+ 
+    return (
+      <div className="flex items-center justify-center py-8">
+        <LinkCard title="Actualités" links={links} />
+      </div>
+    );
+  };
+ 
+ 
+  export default PageCards;
