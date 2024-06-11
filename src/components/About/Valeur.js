@@ -31,17 +31,17 @@ export default function Valeur() {
           <img src={logo3} alt="A" className="  mr-1  bg-[#299EF3] hidden md:block" />
         </div>
       
-        <div className="-mb-16 bg-[#E8A436] font-bold text-xl text-left pt-8 pl-8">
+        <div className="-mb-16 bg-[#E8A436] font-bold text-xl text-left pt-8 pl-16 h-80">
           <span className="text-white font-bold">4 L'innovation</span>
           <br />
           (pour un avenir <br /> désirable)
         </div>
-        <div className="-mb-16 bg-[#83537A] font-bold text-xl text-[#fecaca] text-left pt-8 pl-16">
+        <div className="-mb-16 bg-[#83537A] font-bold text-xl text-[#fecaca] text-left pt-8 pl-16  h-80">
           <span className="text-white font-bold">5 La communication </span>
           <br />
           (une cohérence <br /> entre nos valeurs et <br /> nos actes)
         </div>
-        <div className="-mb-16 bg-[#248AD4] font-bold text-xl text-left pt-8 pl-16">
+        <div className="-mb-16 bg-[#248AD4] font-bold text-xl text-left pt-8 pl-16  h-80">
           <span className="text-white font-bold">6 L'éthique </span>
           <br />
           (le respect et la <br /> confidentialité)
