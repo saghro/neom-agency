@@ -21,7 +21,7 @@ const Media = () => {
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
           <BiSolidLike className="text-5xl text-[#FFA288]" />
           <h2 className="text-xl font-bold mt-9">Optimisation des KPIs</h2>
-          <p className='text-center mt-9'>La compréhension, l'analyse, et le suivi des indicateurs de performance de vos plateformes sociaux  </p>
+          <p className='text-center mt-9'>La compréhension, l'analyse, et le suivi des indicateurs de performance de vos plateformes sociales  </p>
         </div>
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
           <FaUserCircle className="text-5xl text-[#FFA288]" />
