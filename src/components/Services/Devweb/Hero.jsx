@@ -11,8 +11,8 @@
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
   <h1 className="text-4xl lg:text-6xl font-bold mb-4">Développement Web et Mobile</h1>
   <p className="text-lg lg:text-xl mb-8">
-    Nous vous accompagnons dans le conseil, la mise en place, le suivi et l’optimisation
-    des campagnes de référencement organique et payant pour réussir vos projets.
+  
+  Optez pour Neom c'est choisir une équipe d'experts qui s’engage à transformer votre site web en un outil puissant et captivant.
   </p>
   <button className="custom-button">Play a demo <span className="circle">&gt;</span></button>
 </div>

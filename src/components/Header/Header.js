@@ -91,7 +91,7 @@ const Header = () => {
                             <button onClick={toggleMenu} className="absolute top-16 right-7">
                                 <FontAwesomeIcon icon={faTimes} size={isDesktop ? "2x" : "lg"} className="text-blue-900"/>
                             </button>
-                            <img className="mobile-image hidden sm:inline rounded-2xl  mt-6 h-96" src={headerimg} alt="Mobile Image"/>
+                            <img className="mobile-image hidden sm:inline rounded-2xl  mt-6 h-72" src={headerimg} alt="Mobile Image"/>
                         </div>
                     </div>
                 </nav>
