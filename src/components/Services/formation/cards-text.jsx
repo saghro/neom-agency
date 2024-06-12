@@ -10,7 +10,7 @@ const Media = () => {
         Nous veillons à vous offrir des cours attrayants et interactifs adaptés au rythme de chacun disponibles en ligne et peuvent être suivi à tout moment.
       </h1>
       <h1 className="text-3xl font-bold font-Rammetto-One text-[#248AD4] mt-8 text-center">
-        Développer vos connaissances ainsi que vos compétences avec nos formations exclusives 
+        Développez vos connaissances ainsi que vos compétences avec nos formations exclusives 
       </h1>
       <div className="flex flex-col md:flex-row justify-around w-full mt-9 space-y-6 md:space-y-0 md:space-x-4">
         <div className="flex flex-col items-center p-6 border border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
