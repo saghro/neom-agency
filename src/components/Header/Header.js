@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PiUserCirclePlusBold } from 'react-icons/pi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-<<<<<<< HEAD
-import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import logo from "../../images/logo.jpeg";
-=======
 import { faBars, faTimes, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png"; 
@@ -13,7 +9,6 @@ import headerimg from "../../images/headerlogo.png";
 import logo1 from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
 import "./header.css";
->>>>>>> origin/ayoub
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
