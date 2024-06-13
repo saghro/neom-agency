@@ -1,13 +1,12 @@
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 .nav {
-    /* Vos styles existants */
-    transition: transform 0.3s ease; /* Ajoutez une transition pour l'animation */
-    transform: translateY(-100%); /* Position initiale en dehors de l'écran */
-  }
-  
-  .nav.show {
-    transform: translateY(0); /* Position finale pour afficher le menu */
-  }
-  
+  /* Vos styles existants */
+  transition: transform 0.3s ease; /* Ajoutez une transition pour l'animation */
+  transform: translateY(-100%); /* Position initiale en dehors de l'écran */
+}
+
+.nav.show {
+  transform: translateY(0); /* Position finale pour afficher le menu */
+}
