@@ -29,10 +29,10 @@ export default function Solutions({ small }) {
                 </h1>
             </div>
             <div className={`w-full md:w-1/2 p-8 flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
-                <ul className={`space-y-8 ${small ? 'space-y-2' : 'space-y-1'}`}>
+                <ul className={`space-y-8 ${small ? 'space-y-1' : 'space-y-0'}`}>
                     <li className="flex flex-col md:flex-row items-center gap-4 md:gap-6 transition-transform duration-300 hover:translate-x-2 border-b border-gray-300 last:border-0 pb-4 md:pb-6">
                         <span className={`font-bold text-gray-300 mr-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'}`}>01</span>
-                        <div className="flex-1 gap-10">
+                        <div className="flex-1">
                             <Link to="/Social_Media" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Social Media Marketing</h2>
                                 <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>création de contenu, génération de trafic, des stratégies sur mesure...</p>
