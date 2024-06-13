@@ -4,7 +4,7 @@ import womanImage from '../../../assests/outdoor-businessman-having-his-arms-cro
 const Hero = () => {
 return (
     <div
-    className="flex bg-[#7854F7] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
+    className="flex bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
   >
 <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
 <h1 className="text-3xl lg:text-6xl font-bold mb-4">Formation </h1>
