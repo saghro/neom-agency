@@ -1,5 +1,5 @@
 import React from 'react';
-  import personPlaceholder from '../../../assests/seo.png'; 
+  import personPlaceholder from '../../../assests/medium-shot-woman-posing-indoors.png'; 
   import './button.css'
     const Hero = () => {
     return (
