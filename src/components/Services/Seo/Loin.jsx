@@ -3,11 +3,11 @@ import { BsBoxArrowInRight } from "react-icons/bs";
  
 const LinkCard = ({ title, links }) => {
     return (
-      <div className="bg-[#F19F00] -mt-40 text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
+      <div className="bg-[#6A71B3] -mt-40 text-white p-12 rounded-lg w-full max-w-7xl mx-auto font-poppins">
         <h2 className="text-3xl font-bold mb-8 text-center">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {links.map((link, index) => (
-            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-[#F19F00] rounded-full hover:bg-[#0c0c0c] transition duration-300">
+            <a key={index} href={link.url} className="flex items-center justify-between p-6 bg-[#6A71B3] rounded-full hover:bg-[#6A71B3] transition duration-300">
               <span>{link.text}</span>
               <BsBoxArrowInRight className="ml-4 text-3xl" />
             </a>
