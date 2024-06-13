@@ -8,6 +8,7 @@ import logoBlack from "../../images/logo.jpeg";
 import headerimg from "../../images/headerlogo.png";
 import logo1 from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
+import "./Header.css"
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
