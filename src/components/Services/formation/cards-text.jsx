@@ -17,7 +17,7 @@ const Media = () => {
       </h1>
       <div className="flex flex-col md:flex-row justify-around w-full mt-9 space-y-6 md:space-y-0 md:space-x-4">
         <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <FaCloud className="text-5xl text-[#FFA288]" />
+          <FaCloud className="text-5xl text-[#6A71B3]" />
           <h2 className="text-xl font-bold mt-9">Immersive learning</h2>
           <p className="font-bold text-center mt-9">
             Immersive learning : Complétez votre formation avec des cas
@@ -25,7 +25,7 @@ const Media = () => {
           </p>
         </div>
         <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <MdDesktopMac className="text-5xl text-[#FFA288]" />
+          <MdDesktopMac className="text-5xl text-[#6A71B3]" />
           <h2 className="text-xl font-bold mt-9">Cours en ligne</h2>
           <p className="font-bold text-center mt-9">
             Grace à la visioconférence, nous vous offrons des formations en
@@ -33,7 +33,7 @@ const Media = () => {
           </p>
         </div>
         <div className="flex flex-col items-center p-6 border cursor-pointer border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-          <IoIosGitMerge className="text-5xl text-[#FFA288]" />
+          <IoIosGitMerge className="text-5xl text-[#6A71B3]" />
           <h2 className="text-xl font-bold mt-9">Blended learning</h2>
           <p className="font-bold text-center mt-9">
             Profitez des avantages des cours en ligne et présentiels adaptés à
@@ -41,7 +41,7 @@ const Media = () => {
           </p>
         </div>
       </div>
-      <button className="bg-[#FFA288] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl text-xl mt-8 transition duration-300 transform hover:scale-105">
+      <button className="bg-[#6A71B3] hover:bg-[#C7A2CB] text-white font-bold py-2 px-4 rounded-xl text-xl mt-8 transition duration-300 transform hover:scale-105">
         Savoir plus
       </button>
     </div>
