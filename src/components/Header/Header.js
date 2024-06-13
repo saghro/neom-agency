@@ -21,7 +21,7 @@ const Header = () => {
         };
 
         const handleResize = () => {
-            setIsDesktop(window.innerWidth > 768);
+            setIsDesktop(window.innerWidth > 768); // Adjust breakpoint as needed
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -44,7 +44,7 @@ const Header = () => {
 
     return (
         <div>
-            <div className="top-bar h-15 bg-blue-900 text-white flex justify-between p-2 hidden sm:flex">
+            <div className="top-bar bg-blue-900 text-white flex justify-between p-2 hidden sm:flex">
                 <div className="language-selector">FR|EN</div>
                 <div className="contact-info hidden sm:flex items-center gap-4">
                     <div className="phone-icon">
@@ -73,6 +73,7 @@ const Header = () => {
                         <li>Contact</li>
                     </ul>
                 </nav>
+
                 <nav className={`nav ${isMenuOpen ? 'show' : ''} fixed top-0 left-0 right-0 bottom-0 bg-white p-4 shadow-lg z-50 transition-all duration-1000 ease-in-out`}>
                     <div className="flex w-full justify-between">
                         <Link to="/">
@@ -100,6 +101,7 @@ const Header = () => {
                             <img className="mobile-image hidden sm:inline rounded-2xl mt-6 h-72" src={headerimg} alt="Mobile Image" />
                         </div>
                     </div>
+
                 </nav>
                 <button className="join-button bg-blue-900 text-white px-4 py-2 rounded-full font-bold hidden sm:block">
                     rejoignez-nous
@@ -107,6 +109,7 @@ const Header = () => {
                 <div className="icons flex items-center gap-9">
                     <div className="menu-icon " onClick={toggleMenu}>
                         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="2x" className="text-blue-900" />
+
                     </div>
                 </div>
             </header>

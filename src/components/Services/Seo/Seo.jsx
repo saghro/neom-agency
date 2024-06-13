@@ -1,12 +1,10 @@
 import React from 'react';
-import background from '../../../assests/backgroundorange.png'; 
   import personPlaceholder from '../../../assests/seo.png'; 
   import './button.css'
     const Hero = () => {
     return (
         <div
-        className="flex flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
-        style={{ backgroundImage: `url(${background})` }}
+        className=" bg-gradient-to-r from-[#6A71B3] via-[#A8D9E0] to-[#C7A2CB] flex flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
       
       >
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>

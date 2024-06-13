@@ -30,7 +30,7 @@ export default function Valeur() {
           </div>
           <img src={logo3} alt="A" className="  mr-1  bg-[#6A71B3] hidden md:block" />
         </div>
-      
+
         <div className="-mb-16 bg-[#C7A2CB] font-bold text-xl text-left pt-8 pl-16 h-80">
           <span className="text-white font-bold">4 L'innovation</span>
           <br />
@@ -42,6 +42,7 @@ export default function Valeur() {
           (une cohérence <br /> entre nos valeurs et <br /> nos actes)
         </div>
         <div className="-mb-16 bg-[#A8D9E0] font-bold text-xl text-left pt-8 pl-16  h-80">
+
           <span className="text-white font-bold">6 L'éthique </span>
           <br />
           (le respect et la <br /> confidentialité)

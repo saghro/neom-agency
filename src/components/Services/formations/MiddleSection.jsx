@@ -12,7 +12,7 @@ attrayants et interactifs adaptés au rythme
             </span>{' '}
             .  de chacun disponibles en ligne et peuvent être suivi à tout moment.{' '}
             <br className="hidden md:block" />
-            Développer vos{' '}
+            Développez vos{' '}
             <span className="text-orange-600">
             connaissances
                             </span>{' '}

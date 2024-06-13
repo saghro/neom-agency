@@ -1,23 +1,12 @@
-/* header.css */
-
-.project-button, .join-button {
-    transition: background-color 0.5s ease, transform 0.5s ease;
-}
-
-.project-button:hover, .join-button:hover {
-    background-color: #0056b3; 
-    transform: scale(1.1);
-}
-
 .no-scroll {
     overflow: hidden;
 }
 .nav {
-    transition: transform 0.3s ease; 
-    transform: translateY(-100%); 
+    /* Vos styles existants */
+    transition: transform 0.3s ease; /* Ajoutez une transition pour l'animation */
+    transform: translateY(-100%); /* Position initiale en dehors de l'écran */
   }
   
   .nav.show {
-    transform: translateY(0); 
+    transform: translateY(0); /* Position finale pour afficher le menu */
   }
-  
