@@ -1,5 +1,5 @@
 import React from 'react';
-import womanImage from '../../../assests/happy-businessman-folding-his-arms-with-is-colleagues-background-removebg-preview 1.png';
+import womanImage from '../../../assests/outdoor-businessman-having-his-arms-crossed.png';
  
 const Hero = () => {
 return (
@@ -16,7 +16,7 @@ return (
  
  
     <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
-      <img src={womanImage} alt="Person holding a laptop" className="h-full object-cover" />
+      <img src={womanImage} alt="Person holding a laptop" className="h-full object-cover -mr-32" />
     </div>
   </div>
  
