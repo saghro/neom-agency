@@ -12,7 +12,7 @@
   <h1 className="text-4xl lg:text-6xl font-bold mb-4">Développement Web et Mobile</h1>
   <p className="text-lg lg:text-xl mb-8">
     Nous vous accompagnons dans le conseil, la mise en place, le suivi et l’optimisation
-    des campagnes de référencement organique et payant pour réussir vos projets
+    des campagnes de référencement organique et payant pour réussir vos projets.
   </p>
   <button className="custom-button">Play a demo <span className="circle">&gt;</span></button>
 </div>
