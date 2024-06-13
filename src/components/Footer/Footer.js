@@ -3,7 +3,7 @@ import { FaLinkedinIn, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa
 
 const Footer = () => {
   return (
-    <div className="mt-8 bg-[#272D4E] text-white pb-8">
+    <div className="mt-8 bg-gradient-to-r from-[#A8D9E0] via-[#C7A2CB] to-[#6A71B3] text-white pb-8">
       <div className="flex flex-col lg:flex-row justify-between items-start p-6 lg:p-0 mx-4 lg:mx-20">
         <div className="flex justify-center lg:justify-start mt-10 lg:mt-6 w-full lg:w-auto">
           <img src={logonobg} alt="Logo" className="h-16 w-36" />
@@ -43,7 +43,7 @@ const Footer = () => {
 
       <div className="flex flex-col lg:flex-row justify-between text-center lg:text-left mx-4 lg:mx-20">
         <div className="mt-8 lg:ml-12">
-          <h2 className="font-bold">Pages Utils</h2>
+          <h2 className="font-bold">Pages Utiles</h2>
           <ul>
             <li className="mt-2">Services</li>
             <li className="mt-2">Nous rejoindre</li>
@@ -52,9 +52,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="mt-6">
-          <h2 className="font-bold">Paramètre de confidentialités</h2>
+          <h2 className="font-bold">Paramètres de confidentialité</h2>
           <ul>
-            <li className="mt-2">Paramètre de cookies</li>
+            <li className="mt-2">Paramètres de cookies</li>
             <li className="mt-2">Mentions légales</li>
           </ul>
         </div>
