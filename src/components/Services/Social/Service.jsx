@@ -4,7 +4,7 @@ import React from 'react';
     const Hero = () => {
     return (
         <div
-        className="flex bg-[#7854F7] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
+        className="flex bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins"
        
       >
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>

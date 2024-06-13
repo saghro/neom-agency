@@ -1,12 +1,10 @@
 /* header.css */
-
 .project-button, .join-button {
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.5s ease;
 }
 
 .project-button:hover, .join-button:hover {
-    background-color: #0056b3; 
-    transform: scale(1.1);
+    background-color: #C7A2CB; 
 }
 
 .no-scroll {
