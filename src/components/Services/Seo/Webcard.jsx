@@ -5,17 +5,17 @@ import { IoEyeSharp } from "react-icons/io5";
 const WebCards = () => {
   const Cards = ({ title, description, icon }) => {
     return (
-      <div className="-mt-36 max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-[#6A71B3] hover:text-white flex flex-col justify-between ">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-[#6A71B3] hover:text-white flex flex-col justify-between">
         <div>
-          <div className="flex justify-center mb-4 text-5xl">
+          <div className="flex justify-center mb-4 text-3xl sm:text-5xl">
             {icon}
           </div>
-          <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-base">
+          <div className="font-bold text-xl sm:text-2xl mb-2">{title}</div>
+          <p className="text-base sm:text-lg">
             {description}
           </p>
         </div>
-        <button className="mt-4 px-4 py-2 bg-[#6A71B3] border-2 border-white text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300.">
+        <button className="mt-4 px-4 py-2 bg-[#6A71B3] border-2 border-white text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300">
           Savoir Plus
         </button>
       </div>
@@ -24,7 +24,7 @@ const WebCards = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center my-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Cards
           title="Référencement SEO"
           description="Élaborer une stratégie de référencement sur mesure en identifiant vos mots-clés, optimisant votre contenu et en structurant votre site web."
