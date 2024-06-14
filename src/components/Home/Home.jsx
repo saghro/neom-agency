@@ -13,7 +13,7 @@ const Home = () => {
                     réalité. Nous sommes prêts à mettre à votre disposition
                     notre expertise pour un projet réussi.
                 </p>
-                <button className="bg-white text-blue-900 px-4 py-2 w-56 rounded-full font-bold ml-30 mt-10">Contact Us</button>
+                <button className="bg-white text-blue-900 px-4 py-2 w-56 rounded-full font-bold ml-30 mt-10">Contactez-nous</button>
             </div>
 
             <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
