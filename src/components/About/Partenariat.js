@@ -56,7 +56,7 @@ const MultiCardCarousel = () => {
 
     return (
         <>
-            <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">Partenariat & <span className="text-[#6A71B3]">Certifications</span></h1>
+            <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">Nos Références & <span className="text-[#6A71B3]">Certifications</span></h1>
             <Carousel
                 responsive={responsive}
                 ssr={true}

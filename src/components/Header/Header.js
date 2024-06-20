@@ -56,7 +56,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <header className={`header ${isScrolled ? 'bg-white' : 'bg-transparent'} ${isDesktop ? 'pt-16' : ''}`}>
+            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop ? 'pt-16' : ''}`}>
                 <Link to="/">
                     <img
                         className={`logo`}
@@ -65,16 +65,18 @@ const Header = () => {
                     />
                 </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-xl ml-96 pr-12 ">
+                    <ul className="flex gap-10 text-xl ml-96 pr-64 ">
                         <li>Agence</li>
                         <li>Expertise</li>
                         <li>Contact</li>
                     </ul>
-                    <button className="join-button">rejoignez-nous</button>
                 </nav>
+                <button className="rejoignez-nous-button  relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
+                    <span className="relative z-10">rejoignez-nous</span>
+                </button>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-6 text-blue-900 mt-32">
+                        <ul className="flex flex-col gap-2 text-blue-900 mt-32">
                             <li>Agence</li>
                             <li>Expertise</li>
                             <li>Contact</li>

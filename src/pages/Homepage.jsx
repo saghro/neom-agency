@@ -15,7 +15,6 @@ const home = () => {
           <Home/>
           <Solutions/>
           <About/>
-          <Valeur/>
           <Cle/>
           <MultiCardCarousel/>
           <Footer/>
