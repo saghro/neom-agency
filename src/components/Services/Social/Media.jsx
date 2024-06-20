@@ -7,7 +7,7 @@ const Media = () => {
   return (
     <div className="flex flex-col justify-center items-center px-8 mt-8 ">
       <h1 className="text-3xl font-bold font-Rammetto-One text-[#6A71B3] text-center">
-        Boostez votre présence en ligne grâce à nos services et notre expertise en marketing digital et en marketing de contenu...
+        Boostez votre présence en ligne grâce à nos Services et notre expertise en marketing digital et en marketing de contenu...
       </h1>
       <h1 className="text-3xl font-bold font-Rammetto-One text-[#C7A2CB] mt-8 text-center">
         Découvrez le potentiel des médias sociaux et transformez les interactions en résultats concrets
