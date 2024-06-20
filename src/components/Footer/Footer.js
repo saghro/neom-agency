@@ -69,7 +69,7 @@ const Footer = () => {
           <ul>
             <li className="mt-2">neom.contact@gmail.com</li>
             <li className="mt-2">+33 00000000</li>
-            <li className="mt-2">Paris, France</li>
+            <li className="mt-2">Paris,France</li>
           </ul>
         </div>
       </div>
