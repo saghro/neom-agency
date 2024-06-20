@@ -21,7 +21,7 @@ const Home = () => {
             </div>
 
             <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
-                <img src={personPlaceholder} alt="Person holding a laptop" className="h-full object-cover" />
+                <img src={personPlaceholder} alt="Person holding a laptop" className=""style={{ width:"300px" , height:"400px"  , marginTop:"121px"}}  />
             </div>
         </div>
     );
