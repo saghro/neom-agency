@@ -5,7 +5,7 @@ import { faBars, faTimes, faPhone, faEnvelope } from '@fortawesome/free-solid-sv
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png"; 
 import logoBlack from "../../images/logo.jpeg"; 
-import headerimg from "../../images/headerlogo.png";
+import headerimg from "../../images/headerlogo.png"
 import logo1 from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
 import "./header.css";
