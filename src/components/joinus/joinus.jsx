@@ -98,7 +98,7 @@ const JoinusPage = () => {
           </p>
           <p className="text-[#2e1065]">
             <span className="font-bold">
-              Équipements, services, financement, reconditionnement{" "}
+              Équipements, Services, financement, reconditionnement{" "}
             </span>{" "}
             – ajoutés à toute{" "}
           </p>

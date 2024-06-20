@@ -11,7 +11,7 @@ import React from 'react';
   <h1 className="text-3xl lg:text-6xl font-bold mb-4">Social Media Marketing
   </h1>
   <p className="text-lg lg:text-xl mb-8">
-  Propulsez votre présence en ligne avec Neom, des services variés adaptés à vos besoins.  </p>
+  Propulsez votre présence en ligne avec Neom, des Services variés adaptés à vos besoins.  </p>
 </div>
 
 

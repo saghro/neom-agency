@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4 pb-10">
             <input
               type="text"
-              className="bg-[#6A71B3] rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96"
+              className="bg-[#6A71B3] rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96 placeholder-gray-300"
               placeholder="Sub To our Newsletter"
             />
             <button

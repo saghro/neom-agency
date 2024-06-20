@@ -14,7 +14,7 @@ const MiddleSection = () => {
             <br className="hidden md:block" />
             proposons les{' '}
             <span className="text-[#C7A2CB]">
-            meilleurs services en matière 
+            meilleurs Services en matière 
                 </span>{' '}
             <br className="hidden md:block" />
             <span className="text-[#C7A2CB]">d’impression.</span>
