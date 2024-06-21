@@ -1,5 +1,5 @@
 import React from 'react';
-  import personPlaceholder from '../../../assests/seo.png'; 
+  import personPlaceholder from '../../../assests/office.png'; 
 
     const Hero = () => {
     return (
@@ -8,16 +8,18 @@ import React from 'react';
        
       >
    <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
-  <h1 className="text-3xl lg:text-6xl font-bold mb-4">Social Media Marketing
+  <h1 className="text-6xl text-white lg:text-6xl font-bold mb-6">Identité de marque 
+ 
   </h1>
-  <p className="text-lg lg:text-xl mb-8">
-  Propulsez votre présence en ligne avec Neom, des services variés adaptés à vos besoins.  </p>
+  <p className="text-lg lg:text-xl mb-4">
+  Sous les projecteurs...
+  </p>
 </div>
 
 
 
-        <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
-        <img src={personPlaceholder} alt="Person holding a laptop" className="h-full object-cover" />
+        <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-20">
+        <img src={personPlaceholder} alt="Person holding a laptop" className="h-full object-cover ml-" />
         </div>
       </div>
       

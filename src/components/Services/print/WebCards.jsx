@@ -23,7 +23,7 @@ const WebCards = () => {
         icon={<BiSolidPackage />}
       />
     </div>
-    <button className="mt-8 px-8 py-3  bg-[#FFA288] border-2 hover:border-[#FFA288] text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300">
+    <button className="mt-8 px-8 py-3  bg-[#C7A2CB] border-2 hover:border-[#C7A2CB] text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300">
       Vous avez un Projet?
     </button>
   </div>
