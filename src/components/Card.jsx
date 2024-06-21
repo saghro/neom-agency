@@ -27,13 +27,7 @@ const Card = ({ title, description, icon }) => {
           </div>
         </div>
         <div className="font-bold text-xl mb-2 text-center">{title}</div>
-        <p className="text-base text-center">
-          {description}
-        </p>
       </div>
-      <button className="mt-4 px-4 py-2 border-2 border-white bg-[#C7A2CB]  text-white rounded-full hover:bg-white hover:text-[#C7A2CB] transition duration-300">
-        Savoir Plus
-      </button>
     </div>
   );
 };
