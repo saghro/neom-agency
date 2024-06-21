@@ -12,16 +12,16 @@ const About = () => {
     };
 
     return (
-        <div className='flex flex-col md:flex-row justify-between items-center mb-6'>
-            <div className='text-center md:text-left mb-6 md:mb-9 md:ml-8'>
-                <p className="font-bold mt-16 ml-12 text-5xl" style={{
+        <div className='flex flex-col md:flex-row justify-between items-center mb-6 px-4 md:px-8'>
+            <div className='text-center md:text-left mb-6 md:mb-9'>
+                <p className="font-bold mt-16 md:ml-12 text-3xl md:text-5xl" style={{
                     background: 'linear-gradient(to right, #A8D9E0, #6A71B3 ,#A8D9E0)',
                     WebkitBackgroundClip: 'text',
                     color: 'transparent'
                 }}>
                     Et si on révolutionnait
                 </p>
-                <p className="font-bold text-4xl ml-12 mb-4" style={{
+                <p className="font-bold text-2xl md:text-4xl md:ml-12 mb-4" style={{
                     background: 'linear-gradient(to right, #6A71B3,#A8D9E0, #A8D9E0 )',
                     WebkitBackgroundClip: 'text',
                     color: 'transparent'
@@ -41,22 +41,18 @@ const About = () => {
                     <a 
                         href="#"
                         onClick={handleDownload}
-                        className='text-[#6A71B3]  ml-1'
+                        className='text-[#6A71B3] ml-1'
                     >
                           plaquette.
                     </a>
                 </p>
 
-                <div className='flex justify-center mt-6'>
+                <div className='flex justify-center md:justify-start mt-6'>
                     <button className='px-6 bg-[#6A71B3] rounded-3xl py-3 text-white font-bold'>Demander un devis</button>
                 </div>
-                <div className='mt-6 text-center'></div>
             </div>
-            <div className='text-center md:hidden '>
-                <img src={image} alt="communication" style={{ display: "block" ,  }} />
-            </div>
-            <div className='text-center hidden md:block rounded-2xl'>
-                <img src={image} alt="communication" style={{ width: "600px", height: "25rem", marginTop: "-100px" ,borderRadius:"1rem" }} />
+            <div className='w-full md:w-auto md:flex-shrink-0'>
+                <img src={image} alt="communication" className='w-full h-auto md:w-96 md:h-96 md:rounded-2xl object-cover' />
             </div>
         </div>
     );

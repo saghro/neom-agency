@@ -28,11 +28,11 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2,
+        items: 3,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1,
+        items: 2,
     },
 };
 
@@ -70,7 +70,7 @@ const MultiCardCarousel = () => (
             containerClass="carousel-container"
             removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
             dotListClass="custom-dot-list-style mt-1"
-            itemClass="carousel-item-padding-40-px mb-4 px-0" 
+            itemClass="carousel-item-padding-40-px mb-4 px-0"
             showDots
             arrows={false}
             className="mb-2"
@@ -78,7 +78,8 @@ const MultiCardCarousel = () => (
             {items.map(item => (
                 <div
                     key={item.id}
-                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 w-32 rounded-xl border border-gray-300 shadow-md"
+                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-auto w-32 rounded-xl border border-gray-300 shadow-md"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Center the item
                 >
                     <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
                 </div>
