@@ -24,7 +24,7 @@ export default function Solutions({ small }) {
         <div className={`flex flex-col md:flex-row  md:h-screen ${small ? 'text-sm' : ''}`}>
             <div className={`w-full md:w-1/2 bg-[#6A71B3] p-8 text-white flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
                 <h1 className={`font-bold mb-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'} ${small ? '' : 'md:ml-7'}`}>
-                    Sublimez votre <br /> image avec,<br /> <span className="text-[#A8D9E0]">Neom</span>
+                    Sublimez votre <br /> image, avec<br /> <span className="text-[#A8D9E0]">Neom</span>
                 </h1>
             </div>
             <div className={`w-full md:w-1/2 p-8 flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
@@ -34,7 +34,7 @@ export default function Solutions({ small }) {
                         <div className="flex-1">
                             <Link to="/Social_Media" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Identite De Marque</h2>
-                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Création de Graphiques, Print,Packging ,Signalétique</p>
+                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Création de Graphiques, Print, Packging, Signalétique</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className={`text-[#6f42c1] ${small ? 'h-4 w-4' : 'h-6 w-6 md:h-8 md:w-8'}`} />
@@ -44,7 +44,7 @@ export default function Solutions({ small }) {
                         <div className="flex-1">
                             <Link to="/Seo" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Communication</h2>
-                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Réseaux sociaux , Strategie de communication</p>
+                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Réseaux sociaux, Strategie de communication</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className={`text-[#6f42c1] ${small ? 'h-4 w-4' : 'h-6 w-6 md:h-8 md:w-8'}`} />
@@ -54,7 +54,7 @@ export default function Solutions({ small }) {
                         <div className="flex-1">
                             <Link to="/web" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Développement Web et Mobile</h2>
-                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Développement de site web, Création d'application,UI/UX design ,SEO/SEA</p>
+                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Développement de site web, Création d'application, UI/UX design, SEO/SEA</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className={`text-[#6f42c1] ${small ? 'h-4 w-4' : 'h-6 w-6 md:h-8 md:w-8'}`} />
@@ -64,7 +64,7 @@ export default function Solutions({ small }) {
                         <div className="flex-1">
                             <Link to="/Formation" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Formations</h2>
-                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>E-learning , Tutos ,Coaching</p>
+                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>E-learning, Tutos, Coaching</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className={`text-[#6f42c1] ${small ? 'h-4 w-4' : 'h-6 w-6 md:h-8 md:w-8'}`} />
@@ -74,7 +74,7 @@ export default function Solutions({ small }) {
                         <div className="flex-1">
                             <Link to="/Print" className="no-underline">
                                 <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Marketing</h2>
-                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Data analytics,Publicités,Audit</p>
+                                <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Data analytics, Publicités, Audit</p>
                             </Link>
                         </div>
                         <ChevronRightIcon className={`text-[#6f42c1] ${small ? 'h-4 w-4' : 'h-6 w-6 md:h-8 md:w-8'}`} />

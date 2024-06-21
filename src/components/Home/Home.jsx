@@ -12,9 +12,9 @@ const Home = () => {
                     Depuis 2017, Neom Agenc révolutionne la communication digitale et print avec une équipe de 30 experts passionnés. Rejoignez-nous transformez vos idées en succés.
                 </p>
                 <div className="flex justify-center lg:justify-start">
-                    <div className="h-12 w-40 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
+                    <div className="h-14 w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
                         <div className="flex h-full w-full items-center rounded-3xl justify-center bg-[#6A71B3]">
-                            <h1 className="text-1xl text-white">Contactez Nous</h1>
+                            <button className="text-1xl text-white">Racontez-nous votre projet</button>
                         </div>
                     </div>
                 </div>
