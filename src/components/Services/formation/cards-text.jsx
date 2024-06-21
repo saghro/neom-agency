@@ -3,29 +3,119 @@ import { IoIosGitMerge } from "react-icons/io";
 import { FaCloud } from "react-icons/fa";
 import { MdDesktopMac } from "react-icons/md";
 import image1 from "../../../assests/top-view-internet-communication-network-with-laptop.jpg"
-import image2 from "../../../assests/no-people-office-with-multiple-computers-customer-service-desk-call-center-helpline-support-give-telecommunication-assistance-empty-helpdesk-with-client-telephony-reception.jpg"
+import image2 from "../../../assests/map-lying-wooden-table.jpg"
 import "./styles.css";
 
 const Media = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center px-8 mt-8 -mb-44">
-        <div className="flex">
-        <img src={image1} className="shadow-xl ml-6 w-full h-96 rounded-xl " alt="a" />
-        <h1 className="align-center ml-6 mt-36 text-2xl font-bold font-Rammetto-One text-center">
-        Dans un monde où le digital évolue à une vitesse fulgurante, 
-        NEOM vous aide à préparer vos équipes aux défis de demain. 
-        </h1>
-        </div>
-        <div className="flex mt-6">
-        <h1 className="text-2xl font-bold font-Rammetto-One mt-20 text-center">
-        En vous offrant des sessions de formation interactives, engageantes et attrayantes, 
-        qui s'appuient sur les dernières avancées technologiques à l’instar de la réalité virtuelle et 
-        l'intelligence artificielle, Neom Agency est assurément le partenaire de votre succès. 
-        </h1>
-        <img src={image2} alt="" className="shadow-xl ml-6 w-full h-96 rounded-xl "/>
-        </div>
-        <h3 className="text-center mt-8">Nos spécialistes, ultra-connectés et à l'affût des tendances émergentes, vous transmettent les compétences nécessaires pour rester à la pointe de l'innovation et découvrir tous les secrets de la communication, d’aujourd’hui et de demain. </h3>
+<div className="flex flex-col justify-center items-center px-8 mt-6 -mb-44">
+    <div className="flex">
+      <img src={image1} className="shadow-2xl ml-6 w-full h-96 rounded-xl " alt="a" />
+      <div>
+      <h1 className="align-center ml-6 mt-6 text-md text-left font-regular font-Rammetto-One">
+            Dans un monde où le digital évolue à une vitesse fulgurante, NEOM vous aide à préparer vos équipes aux défis de demain. 
+
+      En vous offrant des sessions de formation interactives, engageantes et attrayantes, qui s'appuient sur les dernières avancées technologiques à l’instar de la réalité virtuelle et l'intelligence artificielle, Neom Agency est assurément le partenaire de votre succès. 
+
+      Nos spécialistes, ultra-connectés et à l'affût des tendances émergentes, vous transmettent les compétences nécessaires pour rester à la pointe de l'innovation et découvrir tous les secrets de la communication, d’aujourd’hui et de demain.      
+      </h1>
+      <ul className="font-bold text-left ml-16 mt-4 list-disc ">
+      <li>Formations en ligne et en présentiel</li>
+      <li>Du niveau débutant à expert</li>
+      <li>Certifications officielles</li>
+      <li>Consultations personnalisées</li>
+</ul> 
+</div>
+</div>
+
+<div className="flex space-between grid grid-cols-3 gap-8">
+    <div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">Stratégie Digitale</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+
+<div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">SEO et SEM</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+
+<div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">Content Marketing</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+
+<div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">Social Media</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+
+<div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">Analytics</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+
+<div
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
+><span className="justify-center flex mb-6">UX/UI</span>
+  <div className="">
+  <div
+      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    <div
+      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+    >
+    </div>
+  </div>
+</div>
+</div>
+
+
         <div className="flex flex-col md:flex-row justify-around w-full mt-9 space-y-6 md:space-y-0 md:space-x-4">
           <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
             <FaCloud className="text-5xl text-[#C7A2CB]" />
