@@ -12,6 +12,7 @@ const About = () => {
     };
 
     return (
+
         <div className='flex flex-col md:flex-row justify-between items-center mb-6 px-4 md:px-8'>
             <div className='text-center md:text-left mb-6 md:mb-9'>
                 <p className="font-bold mt-16 md:ml-12 text-3xl md:text-3xl mb-6" style={{
@@ -43,6 +44,7 @@ const About = () => {
                 <div className='flex justify-center md:justify-center mt-6 md:ml-0'>
                     <button className='px-6 bg-[#6A71B3] rounded-3xl py-3 text-white font-bold'>Demander un devis</button>
                 </div>
+
             </div>
             <div className='w-full md:w-auto md:flex-shrink-0'>
                 <img src={image} alt="communication" className=' md:w-96 md:h-96 md:rounded-2xl object-cover' style={{width : "500px"}} />

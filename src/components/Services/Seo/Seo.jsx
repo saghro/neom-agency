@@ -1,6 +1,5 @@
 import React from 'react';
-  import personPlaceholder from '../../../assests/view - Copie.png'; 
-  import './button.css'
+  import personPlaceholder from '../../../assests/medium-shot-woman-posing-indoors.png'; 
     const Hero = () => {
     return (
         <div

@@ -52,5 +52,5 @@
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    width: 100%; /* Make the images 5 times bigger */
+    width: 100%; 
   }

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import TimelineObserver from "react-timeline-animation";
-import Timeline from "./Confetti"; // Updated import to reflect the correct file
+import Timeline from "./Confetti";
 import "./Confetti.css";
 
-export default function WebDev() {
+export default function WebCards() {
   const [message, setMessage] = useState("");
 
   const onCallback = () => {
@@ -48,4 +48,5 @@ export default function WebDev() {
       <div className="mb-32">{message}</div>
     </div>
   );
-}
+};
+
