@@ -65,7 +65,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-xl ml-96 pr-64 ">
+                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100 ">
                         <li>Agence</li>
                         <li>Expertise</li>
                         <li>Contact</li>

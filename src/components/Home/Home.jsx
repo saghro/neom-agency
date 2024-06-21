@@ -1,5 +1,5 @@
 import React from 'react';
-import personPlaceholder from '../../images/hero1.png';
+import personPlaceholder from '../../images/10.png';
 
 const Home = () => {
     return (
@@ -21,7 +21,7 @@ const Home = () => {
             </div>
 
             <div className="hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
-                <img src={personPlaceholder} alt="Person holding a laptop" className=""style={{ width:"300px" , height:"400px"  , marginTop:"121px"}}  />
+                <img src={personPlaceholder} alt="Person holding a laptop" className=""style={{ width:"500px" , height:"600px"  , marginTop:"-20px"}}  />
             </div>
         </div>
     );

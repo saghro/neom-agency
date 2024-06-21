@@ -47,7 +47,7 @@ const About = () => {
                     </a>
                 </p>
 
-                <div className='flex justify-center md:justify-start mt-6'>
+                <div className='flex justify-center md:justify-start mt-6 ml-9'>
                     <button className='px-6 bg-[#6A71B3] rounded-3xl py-3 text-white font-bold'>Demander un devis</button>
                 </div>
             </div>
