@@ -23,7 +23,7 @@ const Router = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/joinus" element={<JoinusPage />} />
                     <Route path="/web" element={<Webdev />} />
-                    <Route path="/print" element={<Print />} />
+                    <Route path="/communcation" element={<Print />} />
                     <Route path="/formation" element={<Formations />} />
                     <Route path="/Social_Media" element={<Service />} />
                     <Route path="/Seo" element={<Seo />} />
