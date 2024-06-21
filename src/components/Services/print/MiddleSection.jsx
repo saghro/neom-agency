@@ -34,6 +34,7 @@ const MiddleSection = () => {
             Nos équipes sont divisées en différents pôles afin de tous exceller dans leur domaine, qu’il s’agisse du web, du print, de l’éditorial ou encore du développement web.
           </p>
         </motion.div>
+
       </div>
     </>
   );
