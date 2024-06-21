@@ -50,7 +50,7 @@ const HomePage = () => {
       <MotionComponent delay={0.8}>
         <MultiCardCarousel />
       </MotionComponent>
-      <MotionComponent delay={1}>
+      <MotionComponent delay={0.9}>
         <Footer />
       </MotionComponent>
     </>
