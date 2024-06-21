@@ -19,7 +19,6 @@ const home = () => {
           <Cle/>
           <MultiCardCarousel/>
           <Footer/>
-
       </>
     )
   }
