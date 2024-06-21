@@ -1,36 +1,58 @@
 import React from 'react';
+import { motion, useInView } from 'framer-motion';
 import Home from '../components/Home/Home';
-import { Fade } from 'react-reveal';
 import Header from "../components/Header/Header";
 import Solutions from "../components/Solutions/Solutions";
 import Footer from "../components/Footer/Footer";
 import Cle from "../components/About/Cle";
 import About from "../components/About/About";
 import MultiCardCarousel from "../components/About/Partenariat";
-import Valeur from "../components/About/Valeur";
+
+const animationVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const MotionComponent = ({ children, delay = 0 }) => {
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={animationVariants}
+      transition={{ duration: 0.5, delay }}
+      style={{ overflow: 'hidden' }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 const HomePage = () => {
   return (
     <>
       <Header />
-      <Fade>
+      <MotionComponent>
         <Home />
-      </Fade>
-      <Fade>
+      </MotionComponent>
+      <MotionComponent delay={0.2}>
         <Solutions />
-      </Fade>
-      <Fade>
+      </MotionComponent>
+      <MotionComponent delay={0.4}>
         <About />
-      </Fade>
-      <Fade>
+      </MotionComponent>
+      <MotionComponent delay={0.6}>
         <Cle />
-      </Fade>
-      <Fade>
+      </MotionComponent>
+      <MotionComponent delay={0.8}>
         <MultiCardCarousel />
-      </Fade>
-      <Fade>
+      </MotionComponent>
+      <MotionComponent delay={1}>
         <Footer />
-      </Fade>
+      </MotionComponent>
     </>
   );
 }
