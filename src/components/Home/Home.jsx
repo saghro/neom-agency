@@ -9,7 +9,7 @@ const Home = () => {
             <div className="max-w-xl mb-8 lg:mb-0 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
                 <h1 className="text-4xl lg:text-4xl font-bold mb-4">Votre succès commence maintenant. </h1>
                 <p className="text-lg lg:text-xl mb-8">
-                    Depuis 2017, Neom Agency révolutionne la communication digitale et print avec une équipe de 30 experts passionnés. Rejoignez-nous transformez vos idées en succés.
+                    Depuis 2017, Neom Agenc révolutionne la communication digitale et print avec une équipe de 30 experts passionnés. Rejoignez-nous transformez vos idées en succés.
                 </p>
                 <div className="flex justify-center lg:justify-start">
                     <div className="h-12 w-40 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
