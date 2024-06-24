@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PiUserCirclePlusBold } from 'react-icons/pi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
@@ -12,6 +12,7 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,6 +41,10 @@ const Header = () => {
         }
     };
 
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+
     return (
         <div>
             <div className="top-bar">
@@ -56,7 +61,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <header className={`header ${isScrolled ? 'bg-white' : 'bg-transparent'} ${isDesktop ? 'pt-16' : ''}`}>
+            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop ? 'pt-16' : ''}`}>
                 <Link to="/">
                     <img
                         className={`logo`}
@@ -64,17 +69,28 @@ const Header = () => {
                         alt="Logo"
                     />
                 </Link>
-                <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-xl ml-96 pr-12 ">
+                <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`} >
+                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100 ">
                         <li>Agence</li>
-                        <li>Expertise</li>
+                        <li className="relative" onClick={toggleDropdown}>
+                            Expertise <FontAwesomeIcon icon={faChevronDown} />
+                            <ul className={`dropdown-content absolute hidden text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                                <li><Link to="/service1" className="dropdown-item">Identite De Marque</Link></li>
+                                <li><Link to="/service2" className="dropdown-item">Marketing</Link></li>
+                                <li><Link to="/service3" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                <li><Link to="/service4" className="dropdown-item">Formations</Link></li>
+                                <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                            </ul>
+                        </li>
                         <li>Contact</li>
                     </ul>
-                    <button className="join-button">rejoignez-nous</button>
                 </nav>
+                <button className="rejoignez-nous-button relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
+                    <span className="relative z-10">rejoignez-nous</span>
+                </button>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-6 text-blue-900 mt-32">
+                        <ul className="flex flex-col gap-2 text-blue-900 mt-32">
                             <li>Agence</li>
                             <li>Expertise</li>
                             <li>Contact</li>

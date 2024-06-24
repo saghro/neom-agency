@@ -4,7 +4,7 @@ import Footer from '../components/Footer/Footer'
 import MiddleSection from '../components/Services/print/MiddleSection'
 import WebCards from '../components/Services/print/WebCards'
 import Hero from '../components/Services/print/Hero'
-const Webdev = () => {
+const Print = () => {
     return (
         <>
             <Header />
@@ -15,4 +15,4 @@ const Webdev = () => {
         </>)
 }
 
-export default Webdev
+export default Print
