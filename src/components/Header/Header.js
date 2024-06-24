@@ -74,12 +74,12 @@ const Header = () => {
                         <li>Agence</li>
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
-                            <ul className={`dropdown-content absolute hidden text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                            <ul className={`dropdown-content absolute hidden text-gray-500 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
                                 <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
                                 <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
                                 <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
                                 <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
-                                <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                                <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
                         <li>Contact</li>
@@ -99,7 +99,7 @@ const Header = () => {
                                     <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
                                     <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
                                     <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
-                                    <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                                    <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                                 </ul>
                             </li>
                             <li>Contact</li>
