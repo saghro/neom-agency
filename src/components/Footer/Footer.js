@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4 pb-10">
             <input
               type="text"
-              className="bg-[#6A71B3] rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96"
+              className="bg-[#6A71B3] rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96 placeholder-gray-300"
               placeholder="Sub To our Newsletter"
             />
             <button
@@ -22,12 +22,10 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
+
           <div className="flex justify-center lg:justify-end mt-4 space-x-4">
             <a href="https://linkedin.com">
               <FaLinkedinIn className="text-xl cursor-pointer" />
-            </a>
-            <a href="https://facebook.com">
-              <FaFacebook className="text-xl cursor-pointer" />
             </a>
             <a href="https://instagram.com">
               <FaInstagram className="text-xl cursor-pointer" />
@@ -67,9 +65,9 @@ const Footer = () => {
         <div className="mt-7 lg:mr-12">
           <h2 className="font-bold">Contact</h2>
           <ul>
-            <li className="mt-2">neom.contact@gmail.com</li>
-            <li className="mt-2">+33 00000000</li>
-            <li className="mt-2">Paris, France</li>
+            <li className="mt-2">contact@neom-agency.com</li>
+            <li className="mt-2">01 83 62 40 85</li>
+            <li className="mt-2">43 Rue d'aulnay , 95500 Gonesse</li>
           </ul>
         </div>
       </div>
