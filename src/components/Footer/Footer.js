@@ -22,12 +22,10 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
+
           <div className="flex justify-center lg:justify-end mt-4 space-x-4">
             <a href="https://linkedin.com">
               <FaLinkedinIn className="text-xl cursor-pointer" />
-            </a>
-            <a href="https://facebook.com">
-              <FaFacebook className="text-xl cursor-pointer" />
             </a>
             <a href="https://instagram.com">
               <FaInstagram className="text-xl cursor-pointer" />
@@ -67,9 +65,9 @@ const Footer = () => {
         <div className="mt-7 lg:mr-12">
           <h2 className="font-bold">Contact</h2>
           <ul>
-            <li className="mt-2">neom.contact@gmail.com</li>
-            <li className="mt-2">+33 00000000</li>
-            <li className="mt-2">Paris, France</li>
+            <li className="mt-2">contact@neom-agency.com</li>
+            <li className="mt-2">01 83 62 40 85</li>
+            <li className="mt-2">43 Rue d'aulnay , 95500 Gonesse</li>
           </ul>
         </div>
       </div>
