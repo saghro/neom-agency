@@ -4,6 +4,11 @@ import { FaCloud } from "react-icons/fa";
 import { MdDesktopMac } from "react-icons/md";
 import image1 from "../../../assests/top-view-internet-communication-network-with-laptop.jpg"
 import image2 from "../../../assests/map-lying-wooden-table.jpg"
+import image3 from "../../../assests/laptop-with-internet-browser-search-bar-screen.jpg"
+import image4 from "../../../assests/communication-social-media-icons-personal-computer.jpg"
+import image5 from "../../../assests/hands-holding-smartphone-social-media-concept.jpg"
+import image6 from "../../../assests/computer-dark-room-with-graphs-screen.jpg"
+import image7 from "../../../assests/oaz.jpg"
 import "./styles.css";
 
 const Media = () => {
@@ -27,12 +32,12 @@ const Media = () => {
       <li>Consultations personnalisées</li>
 </ul> 
 </div>
-</div>
+</div> 
 
 <div className="flex space-between grid grid-cols-3 gap-8">
     <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">Stratégie Digitale</span>
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+>
   <div className="">
   <div
       class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
@@ -42,106 +47,84 @@ const Media = () => {
     >
     </div>
   </div>
+  <span className="justify-center flex mb-6">Stratégie Digitale</span>
 </div>
 
 <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">SEO et SEM</span>
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+>
   <div className="">
   <div
       class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
-    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    ><img src={image3} className="h-60 rounded-xl -mt-3 w-96  " alt="a" /></div>
     <div
       class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
     >
     </div>
   </div>
+  <span className="justify-center flex mb-6">SEO et SEM</span>
 </div>
 
 <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">Content Marketing</span>
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+>
   <div className="">
   <div
       class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
-    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    ><img src={image4} className="h-60 rounded-xl w-96 -mt-3" alt="a" /></div>
     <div
       class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
     >
     </div>
   </div>
+  <span className="justify-center flex mb-6">Content Marketing</span>
 </div>
 
 <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">Social Media</span>
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+>
   <div className="">
   <div
       class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
-    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    ><img src={image5} className="h-60 w-96 rounded-xl -mt-3" alt="a" /></div>
     <div
       class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
     >
     </div>
   </div>
+  <span className="justify-center flex mb-6">Social Media</span>
 </div>
 
 <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">Analytics</span>
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+>
   <div className="">
   <div
       class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
-    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    ><img src={image6} className="h-60 w-96 rounded-xl -mt-3" alt="a" /></div>
     <div
       class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
     >
     </div>
   </div>
+  <span className="justify-center flex mb-6">Analytics</span>
 </div>
 
-<div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 border border-1 border-[#1e3a8a] shadow shadow-xl text-black font-bold p-5"
-><span className="justify-center flex mb-6">UX/UI</span>
-  <div className="">
   <div
-      class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
-    ><img src={image2} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+    className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+  >
+    <div className="">
     <div
-      class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
-    >
+        class="rounded-xl group-hover:scale-110 mt-2 w-full h-60 bg-black duration-500 mb-6"
+      ><img src={image7} className="h-60 rounded-xl -mt-3" alt="a" /></div>
+      <div
+        class="absolute w-56 left-0 p-5 -bottom-16 duration-500 group-hover:-translate-y-12"
+      >
+      </div>
     </div>
+    <span className="justify-center flex mb-6">UX/UI</span>
   </div>
 </div>
-</div>
-
-
-        <div className="flex flex-col md:flex-row justify-around w-full mt-9 space-y-6 md:space-y-0 md:space-x-4">
-          <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-            <FaCloud className="text-5xl text-[#C7A2CB]" />
-            <h2 className="text-xl font-bold mt-9">Immersive learning</h2>
-            <p className="font-bold text-center mt-9">
-              Immersive learning : Complétez votre formation avec des cas
-              pratiques dans un environnement virtuel
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-            <MdDesktopMac className="text-5xl text-[#6A71B3]" />
-            <h2 className="text-xl font-bold mt-9">Cours en ligne</h2>
-            <p className="font-bold text-center mt-9">
-              Grace à la visioconférence, nous vous offrons des formations en
-              ligne incluant des outils collaboratifs.
-            </p>
-          </div>
-          <div className="flex flex-col items-center p-6 border cursor-pointer border-gray-200 shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105">
-            <IoIosGitMerge className="text-5xl text-[#A8D9E0]" />
-            <h2 className="text-xl font-bold mt-9">Blended learning</h2>
-            <p className="font-bold text-center mt-9">
-              Profitez des avantages des cours en ligne et présentiels adaptés à
-              vos attentes et exigences.
-            </p>
-          </div>
-        </div>
 
         <div className="mx-auto flex -mt-52 min-h-screen max-w-screen-sm items-center justify-center">
           <a href="#" className="hover:scale-105 codepen-button relative block text-white mx-auto cursor-pointer font-semibold rounded-2xl overflow-hidden p-0.5 isolation-auto">
