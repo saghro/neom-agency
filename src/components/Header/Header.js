@@ -1,36 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import { PiUserCirclePlusBold } from 'react-icons/pi';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
 import "./Header.css";
-
+ 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
-
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+ 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY >= 100);
         };
-
+ 
         const handleResize = () => {
             setIsDesktop(window.innerWidth > 768);
         };
-
+ 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
-
+ 
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
+ 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         if (isMenuOpen) {
@@ -39,7 +40,11 @@ const Header = () => {
             document.body.classList.add('no-scroll');
         }
     };
-
+ 
+    const toggleDropdown = () => {
+        setDropdownOpen(!dropdownOpen);
+    };
+ 
     return (
         <div>
             <div className="top-bar">
@@ -65,20 +70,38 @@ const Header = () => {
                     />
                 </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100 ">
+                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100">
                         <li>Agence</li>
-                        <li>Expertise</li>
+                        <li className="relative" onClick={toggleDropdown}>
+                            Expertise <FontAwesomeIcon icon={faChevronDown} />
+                            <ul className={`dropdown-content absolute hidden text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                                <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
+                                <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                            </ul>
+                        </li>
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <button className="rejoignez-nous-button  relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
+                <button className="rejoignez-nous-button relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
                     <span className="relative z-10">rejoignez-nous</span>
                 </button>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-2 text-blue-900 mt-32">
+                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52">
                             <li>Agence</li>
-                            <li>Expertise</li>
+                            <li className="relative ml-6" onClick={toggleDropdown}>
+                                Expertise <FontAwesomeIcon icon={faChevronDown} />
+                                <ul className={`dropdown-content text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out mr-64 mt-32 ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                                    <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
+                                    <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                    <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                    <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                    <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                                </ul>
+                            </li>
                             <li>Contact</li>
                         </ul>
                         <button onClick={toggleMenu} className="absolute top-16 right-7">
@@ -95,5 +118,5 @@ const Header = () => {
         </div>
     );
 };
-
+ 
 export default Header;
