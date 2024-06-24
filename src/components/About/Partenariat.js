@@ -28,64 +28,64 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2,
+        items: 3,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1,
+        items: 2,
     },
 };
 
-const MultiCardCarousel = () => {
-    const items = [
-        { id: 1, content: <img className='mt-8' src={tof} alt="" /> },
-        { id: 3, content: <img className='mt-14' src={tof2} alt="" /> },
-        { id: 4, content: <img className='mt-5' src={tof3} alt="" /> },
-        { id: 5, content: <img className='mt-12' src={tof4} alt="" /> },
-        { id: 6, content: <img className='mt-6' src={tof5} alt="" /> },
-        { id: 7, content: <img className='mt-6' src={tof6} alt="" /> },
-        { id: 8, content: <img className='mt-8' src={tof7} alt="" /> },
-        { id: 9, content: <img className='mt-7' src={tof8} alt="" /> },
-        { id: 11, content: <img className='mt-5' src={tof10} alt="" /> },
-        { id: 12, content: <img className='mt-12' src={tof11} alt="" /> },
-        { id: 14, content: <img className='mt-6' src={tof13} alt="" /> },
-        { id: 15, content: <img className='mt-8' src={tof14} alt="" /> },
-        { id: 16, content: <img className='mt-7' src={tof15} alt="" /> },
-        { id: 17, content: <img className='mt-14' src={tof16} alt="" /> },
-    ];
+const items = [
+    { id: 1, src: tof },
+    { id: 3, src: tof2 },
+    { id: 4, src: tof3 },
+    { id: 5, src: tof4 },
+    { id: 6, src: tof5 },
+    { id: 7, src: tof6 },
+    { id: 8, src: tof7 },
+    { id: 9, src: tof8 },
+    { id: 11, src: tof10 },
+    { id: 12, src: tof11 },
+    { id: 14, src: tof13 },
+    { id: 15, src: tof14 },
+    { id: 16, src: tof15 },
+    { id: 17, src: tof16 },
+];
 
-    return (
-        <>
-            <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">Partenariat & <span className="text-[#ff997f]">Certifications</span></h1>
-            <Carousel
-                responsive={responsive}
-                ssr={true}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={3000}
-                keyBoardControl={true}
-                customTransition="all .5"
-                transitionDuration={1000}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
-                dotListClass="custom-dot-list-style mt-8"
-                itemClass="carousel-item-padding-40-px mb-6"
-                showDots={true}
-                arrows={false}
-                className='mb-6'
-            >
-                {items.map(item => (
-                    <div
-                        key={item.id}
-                        className="flex justify-center items-center h-48 mt-24 hover:scale-110 cursor-pointer mb-12 w-36 rounded-xl border border-gray-300 shadow shadow-gray-500 shadow-md mx-auto"
-                    >
-                        {item.content}
-                    </div>
-
-                ))}
-            </Carousel>
-        </>
-    );
-};
+const MultiCardCarousel = () => (
+    <>
+        <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">
+            Nos Références & <span className="text-[#6A71B3]">Certifications</span>
+        </h1>
+        <Carousel
+            responsive={responsive}
+            ssr
+            infinite
+            autoPlay
+            autoPlaySpeed={3000}
+            keyBoardControl
+            customTransition="all .5"
+            transitionDuration={1000}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
+            dotListClass="custom-dot-list-style mt-1"
+            itemClass="carousel-item-padding-40-px mb-4 px-0"
+            showDots
+            arrows={false}
+            className="mb-2"
+        >
+            {items.map(item => (
+                <div
+                    key={item.id}
+                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-auto w-32 rounded-xl border border-gray-300 shadow-md"
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Center the item
+                >
+                    <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
+                </div>
+            ))}
+        </Carousel>
+    </>
+);
 
 export default MultiCardCarousel;
