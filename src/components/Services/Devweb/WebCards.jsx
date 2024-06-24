@@ -33,7 +33,7 @@
             }
           `}
         </style>
-        <h3 className="mb-4 text-5xl font-bold header-gradient">Nos Services</h3>
+        <h3 className="mb-4 text-5xl font-bold header-gradient text-center">Nos Services</h3>
         <TimelineObserver
           initialColor="#e5e5e5"
           fillColor="#C7A2CB"

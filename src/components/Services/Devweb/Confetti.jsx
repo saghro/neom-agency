@@ -2,32 +2,27 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import TimelineObserver from "react-timeline-animation";
 import "./Confetti.css";
-
-import ill1 from '../../../images/ill1.png';
-import ill2 from '../../../images/ill2.png';
-import ill3 from '../../../images/ill3.png';
-import ill4 from '../../../images/ill4.png';
-import ill5 from '../../../images/ill5.png';
-import ill6 from '../../../images/ill6.png';
-import ill7 from '../../../images/ill7.png';
-
+ 
+// Importing images
+// import ill1 from '../../../images/ill1.png';
+// import ill2 from '../../../images/ill2.png';
+// import ill3 from '../../../images/ill3.png';
+// import ill4 from '../../../images/ill4.png';
+// import ill5 from '../../../images/ill5.png';
+// import ill6 from '../../../images/ill6.png';
+// import ill7 from '../../../images/ill7.png';
+ 
 const Timeline = ({ setObserver, callback }) => {
   const [messages, setMessages] = useState(Array(7).fill(""));
   const timelines = useRef(Array(7).fill(null));
   const circles = useRef(Array(7).fill(null));
-  const [inView, setInView] = useState(Array(7).fill(false));
-
+ 
   const callbacks = [
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
         newMessages[0] = "Design personnalisé (iOS & Android)";
         return newMessages;
-      });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[0] = true;
-        return newInView;
       });
       callback();
     },
@@ -37,22 +32,12 @@ const Timeline = ({ setObserver, callback }) => {
         newMessages[1] = "Console d’administration web ou mobile";
         return newMessages;
       });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[1] = true;
-        return newInView;
-      });
     },
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
         newMessages[2] = "Serveur d’hébergement";
         return newMessages;
-      });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[2] = true;
-        return newInView;
       });
     },
     () => {
@@ -61,22 +46,12 @@ const Timeline = ({ setObserver, callback }) => {
         newMessages[3] = "Mise en ligne de votre application mobile sur les stores";
         return newMessages;
       });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[3] = true;
-        return newInView;
-      });
     },
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
         newMessages[4] = "Fonctionnalité iOS et Android sur mesure";
         return newMessages;
-      });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[4] = true;
-        return newInView;
       });
     },
     () => {
@@ -85,11 +60,6 @@ const Timeline = ({ setObserver, callback }) => {
         newMessages[5] = "Référencement mobile (ASO) sur les App Store (Apple et Google)";
         return newMessages;
       });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[5] = true;
-        return newInView;
-      });
     },
     () => {
       setMessages((prev) => {
@@ -97,14 +67,9 @@ const Timeline = ({ setObserver, callback }) => {
         newMessages[6] = "Maintenance et mises à jour";
         return newMessages;
       });
-      setInView((prev) => {
-        const newInView = [...prev];
-        newInView[6] = true;
-        return newInView;
-      });
     },
   ];
-
+ 
   useEffect(() => {
     timelines.current.forEach((timeline, index) => {
       setObserver(timeline);
@@ -113,7 +78,7 @@ const Timeline = ({ setObserver, callback }) => {
       setObserver(circle, callbacks[index]);
     });
   }, []);
-
+ 
   return (
     <div className="wrapper">
       {timelines.current.map((_, index) => (
@@ -123,31 +88,34 @@ const Timeline = ({ setObserver, callback }) => {
             <div id={`circle${index + 1}`} ref={(el) => (circles.current[index] = el)} className="circle">
               {index + 1}
             </div>
-            <div className={`message ${index % 2 === 0 ? 'left' : 'right'}`}>
-              <motion.div
-                className="message-content"
-                initial={{ opacity: 0 }}
-                animate={inView[index] ? { opacity: 1, y: [20, -20, 20] } : { opacity: 0 }}
-                transition={{
-                  duration: 2,
-                  ease: "easeInOut"
-                }}
-              >
-                <div className="message-text">
-                  {messages[index]}
-                </div>
-                <img
-                  src={[ill1, ill2, ill3, ill4, ill5, ill6, ill7][index]}
-                  alt={`Illustration ${index + 1}`}
-                  className="floating-image"
-                />
-              </motion.div>
+            <div className="message" style={{ [index % 2 === 0 ? 'left' : 'right']: 'calc(100% + 20px)', padding: '0 10px' }}>
+              {messages[index]}
             </div>
+            {/* <motion.img
+              src={[ill1, ill2, ill3, ill4, ill5, ill6, ill7][index]}
+              alt={`Illustration ${index + 1}`}
+              className="floating-image"
+              initial={{ y: -20 }}
+              animate={{ y: 20 }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 2,
+                ease: "easeInOut"
+              }}
+              style={{
+                [index % 2 === 0 ? 'left' : 'right']: 'calc(100% + 20px)',
+                width: '100%', // 5 times bigger
+                height: 'auto',
+                top: '50%',
+                transform: 'translateY(-50%)'
+              }}
+            /> */}
           </div>
         </React.Fragment>
       ))}
     </div>
   );
 };
-
+ 
 export default Timeline;

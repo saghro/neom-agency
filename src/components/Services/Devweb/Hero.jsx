@@ -10,7 +10,7 @@ const Hero = () => {
         style={{ marginTop: '17vh' }}
         initial={{ x: '-100vw' }}
         animate={{ x: 0 }}
-        transition={{ type: 'spring', stiffness: 10 }}
+        transition={{ type: 'spring', stiffness: 20 }} // Increased stiffness for a slightly faster animation
       >
         <h1 className="text-4xl lg:text-6xl font-bold mb-4">Développement Web et Mobile</h1>
         <h3 className="text-lg lg:text-xl mb-8">
@@ -20,7 +20,7 @@ const Hero = () => {
         className="hidden lg:block lg:flex-shrink-0 lg:h-5/6 mt-44"
         initial={{ x: '100vw' }}
         animate={{ x: 0 }}
-        transition={{ type: 'spring', stiffness: 50 }}
+        transition={{ type: 'spring', stiffness: 60 }} // Increased stiffness for a slightly faster animation
       >
         <motion.img 
           src={personPlaceholder} 
