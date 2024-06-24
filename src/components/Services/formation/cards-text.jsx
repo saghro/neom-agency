@@ -82,7 +82,7 @@ const Media = () => {
           </div>
         </div>
 
-        <div className="mx-auto flex mt-12 min-h-screen max-w-screen-sm items-center justify-center">
+        <div className="mx-auto flex -mt-52 -mb-96 min-h-screen max-w-screen-sm items-center justify-center">
           <a href="#" className="hover:scale-105 codepen-button relative block text-white mx-auto cursor-pointer font-semibold rounded-2xl overflow-hidden p-0.5 isolation-auto">
             <span className="relative block px-5 py-2 text-xl bg-white text-black rounded-xl h-full">
               Savoir plus
