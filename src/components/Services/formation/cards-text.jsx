@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosGitMerge } from "react-icons/io";
 import { FaCloud } from "react-icons/fa";
 import { MdDesktopMac } from "react-icons/md";
+import { motion } from 'framer-motion';
 import image1 from "../../../assests/top-view-virtual-reality-simulator-with-laptop-Photoroom.png"
 import image2 from "../../../assests/map-lying-wooden-table.jpg"
 import image3 from "../../../assests/laptop-with-internet-browser-search-bar-screen.jpg"
@@ -16,8 +17,16 @@ const Media = () => {
     <>
 <div className="flex flex-col justify-center items-center px-8 mt-6 -mb-44">
     <div className="flex">
-      <img src={image1} className="shadow-2xl ml-6 w-full h-96 rounded-xl " alt="a" />
-      <div>
+    <motion.img 
+          src={image1} 
+          className="shadow-2xl ml-6 w-full h-96 rounded-xl"
+          alt="a"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        />      
+    <div className="animate-right-to-left">
       <h1 className="align-center ml-6 mt-6 text-md text-left font-regular font-Rammetto-One">
             Dans un monde où le digital évolue à une vitesse fulgurante, NEOM vous aide à préparer vos équipes aux défis de demain. 
 
@@ -36,7 +45,7 @@ const Media = () => {
 
 <div className="flex space-between grid grid-cols-3 gap-8">
     <div
-  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden  duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
+  className="mt-12 rounded-xl relative group cursor-pointer overflow-hidden duration-500 w-64 h-80 shadow shadow-xl text-black font-bold p-5"
 >
   <div className="">
   <div
