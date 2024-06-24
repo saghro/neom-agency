@@ -2,7 +2,7 @@ import React from "react";
 import { IoIosGitMerge } from "react-icons/io";
 import { FaCloud } from "react-icons/fa";
 import { MdDesktopMac } from "react-icons/md";
-import image1 from "../../../assests/top-view-internet-communication-network-with-laptop.jpg"
+import image1 from "../../../assests/top-view-virtual-reality-simulator-with-laptop-Photoroom.png"
 import image2 from "../../../assests/map-lying-wooden-table.jpg"
 import image3 from "../../../assests/laptop-with-internet-browser-search-bar-screen.jpg"
 import image4 from "../../../assests/communication-social-media-icons-personal-computer.jpg"

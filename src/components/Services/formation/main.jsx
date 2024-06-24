@@ -1,5 +1,5 @@
 import React from 'react';
-import womanImage from '../../../assests/webinar-internet-lesson-distance-university-tutor-educator-online-learning-seniors-online-courses-seniors-additional-education-concept-pinkish-coral-bluevector-isolated-illustration.png';
+import womanImage from '../../../assests/female-student-listening-webinar-online.png';
  
 const Hero = () => {
 return (
