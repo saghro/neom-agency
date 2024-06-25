@@ -45,7 +45,7 @@
             />
           )}
         />
-        <div className="mb-52">{message}</div>
+        <div className="mb-32">{message}</div>
       </div>
     );
   }

@@ -13,8 +13,7 @@ const Hero = () => {
         transition={{ type: 'spring', stiffness: 20 }} // Increased stiffness for a slightly faster animation
       >
         <h1 className="text-4xl lg:text-6xl font-bold mb-4">Développement Web et Mobile</h1>
-        <h3 className="text-lg lg:text-xl mb-8">
-        Vos outils, clés en main, disponibles sur tous les supports!</h3>
+       
       </motion.div>
       <motion.div 
         className="hidden lg:block lg:flex-shrink-0 lg:h-5/6 mt-44"

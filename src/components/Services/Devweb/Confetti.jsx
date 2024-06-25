@@ -13,9 +13,9 @@ import "./Confetti.css";
 // import ill7 from '../../../images/ill7.png';
  
 const Timeline = ({ setObserver, callback }) => {
-  const [messages, setMessages] = useState(Array(7).fill(""));
-  const timelines = useRef(Array(7).fill(null));
-  const circles = useRef(Array(7).fill(null));
+  const [messages, setMessages] = useState(Array(6).fill(""));
+  const timelines = useRef(Array(6).fill(null));
+  const circles = useRef(Array(6).fill(null));
  
   const callbacks = [
     () => {
@@ -43,28 +43,21 @@ const Timeline = ({ setObserver, callback }) => {
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
-        newMessages[3] = "Mise en ligne de votre application mobile sur les stores";
+        newMessages[3] = "Fonctionnalité iOS et Android sur mesure";
         return newMessages;
       });
     },
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
-        newMessages[4] = "Fonctionnalité iOS et Android sur mesure";
+        newMessages[4] = "Référencement mobile (ASO) sur les App Store (Apple et Google)";
         return newMessages;
       });
     },
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
-        newMessages[5] = "Référencement mobile (ASO) sur les App Store (Apple et Google)";
-        return newMessages;
-      });
-    },
-    () => {
-      setMessages((prev) => {
-        const newMessages = [...prev];
-        newMessages[6] = "Maintenance et mises à jour";
+        newMessages[5] = "Maintenance et mises à jour";
         return newMessages;
       });
     },
