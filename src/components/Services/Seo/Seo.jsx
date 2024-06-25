@@ -19,7 +19,7 @@ const Hero = () => {
                     <div className="flex justify-center lg:justify-start w-full lg:w-auto">
                         <div className="h-14 w-full lg:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
                             <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white">
-                                <button className="text-1xl text-[#6A71B3]">Demander un devis</button>
+                                <button className="text-xl text-[#6A71B3]">Demander un devis</button>
                             </div>
                         </div>
                     </div>
@@ -27,7 +27,7 @@ const Hero = () => {
                         <div className="h-14 w-full lg:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
                             <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white">
                                 <button
-                                    className="text-1xl text-[#6A71B3]"
+                                    className="text-xl text-[#6A71B3]"
                                     onClick={handleDownload}
                                 >
                                     Télécharger Notre Plaquette
