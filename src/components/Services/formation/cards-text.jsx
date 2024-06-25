@@ -24,12 +24,13 @@ const Media = () => {
             viewport={{ once: true }}
           />      
           <div className="animate-right-to-left mt-6 lg:mt-0 lg:ml-6">
+            <h1 className="bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] text-transparent bg-clip-text font-bold text-2xl text-center mb-6 mt-3">(Re)découvrez la communication avec Neom. </h1>
             <h1 className="text-md text-left font-regular font-Rammetto-One">
               Dans un monde où le digital évolue à une vitesse fulgurante, NEOM vous aide à préparer vos équipes aux défis de demain.
               En vous offrant des sessions de formation interactives, engageantes et attrayantes, qui s'appuient sur les dernières avancées technologiques à l’instar de la réalité virtuelle et l'intelligence artificielle, Neom Agency est assurément le partenaire de votre succès.
               Nos spécialistes, ultra-connectés et à l'affût des tendances émergentes, vous transmettent les compétences nécessaires pour rester à la pointe de l'innovation et découvrir tous les secrets de la communication, d’aujourd’hui et de demain.
             </h1>
-            <ul className="font-bold text-left mt-4 list-disc ml-4 lg:ml-16">
+            <ul className=" text-left mt-4 list-disc ml-4 lg:ml-16">
               <li>Formations en ligne et en présentiel</li>
               <li>Du niveau débutant à expert</li>
               <li>Certifications officielles</li>
