@@ -1,45 +1,52 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Cases from '../../Cases.jsx';
-import Image from '../../../images/29.png';
+import Image from '../../../images/vv.png';
+import Mobile from '../../../images/mob.png';
 
 const DevCases = () => {
   const colors = ['#A8D9E0', '#C7A2CB', '#6A71B3', '#B3A2D9'];
 
+  const leftAnimation = {
+    hidden: { x: '-100vw' },
+    visible: { x: 0, transition: { type: 'spring', stiffness: 50 } }
+  };
+
+  const rightAnimation = {
+    hidden: { x: '100vw' },
+    visible: { x: 0, transition: { type: 'spring', stiffness: 50 } }
+  };
+
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center mb-8">Our Development Cases</h2>
+        <h3 className="mb-4 text-5xl font-bold header-gradient text-center">Etude des cas</h3>
       <div className="grid grid-cols-1 md:grid-cols-2">
-        <Cases 
-          imageSrc={Image}
-          title="Random Title 1"
-          text="This is a random paragraph for the first case."
-          backgroundColor={colors[0]}
-        />
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={leftAnimation}
+        >
+          <Cases 
+            imageSrc={Mobile}
+            title="Conception de l’application mobile RMA"
+            text="Neom a concrétisé la conception de l’application mobile et le site web de RMA"
+          />
+        </motion.div>
         <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-        <Cases 
-          imageSrc={Image}
-          title="Random Title 2"
-          text="This is a random paragraph for the second case."
-          backgroundColor={colors[1]}
-        />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-        <Cases 
-          imageSrc={Image}
-          title="Random Title 3"
-          text="This is a random paragraph for the third case."
-          backgroundColor={colors[2]}
-        />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-        <Cases 
-          imageSrc={Image}
-          title="Random Title 4"
-          text="This is a random paragraph for the fourth case."
-          backgroundColor={colors[3]}
-        />
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={rightAnimation}
+        >
+          <Cases 
+            imageSrc={Image}
+            title="Création de site web et d’application mobile pour ERKAN PARK"
+            text="Neom a réalisé la création de sites web et d'applications mobiles pour ERKAN PARK."
+          />
+        </motion.div>
       </div>
     </div>
   );
 }
 
 export default DevCases;
-

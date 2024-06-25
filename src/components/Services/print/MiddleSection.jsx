@@ -1,5 +1,5 @@
 import React from 'react';
-import MiddleImage from '../../../images/16.jpg';
+import MiddleImage from '../../../images/neomcard.png';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -24,6 +24,9 @@ const MiddleSection = () => {
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ duration: 1, type: 'spring', stiffness: 50 }}
         >
+          <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 leading-tight text-center md:text-left mb-4">
+          Engagez, inspirez, fidélisez
+            </h2>
           <p className="text-md md:text-lg font-medium text-indigo-900 leading-tight text-center md:text-left">
             Bénéficiez d’une stratégie de communication adaptée à vos besoins, basée sur des analyses précises et une compréhension approfondie de votre marché. Grâce à nos experts de la communication et leurs idées novatrices, nous vous positionnons en tête de la concurrence tout en consolidant votre position de leader. Ensemble, nous élaborons une feuille de route qui oriente chaque action vers un succès mesurable.
           </p>
