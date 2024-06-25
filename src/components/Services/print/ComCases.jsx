@@ -9,7 +9,7 @@ const ComCases = () => {
 
   return (
     <div>
-        <h3 className="mb-4 text-5xl font-bold header-gradient text-center">Etude des cas</h3>
+        <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Etude des cas</h3>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <Cases 
           imageSrc={Img1}

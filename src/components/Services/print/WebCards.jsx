@@ -10,6 +10,7 @@ import { BsGraphUp } from "react-icons/bs";
 const WebCards = () => {
   return (
     <div className="mt-20 flex flex-col items-center justify-center my-8">
+      <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Nos Services</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-10">
         <Card
           title="Rédaction, conception et planification de vos publications"
