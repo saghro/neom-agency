@@ -21,7 +21,7 @@ const Timeline = ({ setObserver, callback }) => {
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
-        newMessages[0] = "Accompagnement marketing  ";
+        newMessages[0] = "Accompagnement marketing ";
         return newMessages;
       });
       callback();

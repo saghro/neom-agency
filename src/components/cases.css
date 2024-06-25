@@ -1,0 +1,22 @@
+/* Cases.css */
+ 
+.image-tilt {
+    transition: transform 0.2s ease-out; /* Faster transition for a more responsive feel */
+    will-change: transform;
+  }
+ 
+  .relative:hover .image-tilt {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+ 
+  /* Smooth transition effect for the blue tracking dot */
+  .pointer-events-none {
+    transition: left 0.1s ease-out, top 0.1s ease-out;
+  }
+ 
+ 
+  @media (max-width: 767px) {
+    .image-tilt {
+      box-shadow: none !important;
+    }
+  }

@@ -71,7 +71,7 @@ const Video = () => {
 
       {/* Text Section */}
       <div className="lg:ml-4">
-      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Nous créons les éléments visuels et messages qui capturent.</h1>
+      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center">Sous les projecteurs</h1>
 
 
         <p className="text-sm lg:text-base text-justify text-gray-500 dark:text-gray-400 mb-4 mt-6">

@@ -9,28 +9,6 @@ const MiddleSection = () => {
 
   return (
     <>
-<<<<<<< HEAD
-      <div className='pt-20'>
-        <div className="flex flex-col items-center justify-center">
-          <h2 className="text-2xl md:text-4xl font-bold text-indigo-900 leading-tight text-center px-4 md:px-16 pr-20 pl-20 ">
-            Profitez de notre savoir-faire en matière de création<br />{' '}
-            <span className="text-[#C7A2CB]">
-              des sites web et applications mobiles
-            </span>{' '}
-            sur mesure destiné pour{' '}
-            <br className="hidden md:block" />
-            maximiser votre{' '}
-            <span className="text-[#C7A2CB]">
-              visibilité en ligne et optimiser vos
-            </span>{' '}
-            <br className="hidden md:block" />
-            <span className="text-[#C7A2CB]">conversions.</span>
-          </h2>
-        </div>
-        <div className="flex justify-center mt-8">
-          <img src={offers} alt="png" className="max-w-full h-auto" />
-        </div>
-=======
       <div className='pt-20 flex flex-col-reverse md:flex-row items-center' ref={ref}>
         <motion.div 
           className="flex flex-col justify-center md:w-1/2 mt-8 md:mt-0 px-4 md:px-16"
@@ -56,7 +34,6 @@ const MiddleSection = () => {
         >
           <img src={offers} alt="Web development offerings" className="max-w-[90%] h-auto" />
         </motion.div>
->>>>>>> fc1b2c52d8d33776a7a2d03e32a4e86d9b5d170e
       </div>
     </>
   );
