@@ -35,7 +35,7 @@ const Timeline = ({ setObserver, callback }) => {
     () => {
       setMessages((prev) => {
         const newMessages = [...prev];
-        newMessages[2] = "Stratégie médias sociaux  ";
+        newMessages[2] = "Stratégie médias sociaux.";
         return newMessages;
       });
     },
