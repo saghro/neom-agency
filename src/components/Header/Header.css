@@ -74,8 +74,8 @@ body.no-scroll {
     font-size: 12px;
     padding-top: 5px;
     cursor: pointer;
+    margin-left: 1rem;
 }
-
  
 .dropdown-content {
     display: none;
