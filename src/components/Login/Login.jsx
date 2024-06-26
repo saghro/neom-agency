@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import logo from "../../images/neomlogo.png"
 
 function Copyright(props) {
   return (
@@ -51,11 +52,11 @@ export default function SignIn() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+          <Avatar sx={{ m: 1, bgcolor: '#6A71B3' }}>
+            <img src={logo} alt="" />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+          Se connecter
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -63,7 +64,7 @@ export default function SignIn() {
               required
               fullWidth
               id="email"
-              label="Email Address"
+              label="Adresse email"
               name="email"
               autoComplete="email"
               autoFocus
@@ -72,33 +73,30 @@ export default function SignIn() {
               margin="normal"
               required
               fullWidth
-              name="password"
-              label="Password"
+              name="mot de passe"
+              label="mot de passe"
               type="password"
               id="password"
               autoComplete="current-password"
-            />
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
             />
             <Button
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              
+              sx={{bgcolor:"#6A71B3", mt: 3, mb: 2 }}
             >
-              Sign In
+              Se connecter
             </Button>
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
-                  Forgot password?
+                Mot de passe oublié ?
                 </Link>
               </Grid>
               <Grid item>
                 <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
+                  {"Vous n'avez pas de compte ? Inscrivez-vous"}
                 </Link>
               </Grid>
             </Grid>

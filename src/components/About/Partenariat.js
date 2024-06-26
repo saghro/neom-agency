@@ -70,7 +70,7 @@ const MultiCardCarousel = () => (
             containerClass="carousel-container"
             removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
             dotListClass="custom-dot-list-style mt-1"
-            itemClass="carousel-item-padding-40-px mb-4 px-0"
+            itemClass="carousel-item-padding-40-px mb-4 px-1" // Adjusted the padding here
             showDots
             arrows={false}
             className="mb-2"
@@ -78,8 +78,8 @@ const MultiCardCarousel = () => (
             {items.map(item => (
                 <div
                     key={item.id}
-                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-auto w-32 rounded-xl border border-gray-300 shadow-md"
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Center the item
+                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-2 w-32 rounded-xl border border-gray-300 shadow-md" // Adjusted margin here
+                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                 >
                     <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
                 </div>

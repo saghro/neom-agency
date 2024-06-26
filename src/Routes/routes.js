@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/Homepage';
-import JoinusPage from '../pages/joinus';
 import Webdev from '../pages/Webdev';
 import Print from '../pages/Print';
 import Formations from '../pages/Formations';
@@ -23,7 +22,6 @@ const Router = () => {
                 <Routes>
                     <Route path="/" element={<HomePage />} />
                     <Route path="/login" element={<LoginForm />} />
-                    <Route path="/joinus" element={<JoinusPage />} />
                     <Route path="/web" element={<Webdev />} />
                     <Route path="/communication" element={<Print />} />
                     <Route path="/formation" element={<Formations />} />
