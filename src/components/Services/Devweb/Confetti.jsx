@@ -76,12 +76,16 @@ const Timeline = ({ setObserver, callback }) => {
     <div className="wrapper">
       {timelines.current.map((_, index) => (
         <React.Fragment key={index}>
+          // This div represents a timeline element. The id is dynamically set based on the index.
+          // The ref attribute assigns the DOM element to the timelines.current array at the current index.
           <div id={`timeline${index + 1}`} ref={(el) => (timelines.current[index] = el)} className="timeline" />
+          
+          // This div wraps around the circle and message elements, providing a relative positioning context.
           <div className="circleWrapper">
             <div id={`circle${index + 1}`} ref={(el) => (circles.current[index] = el)} className="circle">
               {index + 1}
             </div>
-            <div className="message" style={{ [index % 2 === 0 ? 'left' : 'right']: 'calc(100% + 20px)', padding: '0 10px' }}>
+            <div className="message" style={{ [index % 2 === 0 ? 'left' : 'right']: `calc(100% + ${window.innerWidth <= 768 ? '20px' : '70px'})`, padding: '0 10px' }}>
               {messages[index]}
             </div>
             {/* <motion.img
