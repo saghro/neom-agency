@@ -17,15 +17,15 @@ const Hero = () => {
                 <h1 className="text-3xl lg:text-6xl font-bold mb-16 animate-left-to-right">Formation</h1>
                 <div className='flex flex-col sm:flex-row gap-3 mt-12'>
                     <div className="flex justify-center lg:justify-start">
-                        <div className="h-14 w-full sm:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
-                            <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white text-[#6A71B3]"> 
+                        <div className="h-14 w-48 sm:w-48 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
+                            <div className="flex h-full w-48 items-center rounded-3xl justify-center bg-white text-[#6A71B3]"> 
                                 <button className="text-1xl">Demander un devis</button>
                             </div>
                         </div>
                     </div>
                     <div className="flex justify-center lg:justify-start">
-                        <div className="h-14 w-full sm:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
-                            <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white">
+                        <div className="h-14 w-full sm:w-48 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
+                            <div className="flex h-full w-48 items-center rounded-3xl justify-center bg-white">
                                 <button
                                     className="text-1xl text-[#6A71B3]"
                                     onClick={handleDownload}
