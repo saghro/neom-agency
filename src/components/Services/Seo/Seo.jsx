@@ -1,6 +1,8 @@
 import React from 'react';
 import personPlaceholder from '../../../assests/view.png';
 
+
+
 const Hero = () => {
     const handleDownload = () => {
         const link = document.createElement('a');

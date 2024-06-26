@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import TimelineObserver from "react-timeline-animation";
 import "./Points.css";
 
 // import ill1 from '../../../images/ill1.png';
