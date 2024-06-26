@@ -10,7 +10,7 @@ const DevCases = () => {
  
   return (
     <div>
-      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Etude des cas</h1>
+      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Realisation</h1>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <Cases
           imageSrc={Image1}
@@ -40,6 +40,11 @@ const DevCases = () => {
           backgroundColor={colors[3]}
         /> */}
       </div>
+      <div className="flex justify-center">
+  <div className="h-14 lg:w-56 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5 flex items-center justify-center">
+    <button className="text-xl text-[#6A71B3]">Voir plus</button>
+  </div>
+</div>
     </div>
   );
 }
