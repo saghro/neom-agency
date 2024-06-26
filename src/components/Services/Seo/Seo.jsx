@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import personPlaceholder from '../../../assests/view.png';  
 
 const Hero = () => {
@@ -13,17 +14,29 @@ const Hero = () => {
 
     return (
         <div className="flex bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins">
-            <div className="max-w-xl mb-8 lg:mb-0 ml-6 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
+            <motion.div
+                className="max-w-xl mb-8 lg:mb-0 ml-6 text-center lg:text-left mx-auto"
+                style={{ marginTop: '17vh' }}
+                initial={{ x: '-100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 20 }}
+            >
                 <h1 className="text-3xl lg:text-6xl font-bold mb-4 animate-left-to-right">Marketing</h1>
                 <div className="flex flex-col lg:flex-row gap-3 mt-8">
-                    <div className="flex justify-center lg:justify-start w-full lg:w-auto">
+                    <motion.div
+                        className="flex justify-center lg:justify-start w-full lg:w-auto"
+                        whileHover={{ scale: 1.1 }}
+                    >
                         <div className="h-14 w-full lg:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
                             <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white">
                                 <button className="text-xl text-[#6A71B3]">Demander un devis</button>
                             </div>
                         </div>
-                    </div>
-                    <div className="flex justify-center lg:justify-start w-full lg:w-auto">
+                    </motion.div>
+                    <motion.div
+                        className="flex justify-center lg:justify-start w-full lg:w-auto"
+                        whileHover={{ scale: 1.1 }}
+                    >
                         <div className="h-14 w-full lg:w-64 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
                             <div className="flex h-full w-full items-center rounded-3xl justify-center bg-white">
                                 <button
@@ -34,13 +47,30 @@ const Hero = () => {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="animate-right-to-left hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
-                <img src={personPlaceholder} alt="Person holding a laptop" className="h-full object-cover" />
-            </div>
+            <motion.div
+                className="animate-right-to-left hidden lg:block lg:flex-shrink-0 lg:h-full mt-16"
+                initial={{ x: '100vw' }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', stiffness: 60 }}
+            >
+                <motion.img
+                    src={personPlaceholder}
+                    alt="Person holding a laptop"
+                    className="h-full object-cover"
+                    initial={{ y: -20 }}
+                    animate={{ y: 20 }}
+                    transition={{
+                        repeat: Infinity,
+                        repeatType: 'reverse',
+                        duration: 2,
+                        ease: 'easeInOut'
+                    }}
+                />
+            </motion.div>
         </div>
     );
 };
