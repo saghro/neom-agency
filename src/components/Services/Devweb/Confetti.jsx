@@ -1,16 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
-import TimelineObserver from "react-timeline-animation";
 import "./Confetti.css";
-
-// Importing images
-// import ill1 from '../../../images/ill1.png';
-// import ill2 from '../../../images/ill2.png';
-// import ill3 from '../../../images/ill3.png';
-// import ill4 from '../../../images/ill4.png';
-// import ill5 from '../../../images/ill5.png';
-// import ill6 from '../../../images/ill6.png';
-// import ill7 from '../../../images/ill7.png';
 
 const Timeline = ({ setObserver, callback }) => {
   const [messages, setMessages] = useState(Array(7).fill(""));

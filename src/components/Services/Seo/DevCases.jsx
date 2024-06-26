@@ -2,8 +2,6 @@ import React from 'react';
 import Cases from '../../cases';
 import Image1 from '../../../assests/marketing1.png';
 import Image2 from '../../../assests/marketing2.png';
-import Image3 from '../../../assests/marketing3.png';
-
  
 const DevCases = () => {
   const colors = ['#A8D9E0', '#C7A2CB', '#6A71B3', '#B3A2D9'];
