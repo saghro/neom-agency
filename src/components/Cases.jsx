@@ -60,7 +60,7 @@ const Cases = ({ imageSrc, title, text }) => {
           `}
         </style>
       </div>
-      <div className="flex flex-col justify-start p-4 bg-white shadow-lg rounded-lg w-64 h-64 text-center mt-4 mb-4">
+      <div className="flex flex-col justify-start p-4 bg-[#fdfcfe] shadow-lg rounded-lg w-64 h-64 text-center mt-4 mb-4">
         <h3 className="text-lg font-bold">{title}</h3>
         <p className="mt-2 text-sm">{text}</p>
       </div>

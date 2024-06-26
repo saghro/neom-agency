@@ -9,7 +9,7 @@ const MiddleSection = () => {
 
   return (
     <>
-      <div className='pt-20 flex flex-col-reverse md:flex-row items-center' ref={ref}>
+      <div className='pt-20 flex flex-col-reverse md:flex-row items-center overflow-hidden' ref={ref}>
         <motion.div 
           className="flex justify-center w-full md:w-1/2 pl-4 pr-4"
           initial={{ x: -100, opacity: 0 }}

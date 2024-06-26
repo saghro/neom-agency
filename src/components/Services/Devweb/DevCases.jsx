@@ -20,7 +20,7 @@ const DevCases = () => {
   return (
     <div>
         <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Etude des cas</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1">
         <motion.div
           initial="hidden"
           animate="visible"
@@ -32,7 +32,7 @@ const DevCases = () => {
             text="Neom a concrétisé la conception de l’application mobile et le site web de RMA"
           />
         </motion.div>
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
         <motion.div
           initial="hidden"
           animate="visible"
@@ -44,6 +44,7 @@ const DevCases = () => {
             text="Neom a réalisé la création de sites web et d'applications mobiles pour ERKAN PARK."
           />
         </motion.div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
       </div>
     </div>
   );
