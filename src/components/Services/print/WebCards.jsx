@@ -42,13 +42,6 @@ const WebCards = () => {
           description="Maximiser l’efficacité de votre ROI, en créant des campagnes publicitaires ciblées avec des messages publicitaires personnalisés."
           icon={<MdOutlineCampaign />}
         />
-        <div className="md:col-span-3 flex justify-center">
-          <Card
-            title="Composition de votre stratégie de communication"
-            description="Neom vous accompagne dans la mise en place d’un plan structuré et cohérent qui vise à optimiser votre visibilité auprès de votre audience cible."
-            icon={<BsGraphUp />}
-          />
-        </div>
       </div>
     </div>
   );

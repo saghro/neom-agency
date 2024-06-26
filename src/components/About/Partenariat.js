@@ -20,19 +20,19 @@ import tof16 from '../../images/image (17).jpeg';
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
-        items: 5,
+        items: 4,
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 5,
+        items: 4,
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 3,
+        items: 2,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 2,
+        items: 1,
     },
 };
 
@@ -70,7 +70,7 @@ const MultiCardCarousel = () => (
             containerClass="carousel-container"
             removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
             dotListClass="custom-dot-list-style mt-1"
-            itemClass="carousel-item-padding-40-px mb-4 px-0"
+            itemClass="custom-carousel-item"
             showDots
             arrows={false}
             className="mb-2"
@@ -78,13 +78,22 @@ const MultiCardCarousel = () => (
             {items.map(item => (
                 <div
                     key={item.id}
-                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-auto w-32 rounded-xl border border-gray-300 shadow-md"
+                    className="flex justify-center items-center h-32 hover:scale-110 cursor-pointer mx-4 w-32 rounded-xl border border-gray-300 shadow-md"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Center the item
                 >
                     <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
                 </div>
             ))}
         </Carousel>
+        <style jsx>{`
+            .custom-carousel-item {
+                width: calc(100% / 4); // This ensures 4 items are displayed at all times
+                padding: 0 20px; // Add some padding to create space between items
+            }
+            .carousel-container {
+                margin: 0 auto; // Center the carousel container
+            }
+        `}</style>
     </>
 );
 

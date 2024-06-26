@@ -10,6 +10,7 @@ import Seo from '../pages/SEO';
 import Solutions from '../components/Solutions/Solutions';
 import useScrollToTop from './useScrollToTop';
 import LoginForm from '../components/Login/Login';
+import Realisation from '../pages/Realisation';
 
 const ScrollToTopWrapper = ({ children }) => {
     useScrollToTop();
@@ -25,6 +26,7 @@ const Router = () => {
                     <Route path="/login" element={<LoginForm />} />
                     <Route path="/joinus" element={<JoinusPage />} />
                     <Route path="/web" element={<Webdev />} />
+                    <Route path="/realisation" element={<Realisation />} />
                     <Route path="/communication" element={<Print />} />
                     <Route path="/formation" element={<Formations />} />
                     <Route path="/Social_Media" element={<Service />} />
