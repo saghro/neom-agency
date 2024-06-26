@@ -1,5 +1,6 @@
 import React from 'react';
 import Cases from '../../Cases';
+import { Link } from 'react-router-dom';
 import '../../Cases.css'
 import Image1 from '../../../assests/identite1.png';
 import Image2 from '../../../assests/identi2.png';
@@ -7,10 +8,10 @@ import Image3 from '../../../assests/identi3.png';
 import Image4 from '../../../assests/identi4.png';
 
 
- 
+
 const SocCases = () => {
   const colors = ['#A8D9E0', '#C7A2CB', '#6A71B3', '#B3A2D9'];
- 
+
   return (
     <div>
       <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Etude des cas</h1>
@@ -36,15 +37,23 @@ const SocCases = () => {
           backgroundColor={colors[2]}
         />
         <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-         <Cases
+        <Cases
           imageSrc={Image4}
           title="ITS "
           text="Neom a pris en charge l'impression sur vêtements et matériels de l’entreprise ITS avec une expertise remarquable."
           backgroundColor={colors[3]}
-        /> 
+        />
+
       </div>
+      <div className="flex justify-center">
+          <div className="h-14 lg:w-56 rounded-3xl p-0.5 flex items-center justify-center" style={{ border: '2px solid', borderImage: 'linear-gradient(to right, #6A71B3, #A8D9E0, #C7A2CB) 1' }}>
+            <Link to="/realisation">
+              <button className="text-xl transition-colors duration-300 hover:bg-gray-200" style={{ background: 'transparent', color: '#00008B' }}>Voir plus</button>
+            </Link>
+          </div>
+        </div>
     </div>
   );
 }
- 
+
 export default SocCases;

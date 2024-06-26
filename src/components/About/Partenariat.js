@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 import tof from '../../images/image1.png';
@@ -17,70 +17,49 @@ import tof15 from '../../images/image16.png';
 import tof16 from '../../images/image (17).jpeg';
 
 const items = [
-    { id: 1, src: tof },
-    { id: 3, src: tof2 },
-    { id: 4, src: tof3 },
-    { id: 5, src: tof4 },
-    { id: 6, src: tof5 },
-    { id: 7, src: tof6 },
-    { id: 8, src: tof7 },
-    { id: 9, src: tof8 },
-    { id: 11, src: tof10 },
-    { id: 12, src: tof11 },
-    { id: 14, src: tof13 },
-    { id: 15, src: tof14 },
-    { id: 16, src: tof15 },
-    { id: 17, src: tof16 },
+    tof,
+    tof2,
+    tof3,
+    tof4,
+    tof5,
+    tof6,
+    tof7,
+    tof8,
+    tof10,
+    tof11,
+    tof13,
+    tof14,
+    tof15,
+    tof16,
 ];
 
-const MultiCardCarousel = () => (
-    <Wrapper>
-        <Text>Nos Client <Span>Confiences</Span></Text>
-        <Marquee>
-            <MarqueeGroup>
-                {items.map(item => (
-                    <Card key={item.id}>
-                        <Image src={item.src} alt="" />
-                    </Card>
-                ))}
-            </MarqueeGroup>
-            <MarqueeGroup>
-                {items.map(item => (
-                    <Card key={item.id}>
-                        <Image src={item.src} alt="" />
-                    </Card>
-                ))}
-            </MarqueeGroup>
-        </Marquee>
-        <Spacer />
-        <Marquee>
-            <MarqueeGroup2>
-                {items.map(item => (
-                    <Card key={item.id}>
-                        <Image src={item.src} alt="" />
-                    </Card>
-                ))}
-            </MarqueeGroup2>
-            <MarqueeGroup2>
-                {items.map(item => (
-                    <Card key={item.id}>
-                        <Image src={item.src} alt="" />
-                    </Card>
-                ))}
-            </MarqueeGroup2>
-        </Marquee>
-    </Wrapper>
-);
+const MultiImageCarousel = () => {
+    useEffect(() => {
+        const marquee = document.getElementById('marquee');
+        if (marquee) {
+            marquee.style.animationPlayState = 'running';
+        }
+    }, []);
 
-export default MultiCardCarousel;
+    return (
+        <Wrapper>
+            <Text>Nos Clients <Span>Confiances</Span></Text>
+            <Marquee id="marquee">
+                {items.map((src, index) => (
+                    <Image key={index} src={src} alt="" />
+                ))}
+            </Marquee>
+        </Wrapper>
+    );
+};
+
+export default MultiImageCarousel;
 
 const Wrapper = styled.div`
     width: 100%;
-    height: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 `;
 
 const Text = styled.h1`
@@ -108,14 +87,7 @@ const Span = styled.span`
     color: #6A71B3;
 `;
 
-const Marquee = styled.div`
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-`;
-
-const scrollX = keyframes`
+const marqueeAnimation = keyframes`
     from {
         transform: translateX(0);
     }
@@ -124,74 +96,42 @@ const scrollX = keyframes`
     }
 `;
 
-const MarqueeGroup = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+const Marquee = styled.div`
+    width: 80%;
+    overflow: hidden;
     white-space: nowrap;
-    width: 100%;
-    animation: ${scrollX} 30s linear infinite;
-
-    @media (max-width: 768px) {
-        justify-content: flex-start;
-    }
-`;
-
-const MarqueeGroup2 = styled(MarqueeGroup)`
-    animation-direction: reverse;
-    animation-delay: -3s;
-`;
-
-const Spacer = styled.div`
-    height: 2rem; /* Adjust the height as needed */
-`;
-
-const Card = styled.div`
-    width: 100px;
-    height: 50px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 20px;
-    transition: all 0.3s ease;
+    justify-content: flex-start;
+    padding: 20px 0;
+    animation: ${marqueeAnimation} 30s linear infinite paused;
 
     &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        animation-play-state: running;
     }
 
-    @media (max-width: 768px) {
-        width: 80px;
-        height: 40px;
-        margin: 0 10px;
-    }
-
-    @media (max-width: 480px) {
-        width: 60px;
-        height: 30px;
-        margin: 0 5px;
+    &::-webkit-scrollbar {
+        display: none; /* hide scrollbar */
     }
 `;
 
 const Image = styled.img`
     object-fit: contain;
-    width: 100%;
-    height: 50px;
+    width: 100px; /* Ajuster la taille des images ici */
+    height: auto; /* Garder le ratio d'aspect */
+    margin: 0 10px; /* Espacement entre les images */
     transition: all 0.3s ease;
     filter: brightness(0.7) grayscale(100%);
-    
+
     &:hover {
         filter: brightness(1) grayscale(0%);
     }
 
     @media (max-width: 768px) {
-        height: 40px;
+        width: 80px; /* Ajustement pour les écrans plus petits */
     }
 
     @media (max-width: 480px) {
-        height: 30px;
+        width: 60px; /* Ajustement pour les écrans encore plus petits */
     }
 `;

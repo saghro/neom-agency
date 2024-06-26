@@ -1,5 +1,5 @@
 import React from 'react';
-import womanImage from '../../../assests/female-student-listening-webinar-online.png';
+import womanImage from '../../../assests/web-site-design-online-service-platform-presenting-content-web-pages-website-layout-composition-color-online-education-flat-vector-illustration-Photoroom-removebg-preview.png';
 
 const Hero = () => {
     const handleDownload = () => {
