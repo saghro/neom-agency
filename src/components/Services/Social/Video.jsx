@@ -22,9 +22,9 @@ const CardSection = () => {
     <div className="container mx-auto px-3 py-4">
       <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Nous créons les éléments visuels et messages qui capturent.</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8 ml-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         {cardsData.map((card) => (
-          <div key={card.id} className="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          <div key={card.id} className="w-full bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
             <img src={card.image} alt={card.title} className="w-full h-40 object-cover rounded-t-lg" />
             <div className="p-4">
               <h3 className="text-xl font-bold mb-2">{card.title}</h3>

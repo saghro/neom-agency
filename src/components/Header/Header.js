@@ -1,37 +1,48 @@
 import React, { useState, useEffect } from 'react';
 import { PiUserCirclePlusBold } from 'react-icons/pi';
+import { faChevronDown, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faTimes, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "./Header.css";
- 
+
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
     const [dropdownOpen, setDropdownOpen] = useState(false);
- 
+    const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+
+    const navigate = useNavigate();
+
+    const toggleLanguageDropdown = () => {
+        setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
+    };
+
+    const handleLoginIconClick = () => {
+        navigate('/login');  // Redirect to the login page
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY >= 100);
         };
- 
+
         const handleResize = () => {
             setIsDesktop(window.innerWidth > 768);
         };
- 
+
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
- 
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
- 
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         if (isMenuOpen) {
@@ -40,15 +51,24 @@ const Header = () => {
             document.body.classList.add('no-scroll');
         }
     };
- 
+
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
- 
+
     return (
         <div>
             <div className="top-bar">
-                <div className="language-selector">FR|EN</div>
+                <div className="language-selector" onClick={toggleLanguageDropdown}>
+                    FR|EN <FontAwesomeIcon icon={faChevronDown} />
+                    {isLanguageDropdownOpen && (
+                        <ul className="dropdown-content">
+                            <li><a href="#">Français</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    )}
+                </div>
+
                 <div className="contact-info hidden sm:flex items-center gap-4">
                     <div className="phone-icon">
                         <p><FontAwesomeIcon icon={faPhone} size="lg" />+33 1 12 34 56 78</p>
@@ -56,8 +76,8 @@ const Header = () => {
                     <div className="email-icon">
                         <p><FontAwesomeIcon icon={faEnvelope} size="lg" /> contact@neom-agency.com </p>
                     </div>
-                    <div className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
-                        <PiUserCirclePlusBold />
+                    <div className="user-icon" onClick={handleLoginIconClick}>
+                        <FontAwesomeIcon icon={faUserCircle} size="lg" />
                     </div>
                 </div>
             </div>
@@ -118,5 +138,5 @@ const Header = () => {
         </div>
     );
 };
- 
+
 export default Header;

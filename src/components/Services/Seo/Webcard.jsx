@@ -1,50 +1,51 @@
-import React from 'react';
-import { RiBodyScanFill } from "react-icons/ri";
-import { IoEyeSharp } from "react-icons/io5";
-
-const WebCards = () => {
-  const Cards = ({ title, description, icon }) => {
-    return (
-      <div className="max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-gradient-to-r from-[#6A71B3] to-[#A8D9E0] hover:text-white flex flex-col justify-between">
-        <div>
-          <div className="flex justify-center mb-4 text-3xl sm:text-5xl">
-            {icon}
-          </div>
-          <div className="font-bold text-xl sm:text-2xl mb-2">{title}</div>
-          <p className="text-base sm:text-lg">
-            {description}
-          </p>
-        </div>
-         <div class="h-12 mt-6 cursor-pointer hover:scale-105 w-40 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
-                        <div class="flex h-full w-full items-center rounded-3xl justify-center bg-white ">
-                            <h1 class="text-1xl text-black">Savoir plus</h1>
-                        </div>
-    </div>
-      </div>
-    );
+import React, { useState } from "react";
+import TimelineObserver from "react-timeline-animation";
+import Timeline from "./Points"; 
+import "./Points.css";
+ 
+export default function WebDev() {
+  const [message, setMessage] = useState("");
+ 
+  const onCallback = () => {
+    console.log("awesome");
   };
-
+ 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center my-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <Cards
-          title="Référencement SEO"
-          description="Avec un contenu harmonieux, un storytelling captivant et une stratégie de marketing cohérente, nous vous aidons à transformer vos visions en réalité tangible, en bâtissant une présence en ligne qui inspire confiance et fidélité, tout en construisant un avenir où votre marque prospère et se distingue et ce, grâce à notre maîtrise des plateformes émergentes. "
-          icon={<RiBodyScanFill />}
-        />
-        <Cards
-          title="Référencement SEA"
-          description="En combinant l’intelligence artificielle, big data et créativité, nous vous aidons à mettre en place des stratégies bien pensées, personnalisées qui vous distinguent et maximisent votre retour sur investissement... "
-          icon={<IoEyeSharp />}
-        />
-      </div>
-      <div class="h-12 mt-6 cursor-pointer hover:scale-105 w-60 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5">
-                        <div class="flex h-full w-full items-center rounded-3xl justify-center bg-white ">
-                            <h1 class="text-1xl text-black">Vous avez un projet?</h1>
-                        </div>
-    </div>
+    <div className="Drop pt-20">
+      <style>
+        {`
+          .header-gradient {
+            background: linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .fill-gradient {
+            background: linear-gradient(116deg, #A8D9E0, #C7A2CB, #6A71B3);
+            background-size: 600% 600%;
+            animation: fillAnimation 6s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          @keyframes fillAnimation {
+            0% { background-position: 0% 30%; }
+            50% { background-position: 100% 71%; }
+            100% { background-position: 0% 30%; }
+          }
+        `}
+      </style>
+      <h3 className="mb-4 text-5xl font-bold header-gradient">Nos Services</h3>
+      <TimelineObserver
+        initialColor="#e5e5e5"
+        fillColor="#C7A2CB"
+        handleObserve={(setObserver) => (
+          <Timeline
+            callback={onCallback}
+            className="timeline fill-gradient"
+            setObserver={setObserver}
+          />
+        )}
+      />
+      <div className="mb-32">{message}</div>
     </div>
   );
-};
-
-export default WebCards;
+}

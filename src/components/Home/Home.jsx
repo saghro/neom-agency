@@ -2,6 +2,7 @@ import React from 'react';
 import personPlaceholder from '../../images/10.png';
 
 const Home = () => {
+  
     return (
         <div
             className="flex flex-col lg:flex-row items-center justify-between p-8 h-screen text-white font-poppins bg-gradient-to-r from-[#A8D9E0] via-[#C7A2CB] to-[#6A71B3]"
