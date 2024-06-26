@@ -1,66 +1,74 @@
-// import React from 'react';
-// import image from '../../../assests/identi.png'
-
-// const Video = () => {
-//   return (
-//     <div className="flex items-center justify-start p-4">
-//       <div className="flex-shrink-0 mr-4">
-//         <img className="h-96 w-100" src={image} alt="Description de l'image" /> 
-//       </div>
-//       <div>
-//         <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Nous créons les éléments visuels et messages qui capturent l’essence de votre entreprise, assurant une reconnaissance immédiate et une connexion pleine d’émotion avec votre public.</h1>
-//         <ul className="list-disc text-left text-gray-600 mt-4">
-//           <li>Création de votre logo, signature de votre marque</li>
-//           <li>Elaboration de votre charte graphique</li>
-//           <li>Création de vos supports de papeterie (cartes visites, papier en-tête)</li>
-//           <li>Réalisation de goodies aux couleurs de votre marque</li>
-//           <li>Conception du packaging de vos produits</li>
-//           <li>Conception de votre photo de couverture pour vos réseaux</li>
-//           <li>Rédaction de vos éléments de langage</li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Video;
 import React from 'react';
-import identiImage from '../../../assests/manwork.png';
-import identiImage1 from '../../../assests/graphics.png';
-import identiImage2 from '../../../assests/cart.png';
-import identiImage3 from '../../../assests/color.png';
-import identiImage4 from '../../../assests/delivery.png';
-import identiImage5 from '../../../assests/couverture.png';
-import identiImage6 from '../../../assests/langage.png';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import { BiLogoGitlab } from 'react-icons/bi';
+import { TiChartPie } from 'react-icons/ti';
+import { MdMovieCreation, MdOutlineProductionQuantityLimits, MdOutlineCoPresent } from 'react-icons/md';
+import { AiOutlineProduct } from 'react-icons/ai';
+import { GrLanguage } from 'react-icons/gr';
 
-const CardSection = () => {
-  const cardsData = [
-    { id: 1, description: 'Création de votre logo : Un logo à la fois inoubliable et symbolique, transmettant votre identité et vos principes', image: identiImage, title: '' },
-    { id: 2, description: 'Création de votre charte graphique : Une charte graphique exhaustive qui établit une utilisation cohérente des couleurs, des typographies et des éléments visuels de votre marque.  ', image: identiImage1, title: '' },
-    { id: 3, description: 'Création de vos supports de papeterie : Des supports de papeterie qui représentent l identité visuelle de votre entreprise.', image: identiImage2, title: '' },
-    { id: 4, description: 'Création de produits promotionnels personnalisés : La conception des articles promotionnels personnalisés tels que des stylos, des carnets ou des sacs, tous avec votre logo et vos teintes.   ', image: identiImage3, title: '' },
-    { id: 5, description: 'Élaboration de la conception de vos emballages : Des emballages attrayants et pratiques qui non seulement préservent vos produits, mais aussi captivent vos clients dès le début.', image: identiImage4, title: '' },
-    { id: 6, description: 'Création d image de couverture pour vos réseaux sociaux : Des visuels attirants qui captent immédiatement l attention de votre public cible et mettent en avant l esthétique de votre marque.', image: identiImage5, title: '' },
-    { id: 7, description: 'Rédaction de vos éléments de langage : La rédaction de slogans, de messages publicitaires et de descriptions de produits.  ', image: identiImage6, title: '' },
-  ];
+const cards = [
+  { id: 1, title: 'Création de votre logo', icon: <BiLogoGitlab className="text-color-[#A8D9E0]"  /> },
+  { id: 2, title: 'Création de votre charte graphique', icon: <TiChartPie /> },
+  { id: 3, title: 'Création de vos supports de papeterie', icon: <MdMovieCreation /> },
+  { id: 4, title: 'Création de produits promotionnels personnalisés', icon: <MdOutlineProductionQuantityLimits /> },
+  { id: 5, title: 'Élaboration de la conception de vos emballages', icon: <AiOutlineProduct /> },
+  { id: 6, title: 'Création d\'image de couverture pour vos réseaux sociaux', icon: <MdOutlineCoPresent /> },
+  { id: 7, title: 'Rédaction de vos éléments de langage', icon: <GrLanguage /> },
+];
+
+const App = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
-    <div className="container mx-auto px-3 py-4">
-      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Ce que nous vous proposons</h1>
-
-      <div className="flex flex-wrap justify-center gap-4 mt-8">
-        {cardsData.map((card) => (
-          <div key={card.id} className="max-w-xs w-full bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-            <img src={card.image} alt={card.title} className="w-full h-32 object-cover rounded-t-lg" />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-              <p className="text-gray-600">{card.description}</p>
+    <div className="bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] h-96 flex items-center justify-center p-3">
+      <div className="w-full max-w-4xl">
+        <Slider {...settings}>
+          {cards.map(card => (
+            <div key={card.id} className="p-4">
+              <div className="bg-white rounded-lg shadow-lg p-6 text-center h-56 flex flex-col justify-center items-center hover:bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] transition duration-300">
+                <div className="text-4xl mb-4">{card.icon}</div>
+                <h3 className="text-xl font-semibold">{card.title}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
     </div>
   );
 };
 
-export default CardSection;
+export default App;
