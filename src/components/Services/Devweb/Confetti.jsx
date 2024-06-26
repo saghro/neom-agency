@@ -110,5 +110,5 @@ const Timeline = ({ setObserver, callback }) => {
     </div>
   );
 };
- 
+
 export default Timeline;
