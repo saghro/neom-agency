@@ -27,6 +27,7 @@ const Card = ({ title, description, icon }) => {
           </div>
         </div>
         <div className="font-bold text-xl mb-2 text-center">{title}</div>
+        <div className="text-center mt-2">{description}</div>
       </div>
     </div>
   );
