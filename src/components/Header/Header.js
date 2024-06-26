@@ -13,7 +13,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
     const [dropdownOpen, setDropdownOpen] = useState(false);
- 
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY >= 100);
@@ -40,11 +40,13 @@ const Header = () => {
             document.body.classList.add('no-scroll');
         }
     };
+
  
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
  
+
     return (
         <div>
             <div className="top-bar">
@@ -69,6 +71,7 @@ const Header = () => {
                         alt="Logo"
                     />
                 </Link>
+
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100">
                         <li>Agence</li>
