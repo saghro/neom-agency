@@ -9,19 +9,7 @@ const Footer = () => {
           <img src={logonobg} alt="Logo" className="h-16 w-36" />
         </div>
         <div className="flex flex-col items-center lg:items-end mt-6 lg:mt-6 w-full lg:w-auto">
-          <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto space-y-4 lg:space-y-0 lg:space-x-4 pb-10">
-            <input
-              type="text"
-              className="bg-[#6A71B3] rounded-2xl py-2 px-6 w-full sm:w-64 lg:w-96 placeholder-gray-300"
-              placeholder="Sub To our Newsletter"
-            />
-            <button
-              type="submit"
-              className="bg-white text-[#6c529e] text-lg font-bold py-2 px-6 rounded-2xl"
-            >
-              Subscribe
-            </button>
-          </div>
+         
 
           <div className="flex justify-center lg:justify-end mt-4 space-x-4">
             <a href="https://linkedin.com">

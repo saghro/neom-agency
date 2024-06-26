@@ -27,7 +27,6 @@ export default function Solutions({ small }) {
                     Sublimez votre <br /> image, avec<br /> <span className="text-[#A8D9E0]">Neom</span>
                 </h1>
             </div>
-
             <div className={`w-full md:w-1/2 p-8 flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
                 <ul className={`space-y-0 ${small ? 'space-y-2' : 'space-y-5'}`}>
                     <li className="flex flex-col md:flex-row items-center gap-4 md:gap-6 transition-transform duration-300 hover:translate-x-2 border-b border-gray-300 last:border-0 pb-4 md:pb-6">
@@ -44,7 +43,7 @@ export default function Solutions({ small }) {
                         <span className={`font-bold text-gray-300 mr-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'}`}>02</span>
                         <div className="flex-1">
                             <Link to="/Seo" className="no-underline">
-                                <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Communication</h2>
+                                <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Marketing</h2>
                                 <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Réseaux sociaux, Strategie de communication</p>
                             </Link>
                         </div>
@@ -73,8 +72,8 @@ export default function Solutions({ small }) {
                     <li className="flex flex-col md:flex-row items-center gap-4 md:gap-6 transition-transform duration-300 hover:translate-x-2 pb-4 md:pb-6">
                         <span className={`font-bold text-gray-300 mr-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'}`}>05</span>
                         <div className="flex-1">
-                            <Link to="/Print" className="no-underline">
-                                <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Marketing</h2>
+                            <Link to="/communication" className="no-underline">
+                                <h2 className={`font-bold mb-1 text-[#272D4E] ${small ? 'text-xl' : 'text-2xl md:text-1xl'}`}>Communication</h2>
                                 <p className={`text-gray-600 ${small ? 'text-sm' : ''}`}>Data analytics, Publicités, Audit</p>
                             </Link>
                         </div>

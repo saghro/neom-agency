@@ -7,7 +7,7 @@ import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
 import "./Header.css";
-
+ 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,20 +18,20 @@ const Header = () => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY >= 100);
         };
-
+ 
         const handleResize = () => {
             setIsDesktop(window.innerWidth > 768);
         };
-
+ 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
-
+ 
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
+ 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         if (isMenuOpen) {
@@ -41,9 +41,11 @@ const Header = () => {
         }
     };
 
+ 
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
+ 
 
     return (
         <div>
@@ -69,17 +71,18 @@ const Header = () => {
                         alt="Logo"
                     />
                 </Link>
-                <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`} >
-                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100 ">
+
+                <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
+                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100">
                         <li>Agence</li>
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
-                            <ul className={`dropdown-content absolute hidden text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                <li><Link to="/service1" className="dropdown-item">Identite De Marque</Link></li>
-                                <li><Link to="/service2" className="dropdown-item">Marketing</Link></li>
-                                <li><Link to="/service3" className="dropdown-item">Développement Web et Mobile</Link></li>
-                                <li><Link to="/service4" className="dropdown-item">Formations</Link></li>
-                                <li><Link to="/service5" className="dropdown-item">Communication</Link></li>
+                            <ul className={`dropdown-content absolute hidden text-gray-500 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                                <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
+                                <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
                         <li>Contact</li>
@@ -90,9 +93,18 @@ const Header = () => {
                 </button>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-2 text-blue-900 mt-32">
+                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52">
                             <li>Agence</li>
-                            <li>Expertise</li>
+                            <li className="relative ml-6" onClick={toggleDropdown}>
+                                Expertise <FontAwesomeIcon icon={faChevronDown} />
+                                <ul className={`dropdown-content text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out mr-64 mt-32 ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
+                                    <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
+                                    <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                    <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                    <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                    <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
+                                </ul>
+                            </li>
                             <li>Contact</li>
                         </ul>
                         <button onClick={toggleMenu} className="absolute top-16 right-7">
@@ -109,5 +121,5 @@ const Header = () => {
         </div>
     );
 };
-
+ 
 export default Header;
