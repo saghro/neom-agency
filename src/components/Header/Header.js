@@ -6,33 +6,36 @@ import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesom
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
-import { Link } from 'react-router-dom';
+import { Link , } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 import "./Header.css";
- 
+
 const Header = () => {
+    const navigate = useNavigate();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
     const [dropdownOpen, setDropdownOpen] = useState(false);
- 
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY >= 100);
         };
- 
+
         const handleResize = () => {
             setIsDesktop(window.innerWidth > 768);
         };
- 
+
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
- 
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleResize);
         };
     }, []);
- 
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
         if (isMenuOpen) {
@@ -41,15 +44,17 @@ const Header = () => {
             document.body.classList.add('no-scroll');
         }
     };
- 
+
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
- 
+    const handleLoginClick = () => {
+        window.open('https://bill.neom-agency.com/authentication/login', '_blank');
+    };
     return (
         <div>
             <div className="top-bar">
-            <div className="language-selector">FR|EN</div>
+                <div className="language-selector">FR|EN</div>
                 <div className="contact-info hidden sm:flex items-center gap-4">
                     <div className="phone-icon">
                         <p><FontAwesomeIcon icon={faPhone} size="lg" />+33 1 12 34 56 78</p>
@@ -57,9 +62,9 @@ const Header = () => {
                     <div className="email-icon">
                         <p><FontAwesomeIcon icon={faEnvelope} size="lg" /> contact@neom-agency.com </p>
                     </div>
-                    <div className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
-                    <FaRegCircleUser />
-                    </div>
+                    <botton onClick={handleLoginClick} className=" tex-uset-black font-bold px-4 py-2 rounded-full cursor-pointer">
+                        +
+                    </botton>
                 </div>
             </div>
             <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop ? 'pt-16' : ''}`}>
@@ -71,7 +76,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100">
+                    <ul className="flex gap-10 text-lg ml-56 pr-64 text-black-100 cursor-pointer">
                         <li>Agence</li>
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
@@ -83,15 +88,16 @@ const Header = () => {
                                 <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
+                        <li>Realisation</li>
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <Link to="/login" className="rejoignez-nous-button relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
+                <botton className="rejoignez-nous-button relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2 cursor-pointer">
                     <span className="relative z-10">rejoignez-nous</span>
-                </Link>
+                </botton>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52">
+                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52 cursor-pointer ">
                             <li>Agence</li>
                             <li className="relative ml-6" onClick={toggleDropdown}>
                                 Expertise <FontAwesomeIcon icon={faChevronDown} />
@@ -119,5 +125,5 @@ const Header = () => {
         </div>
     );
 };
- 
+
 export default Header;
