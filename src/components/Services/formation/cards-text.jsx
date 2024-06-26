@@ -17,7 +17,7 @@ const Media = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           />      
-          <div className="animate-right-to-left mt-6 lg:mt-0 lg:ml-6 mr-20">
+          <div className="animate-right-to-left mt-6 lg:mt-0 lg:ml-6 lg:mr-20 text-center lg:text-justify">
             <h1 className="bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] text-transparent bg-clip-text font-bold text-2xl mb-6 mt-6">
               (Re)découvrez la communication avec Neom.
             </h1>
