@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { motion } from 'framer-motion';
 import "./Points.css";
 
 const Timeline = ({ setObserver, callback }) => {
@@ -78,7 +79,6 @@ const Timeline = ({ setObserver, callback }) => {
             </div>
             <div className="message" style={{ [index % 2 === 0 ? 'left' : 'right']: 'calc(100% + 20px)' }}>
               {/* <motion.img
-                
                 alt={`Illustration ${index + 1}`}
                 className={`floating-image ${index % 2 === 0 ? 'right-aligned' : 'left-aligned'}`}
                 initial={{ opacity: 0 }}
