@@ -10,19 +10,19 @@ const ComCases = () => {
   return (
     <div>
         <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Etude des cas</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1">
         <Cases 
           imageSrc={Img1}
           title="Communication : RMA "
           text=": Neom a conçu des flyers percutants et professionnels, en mettant l'accent sur des visuels attrayants et un message clair."
         />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
         <Cases 
           imageSrc={Img2}
           title="Az finance"
           text="Neom a créé du contenu captivant pour les réseaux sociaux, en utilisant des stratégies innovantes et des visuels attrayants pour maximiser l'engagement."
         />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
         <Cases 
           imageSrc={Img3}
           title="ITS matériaux"
