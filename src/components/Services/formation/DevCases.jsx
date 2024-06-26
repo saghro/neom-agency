@@ -1,39 +1,53 @@
 import React from 'react';
-import Cases from '../../cases';
-import Image from '../../../assests/1.png';
-import Image2 from '../../../assests/36-removebg-preview (1).png';
-import Image3 from '../../../assests/37-removebg-preview (1).png';
-
+import { motion } from 'framer-motion';
+import Cases from '../../Cases.jsx';
+import Image from '../../../images/vv.png';
+import Mobile from '../../../images/mob.png';
+ 
 const DevCases = () => {
   const colors = ['#A8D9E0', '#C7A2CB', '#6A71B3', '#B3A2D9'];
-
+ 
+  const leftAnimation = {
+    hidden: { x: '-100vw' },
+    visible: { x: 0, transition: { type: 'spring', stiffness: 50 } }
+  };
+ 
+  const rightAnimation = {
+    hidden: { x: '100vw' },
+    visible: { x: 0, transition: { type: 'spring', stiffness: 50 } }
+  };
+ 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center mb-8">Our Development Cases</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <Cases
-          title="Formations en ligne et en présentiel "
-          text="Autonomiser votre équipe, stimuler l'innovation et garantir une adaptation rapide aux évolutions constantes du paysage digital"
-          backgroundColor={colors[0]}
-        />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-        <Cases 
-          imageSrc={Image2}
-          title="Certifications officielles"
-          text="Renforcer la capacité à fournir des solutions innovantes et à haute performance, fournir des résultats exceptionnels à vos clients"
-          backgroundColor={colors[1]}
-        />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
-        <Cases 
-          imageSrc={Image3}
-          title="Consultations personnalisées"
-          text="Identifier les opportunités stratégiques et développer des recommandations adaptées à votre secteur d'activité à travers des échanges approfondis et des analyses détaillées"
-          backgroundColor={colors[2]}
-        />
-        <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Etude des cas</h3>
+      <div className="grid grid-cols-1">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={leftAnimation}
+        >
+          <Cases
+            imageSrc={Mobile}
+            title="Conception de l’application mobile RMA"
+            text="Neom a concrétisé la conception de l’application mobile et le site web de RMA"
+          />
+        </motion.div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={rightAnimation}
+        >
+          <Cases
+            imageSrc={Image}
+            title="Création de site web et d’application mobile pour ERKAN PARK"
+            text="Neom a réalisé la création de sites web et d'applications mobiles pour ERKAN PARK."
+          />
+        </motion.div>
+        <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
       </div>
     </div>
   );
 }
-
+ 
 export default DevCases;
