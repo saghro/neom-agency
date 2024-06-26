@@ -16,25 +16,6 @@ import tof14 from '../../images/image (15).jpeg';
 import tof15 from '../../images/image16.png';
 import tof16 from '../../images/image (17).jpeg';
 
-const responsive = {
-    superLargeDesktop: {
-        breakpoint: { max: 4000, min: 3000 },
-        items: 5,
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 5,
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 3,
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 2,
-    },
-};
-
 const items = [
     { id: 1, src: tof },
     { id: 3, src: tof2 },
@@ -53,38 +34,42 @@ const items = [
 ];
 
 const MultiCardCarousel = () => (
-    <>
-        <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">
-            Nos Références & <span className="text-[#6A71B3]">Certifications</span>
-        </h1>
-        <Carousel
-            responsive={responsive}
-            ssr
-            infinite
-            autoPlay
-            autoPlaySpeed={3000}
-            keyBoardControl
-            customTransition="all .5"
-            transitionDuration={1000}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
-            dotListClass="custom-dot-list-style mt-1"
-            itemClass="carousel-item-padding-40-px mb-4 px-1" // Adjusted the padding here
-            showDots
-            arrows={false}
-            className="mb-2"
-        >
-            {items.map(item => (
-                <div
-                    key={item.id}
-                    className="flex justify-center items-center h-32 mt-8 hover:scale-110 cursor-pointer mb-4 mx-2 w-32 rounded-xl border border-gray-300 shadow-md" // Adjusted margin here
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-                >
-                    <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
-                </div>
-            ))}
-        </Carousel>
-    </>
+    <Wrapper>
+        <Text>Nos Client <Span>Confiences</Span></Text>
+        <Marquee>
+            <MarqueeGroup>
+                {items.map(item => (
+                    <Card key={item.id}>
+                        <Image src={item.src} alt="" />
+                    </Card>
+                ))}
+            </MarqueeGroup>
+            <MarqueeGroup>
+                {items.map(item => (
+                    <Card key={item.id}>
+                        <Image src={item.src} alt="" />
+                    </Card>
+                ))}
+            </MarqueeGroup>
+        </Marquee>
+        <Spacer />
+        <Marquee>
+            <MarqueeGroup2>
+                {items.map(item => (
+                    <Card key={item.id}>
+                        <Image src={item.src} alt="" />
+                    </Card>
+                ))}
+            </MarqueeGroup2>
+            <MarqueeGroup2>
+                {items.map(item => (
+                    <Card key={item.id}>
+                        <Image src={item.src} alt="" />
+                    </Card>
+                ))}
+            </MarqueeGroup2>
+        </Marquee>
+    </Wrapper>
 );
 
 export default MultiCardCarousel;
