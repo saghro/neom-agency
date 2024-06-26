@@ -48,7 +48,7 @@ function App() {
   return (
     <AppContainer>
       <Wrapper>
-        <Text>With Great Outcomes.</Text>
+        <Text>With Great Outcomes</Text>
         <Note>Our customers have gotten offers from awesome companies.</Note>
         <Marquee>
           <CarouselTrack ref={trackRef} animate={controls}>
