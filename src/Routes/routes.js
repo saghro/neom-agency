@@ -6,7 +6,7 @@ import Webdev from '../pages/Webdev';
 import Print from '../pages/Print';
 import Formations from '../pages/Formations';
 import Service from '../pages/Service';
-import Seo from '../pages/SEO';
+import Seo from '../pages/SEO'
 import Solutions from '../components/Solutions/Solutions';
 import useScrollToTop from './useScrollToTop';
 
