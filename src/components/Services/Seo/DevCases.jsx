@@ -1,5 +1,6 @@
 import React from 'react';
 import Cases from '../../cases';
+import { Link } from 'react-router-dom';
 import Image1 from '../../../assests/marketing1.png';
 import Image2 from '../../../assests/marketing2.png';
 import Image3 from '../../../assests/marketing3.png';
@@ -40,12 +41,17 @@ const DevCases = () => {
           backgroundColor={colors[3]}
         /> */}
       </div>
-      <div className="flex justify-center">
-  <div className="h-14 lg:w-56 rounded-3xl bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] p-0.5 flex items-center justify-center">
-    <button className="text-xl text-[#6A71B3]">Voir plus</button>
-  </div>
-</div>
-    </div>
+ 
+<div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
+        <div className="flex justify-center">
+          <div className="h-14 lg:w-56 rounded-3xl p-0.5 flex items-center justify-center" style={{ border: '2px solid', borderImage: 'linear-gradient(to right, #6A71B3, #A8D9E0, #C7A2CB) 1' }}>
+            <Link to="/realisation">
+              <button className="text-xl transition-colors duration-300 hover:bg-gray-200" style={{ background: 'transparent', color: '#00008B' }}>Voir plus</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+   
   );
 }
  
