@@ -1,100 +1,137 @@
-import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React, { useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
 
-import tof from '../../images/image (1).jpeg';
-import tof2 from '../../images/image (3).jpeg';
-import tof3 from '../../images/image (4).jpeg';
-import tof4 from '../../images/image (5).jpeg';
-import tof5 from '../../images/image (6).jpeg';
-import tof6 from '../../images/image (7).jpeg';
-import tof7 from '../../images/image (8).jpeg';
-import tof8 from '../../images/image (9).jpeg';
-import tof10 from '../../images/image (11).jpeg';
-import tof11 from '../../images/image (12).jpeg';
-import tof13 from '../../images/image (14).jpeg';
+import tof from '../../images/image1.png';
+import tof2 from '../../images/image3.png';
+import tof3 from '../../images/image4.png';
+import tof4 from '../../images/image5.png';
+import tof5 from '../../images/image6.png';
+import tof6 from '../../images/image__7.png';
+import tof7 from '../../images/image8.png';
+import tof8 from '../../images/image9.png';
+import tof10 from '../../images/image11.png';
+import tof11 from '../../images/image12.png';
+import tof13 from '../../images/image14.png';
 import tof14 from '../../images/image (15).jpeg';
-import tof15 from '../../images/image (16).jpeg';
+import tof15 from '../../images/image16.png';
 import tof16 from '../../images/image (17).jpeg';
 
-const responsive = {
-    superLargeDesktop: {
-        breakpoint: { max: 4000, min: 3000 },
-        items: 4,
-    },
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 4,
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1,
-    },
-};
-
 const items = [
-    { id: 1, src: tof },
-    { id: 3, src: tof2 },
-    { id: 4, src: tof3 },
-    { id: 5, src: tof4 },
-    { id: 6, src: tof5 },
-    { id: 7, src: tof6 },
-    { id: 8, src: tof7 },
-    { id: 9, src: tof8 },
-    { id: 11, src: tof10 },
-    { id: 12, src: tof11 },
-    { id: 14, src: tof13 },
-    { id: 15, src: tof14 },
-    { id: 16, src: tof15 },
-    { id: 17, src: tof16 },
+    tof,
+    tof2,
+    tof3,
+    tof4,
+    tof5,
+    tof6,
+    tof7,
+    tof8,
+    tof10,
+    tof11,
+    tof13,
+    tof14,
+    tof15,
+    tof16,
 ];
 
-const MultiCardCarousel = () => (
-    <>
-        <h1 className="mt-24 font-bold text-[#272D4E] text-5xl text-center">
-            Nos Références & <span className="text-[#6A71B3]">Certifications</span>
-        </h1>
-        <Carousel
-            responsive={responsive}
-            ssr
-            infinite
-            autoPlay
-            autoPlaySpeed={3000}
-            keyBoardControl
-            customTransition="all .5"
-            transitionDuration={1000}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={['desktop', 'tablet', 'mobile']}
-            dotListClass="custom-dot-list-style mt-1"
-            itemClass="custom-carousel-item"
-            showDots
-            arrows={false}
-            className="mb-2"
-        >
-            {items.map(item => (
-                <div
-                    key={item.id}
-                    className="flex justify-center items-center h-32 hover:scale-110 cursor-pointer mx-4 w-32 rounded-xl border border-gray-300 shadow-md"
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} // Center the item
-                >
-                    <img className="mt-2" src={item.src} alt="" style={{ width: '80px', height: '60px' }} />
-                </div>
-            ))}
-        </Carousel>
-        <style jsx>{`
-            .custom-carousel-item {
-                width: calc(100% / 4); // This ensures 4 items are displayed at all times
-                padding: 0 20px; // Add some padding to create space between items
-            }
-            .carousel-container {
-                margin: 0 auto; // Center the carousel container
-            }
-        `}</style>
-    </>
-);
+const MultiImageCarousel = () => {
+    useEffect(() => {
+        const marquee = document.getElementById('marquee');
+        if (marquee) {
+            marquee.style.animationPlayState = 'running';
+        }
+    }, []);
 
-export default MultiCardCarousel;
+    return (
+        <Wrapper>
+            <Text>Nos Clients <Span>Confiances</Span></Text>
+            <Marquee id="marquee">
+                {items.map((src, index) => (
+                    <Image key={index} src={src} alt="" />
+                ))}
+            </Marquee>
+        </Wrapper>
+    );
+};
+
+export default MultiImageCarousel;
+
+const Wrapper = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+const Text = styled.h1`
+    font-size: 3rem;
+    font-weight: bold;
+    color: #272D4E;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+`;
+
+const Span = styled.span`
+    color: #6A71B3;
+`;
+
+const marqueeAnimation = keyframes`
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+`;
+
+const Marquee = styled.div`
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    animation: ${marqueeAnimation} 30s linear infinite paused;
+
+    &:hover {
+        animation-play-state: running;
+    }
+
+    &::-webkit-scrollbar {
+        display: none; /* hide scrollbar */
+    }
+`;
+
+const Image = styled.img`
+    object-fit: contain;
+    width: 100px; /* Ajuster la taille des images ici */
+    height: auto; /* Garder le ratio d'aspect */
+    margin: 0 10px; /* Espacement entre les images */
+    transition: all 0.3s ease;
+    filter: brightness(0.7) grayscale(100%);
+
+    &:hover {
+        filter: brightness(1) grayscale(0%);
+    }
+
+    @media (max-width: 768px) {
+        width: 80px; /* Ajustement pour les écrans plus petits */
+    }
+
+    @media (max-width: 480px) {
+        width: 60px; /* Ajustement pour les écrans encore plus petits */
+    }
+`;

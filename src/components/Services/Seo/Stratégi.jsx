@@ -8,7 +8,7 @@ const Video = () => {
       <div className="flex-shrink-0 mr-4 lg:mr-8 mb-6 lg:mb-0">
         <img className="h-48 w-full sm:h-64 md:h-80 lg:h-96 object-cover" src={image} alt="Description de l'image" />
       </div>
-      <div className='text-justify mr-16'>       
+      <div className='text-center text-left lg:text-justify lg:mr-36'>       
          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-4 lg:mt-8">
         De la conception à l’optimisation
         </h1>

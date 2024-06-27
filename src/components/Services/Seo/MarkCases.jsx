@@ -1,5 +1,6 @@
 import React from 'react';
 import Cases from '../../Cases';
+import { Link } from 'react-router-dom';
 import Image1 from '../../../assests/marketing1.png';
 import Image2 from '../../../assests/marketing2.png';
 
@@ -24,8 +25,14 @@ const MarkCases = () => {
           text="Stratégie de lancement, stratégie de différenciation, marketing d'influence "
           backgroundColor={colors[1]}
         />
-    
       </div>
+      <div className="flex justify-center">
+          <div className="h-14 lg:w-56 rounded-3xl p-0.5 flex items-center justify-center" style={{ border: '2px solid', borderImage: 'linear-gradient(to right, #6A71B3, #A8D9E0, #C7A2CB) 1' }}>
+            <Link to="/realisation">
+              <button className="text-xl transition-colors duration-300 hover:bg-gray-200" style={{ background: 'transparent', color: '#00008B' }}>Voir plus</button>
+            </Link>
+          </div>
+        </div>
     </div>
   );
 }

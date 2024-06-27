@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import personPlaceholder from '../../../assests/isometric.png';  
 

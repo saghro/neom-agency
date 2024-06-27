@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { FaRegCircleUser } from "react-icons/fa6";
-import { MdLanguage } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import logoWhite from "../../images/neomlogowhite.png";
 import logoBlack from "../../images/logo.jpeg";
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+ 
 import "./Header.css";
  
 const Header = () => {
+    const navigate = useNavigate();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
@@ -45,11 +47,13 @@ const Header = () => {
     const toggleDropdown = () => {
         setDropdownOpen(!dropdownOpen);
     };
- 
+    const handleLoginClick = () => {
+        window.open('https://bill.neom-agency.com/authentication/login', '_blank');
+    };
     return (
         <div>
             <div className="top-bar">
-            <div className="language-selector">FR|EN</div>
+                <div className="language-selector">FR|EN</div>
                 <div className="contact-info hidden sm:flex items-center gap-4">
                     <div className="phone-icon">
                         <p><FontAwesomeIcon icon={faPhone} size="lg" />+33 1 12 34 56 78</p>
@@ -57,12 +61,12 @@ const Header = () => {
                     <div className="email-icon">
                         <p><FontAwesomeIcon icon={faEnvelope} size="lg" /> contact@neom-agency.com </p>
                     </div>
-                    <div className="icon-user bg-white text-black font-bold px-4 py-2 rounded-full">
-                    <FaRegCircleUser />
+                    <div onClick={handleLoginClick} className="text-white font-bold mx-4 my-2 rounded-full cursor-pointer z-10">
+                    <FaUserAlt />
                     </div>
                 </div>
             </div>
-            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop ? 'pt-16' : ''}`}>
+            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-8' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
                 <Link to="/">
                     <img
                         className={`logo`}
@@ -71,7 +75,7 @@ const Header = () => {
                     />
                 </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
-                    <ul className="flex gap-10 text-lg ml-96 pr-64 text-black-100">
+                    <ul className="flex gap-10 text-lg ml-56 pr-64 text-black-100 cursor-pointer">
                         <li>Agence</li>
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
@@ -83,15 +87,16 @@ const Header = () => {
                                 <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
+                        <li><Link to="/realisation" className="dropdown-item">Realisation</Link></li>
                         <li>Contact</li>
                     </ul>
                 </nav>
-                <Link to="/login" className="rejoignez-nous-button relative px-10 py-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden mt-2">
+                <button className="rejoignez-nous-button relative mx-10 my-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden cursor-pointer">
                     <span className="relative z-10">rejoignez-nous</span>
-                </Link>
+                </button>
                 <nav className={`nav ${isMenuOpen ? 'show' : ''}`}>
                     <div className="flex flex-col items-center">
-                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52">
+                        <ul className="flex flex-col gap-2 text-blue-900 mb-96 mr-52 cursor-pointer ">
                             <li>Agence</li>
                             <li className="relative ml-6" onClick={toggleDropdown}>
                                 Expertise <FontAwesomeIcon icon={faChevronDown} />

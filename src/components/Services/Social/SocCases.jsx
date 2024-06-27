@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Cases from '../../Cases';
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../../Cases.css'
 import Image1 from '../../../assests/identite1.png';
 import Image2 from '../../../assests/identi2.png';
@@ -42,6 +43,7 @@ const SocCases = () => {
         />
         <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
         <Cases
+        <Cases
           imageSrc={Image4}
           title="ITS "
           text="Neom a pris en charge l'impression sur vêtements et matériels de l’entreprise ITS avec une expertise remarquable."
@@ -59,5 +61,5 @@ const SocCases = () => {
     </div>
   );
 }
- 
+
 export default SocCases;
