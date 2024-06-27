@@ -66,29 +66,29 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-8' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
-                <Link to="/">
+            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-6' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
+                <a href="/">
                     <img
                         className={`logo`}
                         src={isScrolled ? logoBlack : (isDesktop ? logoWhite : logoBlack)}
                         alt="Logo"
                     />
-                </Link>
+                </a>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex gap-10 text-lg ml-56 pr-64 text-black-100 cursor-pointer">
                         <li>Agence</li>
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
                             <ul className={`dropdown-content absolute hidden text-gray-500 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
-                                <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
-                                <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
-                                <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
-                                <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
+                                <li><a href="/Social_Media" className="dropdown-item">Identite De Marque</a></li>
+                                <li><a href="/Seo" className="dropdown-item">Marketing</a></li>
+                                <li><a href="/web" className="dropdown-item">Développement Web et Mobile</a></li>
+                                <li><a href="/Formation" className="dropdown-item">Formations</a></li>
+                                <li><a href="/communication" className="dropdown-item">Communication</a></li>
                             </ul>
                         </li>
                         <li><Link to="/realisation" className="dropdown-item">Realisation</Link></li>
-                        <li>Contact</li>
+                        <li><Link to="/contact" className="dropdown-item">Contact</Link></li>
                     </ul>
                 </nav>
                 <button className="rejoignez-nous-button relative mx-10 my-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden cursor-pointer">
@@ -101,14 +101,16 @@ const Header = () => {
                             <li className="relative ml-6" onClick={toggleDropdown}>
                                 Expertise <FontAwesomeIcon icon={faChevronDown} />
                                 <ul className={`dropdown-content text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out mr-64 mt-32 ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                    <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
-                                    <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
-                                    <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
-                                    <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
-                                    <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
+                                    <li><a href="/Social_Media" className="dropdown-item">Identite De Marque</a></li>
+                                    <li><a href="/Seo" className="dropdown-item">Marketing</a></li>
+                                    <li><a href="/web" className="dropdown-item">Développement Web et Mobile</a></li>
+                                    <li><a href="/Formation" className="dropdown-item">Formations</a></li>
+                                    <li><a href="/communication" className="dropdown-item">Communication</a></li>
                                 </ul>
                             </li>
-                            <li>Contact</li>
+                            
+                            <li><Link to="/contact" className="dropdown-item">Contact</Link></li>
+
                         </ul>
                         <button onClick={toggleMenu} className="absolute top-16 right-7">
                             <FontAwesomeIcon icon={faTimes} className="text-blue-900" />

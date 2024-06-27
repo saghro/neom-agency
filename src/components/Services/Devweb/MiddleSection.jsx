@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import offers from '../../../images/webdev.jpg';
+import offers from '../../../images/4412009.jpg';
 
 const MiddleSection = () => {
   const ref = useRef(null);
@@ -9,7 +9,7 @@ const MiddleSection = () => {
 
   return (
     <>
-      <div className='pt-20 flex flex-col md:flex-row items-center' ref={ref}>
+      <div className='pt-4 flex flex-col md:flex-row items-center' ref={ref}>
         <motion.div 
           className="flex justify-center md:w-1/2 pl-4 pr-4"
           initial={{ x: -100, opacity: 0 }}

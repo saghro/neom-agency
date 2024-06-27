@@ -20,7 +20,8 @@ const DevCases = () => {
 
   return (
     <div>
-        <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Portfolio</h3>
+        <h3 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+        Realisation</h3>
       <div className="grid grid-cols-1">
         <motion.div
           initial="hidden"
