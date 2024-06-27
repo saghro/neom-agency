@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Cases from '../../Cases';
+import '../../Cases.css'
 import Image1 from '../../../assests/identite1.png';
 import Image2 from '../../../assests/identi2.png';
 import Image3 from '../../../assests/identi3.png';
 import Image4 from '../../../assests/identi4.png';
-import { Link } from 'react-router-dom';
+
+
 
 const SocCases = () => {
   const colors = ['#A8D9E0', '#C7A2CB', '#6A71B3', '#B3A2D9'];
 
+  useEffect(() => {
+    // Any code that needs to run after the component has mounted
+  }, []);
+ 
   return (
     <div>
       <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">
@@ -37,11 +43,13 @@ const SocCases = () => {
         />
         <div className="block md:hidden border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
         <Cases
+        <Cases
           imageSrc={Image4}
           title="ITS "
           text="Neom a pris en charge l'impression sur vêtements et matériels de l’entreprise ITS avec une expertise remarquable."
           backgroundColor={colors[3]}
         />
+
       </div>
       <div className="border-b-2 border-gray-300 my-4 mx-auto w-1/2"></div>
       <div className="flex justify-center">
