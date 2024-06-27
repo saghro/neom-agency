@@ -49,7 +49,7 @@ function App() {
     <AppContainer>
       <Wrapper>
         <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center mb-8 pb-16 lg:mb-0 ">
-          Ce que nous vous proposons
+          Ce que nous vous proposons 
         </h1>
         <Marquee>
           <CarouselTrack ref={trackRef} animate={controls}>
