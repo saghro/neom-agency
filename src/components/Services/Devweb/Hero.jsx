@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import personPlaceholder from '../../../images/laptopimg.png';
+import personPlaceholder from '../../../images/hand-drawn-flat-design-api-illustration (1).png';
 
 const Hero = () => {
   const handleDownload = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+ 
 const Contact = () => {
   return (
     <div className='bg-white text-black' style={{ fontFamily: 'Poppins, sans-serif' }}>
@@ -8,15 +8,15 @@ const Contact = () => {
         className="flex flex-col lg:flex-row items-center justify-between p-8 min-h-screen text-white font-poppins"
         style={{ background: 'linear-gradient(-45deg, #A8D9E0, #C7A2CB, #6A71B3)', backgroundSize: '400% 400%', animation: 'Gradient 5s ease infinite' }}
       >
-        <motion.div 
-          className="max-w-xl mb-8 lg:mb-0 text-center mx-auto" 
+        <motion.div
+          className="max-w-xl mb-8 lg:mb-0 text-center mx-auto"
           style={{ marginTop: '20vh' }}
           initial={{ y: '-100vh' }}
           animate={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 50 }}
         >
-          <h1 className='text-white text-4xl sm:text-6xl lg:text-6xl font-bold'>Contactez-nous</h1>
-          <motion.p 
+          <h1 className='text-white text-4xl sm:text-6xl lg:text-8xl font-bold'>Contactez-nous</h1>
+          <motion.p
             className="mt-4 text-white"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
@@ -109,7 +109,7 @@ const Contact = () => {
     </div>
   );
 }
-
+ 
 function BuildingIcon(props) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -127,7 +127,7 @@ function BuildingIcon(props) {
     </svg>
   );
 }
-
+ 
 function InboxIcon(props) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -136,7 +136,7 @@ function InboxIcon(props) {
     </svg>
   );
 }
-
+ 
 function PhoneIcon(props) {
   return (
     <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -144,5 +144,5 @@ function PhoneIcon(props) {
     </svg>
   );
 }
-
+ 
 export default Contact;

@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../images/aboutn.jpg';
+import image from '../../images/aboutn.png';
 
 const About = () => {
     const handleDownload = () => {

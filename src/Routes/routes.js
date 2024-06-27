@@ -11,12 +11,12 @@ import useScrollToTop from './useScrollToTop';
 import LoginForm from '../components/Login/Login';
 import Realisation from '../pages/Realisation';
 import ContactPage from '../pages/Contact';
-
+ 
 const ScrollToTopWrapper = ({ children }) => {
     useScrollToTop();
     return children;
 };
-
+ 
 const Router = () => {
     return (
         <BrowserRouter>
@@ -37,5 +37,6 @@ const Router = () => {
         </BrowserRouter>
     );
 };
-
+ 
 export default Router;
+ 
