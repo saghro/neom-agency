@@ -10,6 +10,7 @@ import Solutions from '../components/Solutions/Solutions';
 import useScrollToTop from './useScrollToTop';
 import LoginForm from '../components/Login/Login';
 import Realisation from '../pages/Realisation';
+import ContactPage from '../pages/Contact';
 
 const ScrollToTopWrapper = ({ children }) => {
     useScrollToTop();
@@ -30,6 +31,7 @@ const Router = () => {
                     <Route path="/Social_Media" element={<Service />} />
                     <Route path="/Seo" element={<Seo />} />
                     <Route path="/solutions" element={<Solutions />} />
+                    <Route path="/contact" element={<ContactPage />} />
                 </Routes>
             </ScrollToTopWrapper>
         </BrowserRouter>

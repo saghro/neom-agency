@@ -51,9 +51,7 @@ const SocCases = () => {
       </div>
       <div className="flex justify-center">
           <div className="h-14 lg:w-56 rounded-3xl p-0.5 flex items-center justify-center" style={{ border: '2px solid', borderImage: 'linear-gradient(to right, #6A71B3, #A8D9E0, #C7A2CB) 1' }}>
-            <Link to="/realisation">
-              <button className="text-xl transition-colors duration-300 hover:bg-gray-200" style={{ background: 'transparent', color: '#00008B' }}>Voir plus</button>
-            </Link>
+            <a href="/realisation" className="text-xl transition-colors duration-300 hover:bg-gray-200" style={{ background: 'transparent', color: '#00008B' }}>Voir plus</a>
           </div>
         </div>
     </div>

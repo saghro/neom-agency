@@ -53,7 +53,6 @@ const ImageGallery = () => {
                 <img src={require(`./${image}`)} alt={`Gallery item ${index}`} className="w-64 md:w-80 lg:w-96 object-cover shadow-md" style={{ height: `${getRandomHeight()}px` }} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#A8D9E0] via-[#C7A2CB] to-[#6A71B3] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                   <h4 className="text-white font-poppins transition-transform transform group-hover:scale-110 text-center">{imageDescriptions[image]}</h4>
-                  <h4 className="text-white font-poppins transition-transform transform group-hover:scale-110 text-center">{imageDescriptions[image]}</h4>
                 </div>
                 <style jsx>
                   {`
@@ -80,4 +79,3 @@ const ImageGallery = () => {
 };
  
 export default ImageGallery;
- 
