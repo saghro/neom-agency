@@ -69,7 +69,7 @@ function App() {
 export default App;
 
 const AppContainer = styled.div`
-  width: 100vw;
+  width: 90vw;
   height: 64vh;
   color: #000000;
   position: relative;
@@ -80,13 +80,13 @@ const AppContainer = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 1200px; /* Max width to keep content centered and responsive */
+  max-width: 1200px;
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px;
 `;
 
 const Marquee = styled.div`

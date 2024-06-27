@@ -13,8 +13,8 @@ const Cases = ({ imageSrc, title, text }) => {
     });
   };
   const calculateTilt = () => {
-    const centerX = 128; // Half of the width (256 / 2)
-    const centerY = 128; // Half of the height (256 / 2)
+    const centerX = 128;
+    const centerY = 128;
     const deltaX = mousePosition.x - centerX;
     const deltaY = mousePosition.y - centerY;
     const maxTilt = 25; // Increased maximum tilt angle in degrees
