@@ -122,7 +122,7 @@ const CarouselItem = styled.div`
   }
 
   .icon {
-    font-size: 4rem;
+    font-size: 2rem; /* Adjusted font size */
     margin-bottom: 1rem;
   }
 
