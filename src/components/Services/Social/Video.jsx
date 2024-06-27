@@ -1,66 +1,137 @@
-// import React from 'react';
-// import image from '../../../assests/identi.png'
+import React, { useEffect, useRef, useState } from "react";
+import styled, { keyframes } from "styled-components";
+import { motion, useAnimation } from "framer-motion";
+import { BiLogoGitlab } from 'react-icons/bi';
+import { TiChartPie } from 'react-icons/ti';
+import { MdMovieCreation, MdOutlineProductionQuantityLimits, MdOutlineCoPresent } from 'react-icons/md';
+import { AiOutlineProduct } from 'react-icons/ai';
+import { GrLanguage } from 'react-icons/gr';
 
-// const Video = () => {
-//   return (
-//     <div className="flex items-center justify-start p-4">
-//       <div className="flex-shrink-0 mr-4">
-//         <img className="h-96 w-100" src={image} alt="Description de l'image" /> 
-//       </div>
-//       <div>
-//         <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Nous créons les éléments visuels et messages qui capturent l’essence de votre entreprise, assurant une reconnaissance immédiate et une connexion pleine d’émotion avec votre public.</h1>
-//         <ul className="list-disc text-left text-gray-600 mt-4">
-//           <li>Création de votre logo, signature de votre marque</li>
-//           <li>Elaboration de votre charte graphique</li>
-//           <li>Création de vos supports de papeterie (cartes visites, papier en-tête)</li>
-//           <li>Réalisation de goodies aux couleurs de votre marque</li>
-//           <li>Conception du packaging de vos produits</li>
-//           <li>Conception de votre photo de couverture pour vos réseaux</li>
-//           <li>Rédaction de vos éléments de langage</li>
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// }
+const items = [
+  { id: 1, title: 'Création de votre logo', icon: <BiLogoGitlab className="text-color-[#A8D9E0]" /> },
+  { id: 2, title: 'Création de votre charte graphique', icon: <TiChartPie /> },
+  { id: 3, title: 'Création de vos supports de papeterie', icon: <MdMovieCreation /> },
+  { id: 4, title: 'Création de produits promotionnels personnalisés', icon: <MdOutlineProductionQuantityLimits /> },
+  { id: 5, title: 'Élaboration de la conception de vos emballages', icon: <AiOutlineProduct /> },
+  { id: 6, title: 'Création d\'image de couverture pour vos réseaux sociaux', icon: <MdOutlineCoPresent /> },
+  { id: 7, title: 'Rédaction de vos éléments de langage', icon: <GrLanguage /> },
+];
 
-// export default Video;
-import React from 'react';
-import identiImage from '../../../assests/manwork.png';
-import identiImage1 from '../../../assests/graphics.png';
-import identiImage2 from '../../../assests/cart.png';
-import identiImage3 from '../../../assests/color.png';
-import identiImage4 from '../../../assests/delivery.png';
-import identiImage5 from '../../../assests/couverture.png';
-import identiImage6 from '../../../assests/langage.png';
+function App() {
+  const controls = useAnimation();
+  const [carouselWidth, setCarouselWidth] = useState(0);
+  const trackRef = useRef(null);
 
-const CardSection = () => {
-  const cardsData = [
-    { id: 1, description: 'Création de votre logo : Un logo à la fois inoubliable et symbolique, transmettant votre identité et vos principes', image: identiImage, title: '' },
-    { id: 2, description: 'Création de votre charte graphique : Une charte graphique exhaustive qui établit une utilisation cohérente des couleurs, des typographies et des éléments visuels de votre marque.  ', image: identiImage1, title: '' },
-    { id: 3, description: 'Création de vos supports de papeterie : Des supports de papeterie qui représentent l identité visuelle de votre entreprise.', image: identiImage2, title: '' },
-    { id: 4, description: 'Création de produits promotionnels personnalisés : La conception des articles promotionnels personnalisés tels que des stylos, des carnets ou des sacs, tous avec votre logo et vos teintes.   ', image: identiImage3, title: '' },
-    { id: 5, description: 'Élaboration de la conception de vos emballages : Des emballages attrayants et pratiques qui non seulement préservent vos produits, mais aussi captivent vos clients dès le début.', image: identiImage4, title: '' },
-    { id: 6, description: 'Création d image de couverture pour vos réseaux sociaux : Des visuels attirants qui captent immédiatement l attention de votre public cible et mettent en avant l esthétique de votre marque.', image: identiImage5, title: '' },
-    { id: 7, description: 'Rédaction de vos éléments de langage : La rédaction de slogans, de messages publicitaires et de descriptions de produits.  ', image: identiImage6, title: '' },
-  ];
+  useEffect(() => {
+    const totalWidth = trackRef.current.scrollWidth;
+    setCarouselWidth(totalWidth);
+
+    const animate = async () => {
+      while (true) {
+        await controls.start({
+          x: [-totalWidth, 0],
+          transition: {
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: items.length * 2.5,
+              ease: "linear",
+            },
+          },
+        });
+      }
+    };
+
+    animate();
+  }, [controls]);
 
   return (
-    <div className="container mx-auto px-3 py-4">
-      <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text mt-8 text-center">Ce que nous vous proposons</h1>
-
-      <div className="flex flex-wrap justify-center gap-4 mt-8">
-        {cardsData.map((card) => (
-          <div key={card.id} className="max-w-xs w-full bg-white border border-gray-200 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
-            <img src={card.image} alt={card.title} className="w-full h-32 object-cover rounded-t-lg" />
-            <div className="p-4">
-              <h3 className="text-xl font-bold mb-2">{card.title}</h3>
-              <p className="text-gray-600">{card.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    <AppContainer>
+      <Wrapper>
+        <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center mb-8 pb-16 lg:mb-0 ">
+          Ce que nous vous proposons
+        </h1>
+        <Marquee>
+          <CarouselTrack ref={trackRef} animate={controls}>
+            {items.map((item, index) => (
+              <CarouselItem key={index}>
+                <div className="icon">{item.icon}</div>
+                <div className="title">{item.title}</div>
+              </CarouselItem>
+            ))}
+          </CarouselTrack>
+        </Marquee>
+      </Wrapper>
+    </AppContainer>
   );
-};
+}
 
-export default CardSection;
+export default App;
+
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 64vh;
+  color: #000000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1200px; /* Max width to keep content centered and responsive */
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px; /* Adjust padding as needed */
+`;
+
+const Marquee = styled.div`
+  width: 100%;
+  overflow: hidden;
+`;
+
+const CarouselTrack = styled(motion.div)`
+  display: flex;
+  width: fit-content;
+`;
+
+const CarouselItem = styled.div`
+  width: 300px; /* Default width */
+  min-width: 250px; /* Minimum width for smaller screens */
+  padding: 1.5rem;
+  height: 14rem;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s;
+
+  &:hover {
+    background: linear-gradient(to right, #A8D9E0, #6A71B3, #C7A2CB);
+  }
+
+  .icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width on smaller screens */
+  }
+`;

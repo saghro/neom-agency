@@ -10,17 +10,13 @@ import DevCases from "../components/services/Social/DevCases";
 const service = () => {
   return (
     <>
-     <Header/>
+    <Header/>
     <Service/>
     <Media />
     <Video/>
     <DevCases/>
     <Actualités/>
-    <Footer/>
-   
-    
-
-      
+    <Footer/>      
     </>
   )
 }
