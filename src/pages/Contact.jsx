@@ -7,7 +7,6 @@ const ContactPage = () => {
   useEffect(() => {
     document.title = 'Contact';
   }, []);
-
   return (
     <>
       <Header />
