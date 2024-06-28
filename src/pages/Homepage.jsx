@@ -115,9 +115,7 @@ const HomePage = () => {
       <MotionComponent delay={0.4}>
         <About />
       </MotionComponent>
-      <MotionComponent delay={0.6}>
-        <Cle />
-      </MotionComponent>
+   
         <MultiCardCarousel />
         <Footer />
     </>
