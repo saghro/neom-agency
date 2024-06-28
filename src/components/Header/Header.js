@@ -67,13 +67,13 @@ const Header = () => {
                 </div>
             </div>
             <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-6' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
-                <a href="/">
+                <Link to="/">
                     <img
                         className={`logo`}
                         src={isScrolled ? logoBlack : (isDesktop ? logoWhite : logoBlack)}
                         alt="Logo"
                     />
-                </a>
+                </Link>
                 <nav className={`flex ${isDesktop ? 'block' : 'hidden'}`}>
                     <ul className="flex gap-10 text-lg ml-56 pr-64 text-black-100 cursor-pointer">
                         <li>Agence</li>
