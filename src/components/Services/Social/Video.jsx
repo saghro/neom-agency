@@ -48,8 +48,8 @@ function App() {
   return (
     <AppContainer>
       <Wrapper>
-        <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center mb-4 lg:mb-0 ">
-          Ce que nous vous proposons
+        <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center mb-8 pb-16 lg:mb-0 ">
+          Ce que nous vous proposons 
         </h1>
         <Marquee>
           <CarouselTrack ref={trackRef} animate={controls}>
@@ -69,7 +69,7 @@ function App() {
 export default App;
 
 const AppContainer = styled.div`
-  width: 100vw;
+  width: 90vw;
   height: 64vh;
   color: #000000;
   position: relative;
@@ -80,13 +80,13 @@ const AppContainer = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 1200px; /* Max width to keep content centered and responsive */
+  max-width: 1200px;
   height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px; /* Adjust padding as needed */
+  padding: 0 20px;
 `;
 
 const Marquee = styled.div`
@@ -116,21 +116,21 @@ const CarouselItem = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: background 0.3s;
-
+ 
   &:hover {
     background: linear-gradient(to right, #A8D9E0, #6A71B3, #C7A2CB);
   }
-
+ 
   .icon {
     font-size: 2rem; /* Adjusted font size */
     margin-bottom: 1rem;
   }
-
+ 
   .title {
     font-size: 1.25rem;
     font-weight: bold;
   }
-
+ 
   @media (max-width: 768px) {
     width: 100%; /* Full width on smaller screens */
   }
