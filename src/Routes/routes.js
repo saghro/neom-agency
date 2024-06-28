@@ -22,8 +22,14 @@ const Router = () => {
         <BrowserRouter>
             <ScrollToTopWrapper>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                 
+                   
+                    <Route path="/web" element={<Webdev />} />
+                    <Route path="/realisation" element={<Realisation />} />
+                    <Route path="/communication" element={<Print />} />
+                    <Route path="/identité-de-marque" element={<Service />} />
+                    <Route path="/markting" element={<Seo />} />
+                    <Route path="/solutions" element={<Solutions />} />
+                    <Route path="/contact" element={<ContactPage />} />
                 </Routes>
             </ScrollToTopWrapper>
         </BrowserRouter>
