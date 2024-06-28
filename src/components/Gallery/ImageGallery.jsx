@@ -44,13 +44,13 @@ const ImageGallery = () => {
  
   return (
     <div className="flex flex-col items-center justify-center p-4 gap-4 mt-8">
-      <h2 className="mb-4 text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Notre Portfolio</h2>
-      <div className="flex flex-row flex-wrap justify-center gap-4">
+      <h2 className="mb-4 text-3xl md:text-4xl lg:text-5xl font-bold text-center" style={{ background: 'linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Notre Portfolio</h2>
+      <div className="flex flex-wrap justify-center gap-4">
         {imageChunks.map((chunk, chunkIndex) => (
           <div key={chunkIndex} className="flex flex-col gap-4">
             {chunk.map((image, index) => (
               <div key={index} className="p-2 relative group">
-                <img src={require(`./${image}`)} alt={`Gallery item ${index}`} className="w-64 md:w-80 lg:w-96 object-cover shadow-md" style={{ height: `${getRandomHeight()}px` }} />
+                <img src={require(`./${image}`)} alt={`Gallery item ${index}`} className="w-full sm:w-64 md:w-80 lg:w-96 object-cover shadow-md" style={{ height: `${getRandomHeight()}px` }} />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#A8D9E0] via-[#C7A2CB] to-[#6A71B3] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                   <h4 className="text-white font-poppins transition-transform transform group-hover:scale-110 text-center">{imageDescriptions[image]}</h4>
                 </div>

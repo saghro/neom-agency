@@ -1,5 +1,5 @@
 .test {
-    width: 100wh;
+    width: 100vw;
     height: 90vh;
     color: #fff;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -7,58 +7,89 @@
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
-    }
-  
-  .paused {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.paused {
     -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
     animation-play-state: paused;
-  }
-  
-  @-webkit-keyframes Gradient {
+}
+
+@-webkit-keyframes Gradient {
     0% {
-    background-position: 0% 50%
+        background-position: 0% 50%;
     }
-  50% {
-  background-position: 100% 50%
-  }
-  100% {
-  background-position: 0% 50%
-  }
-  }
-  
-  @-moz-keyframes Gradient {
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
     0% {
-    background-position: 0% 50%
+        background-position: 0% 50%;
     }
-  50% {
-  background-position: 100% 50%
-  }
-  100% {
-  background-position: 0% 50%
-  }
-  }
-  
-  @keyframes Gradient {
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
     0% {
-    background-position: 0% 50%
+        background-position: 0% 50%;
     }
-  50% {
-  background-position: 100% 50%
-  }
-  100% {
-  background-position: 0% 50%
-  }
-  }
-  
-  h1,
-  h6 {
-    font-family: 'Open Sans';
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1,
+h6 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-align: center;
-    position: absolute;
-    top: 45%;
-    right: 0;
-    left: 0;
+    margin: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
     }
-  
-  
+
+    h6 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h6 {
+        font-size: 2rem;
+    }
+}
