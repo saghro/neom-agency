@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaRegCircleUser } from "react-icons/fa6";
-import { MdLanguage } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes, faPhone, faEnvelope, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -62,12 +61,12 @@ const Header = () => {
                     <div className="email-icon">
                         <p><FontAwesomeIcon icon={faEnvelope} size="lg" /> contact@neom-agency.com </p>
                     </div>
-                    <button onClick={handleLoginClick} className="text-white font-bold mx-4 my-2 rounded-full cursor-pointer z-10">
-                        +
-                    </button>
+                    <div onClick={handleLoginClick} className="text-white font-bold mx-4 my-2 rounded-full cursor-pointer z-10">
+                    <FaUserAlt />
+                    </div>
                 </div>
             </div>
-            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-8' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
+            <header className={`header ${isScrolled ? 'scrolled' : ''} ${isDesktop && !isScrolled ? 'mt-6' : ''}`} style={{ transition: 'padding-top 0.3s, margin-top 0.3s' }}>
                 <Link to="/">
                     <img
                         className={`logo`}
@@ -81,15 +80,15 @@ const Header = () => {
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
                             <ul className={`dropdown-content absolute hidden text-gray-500 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
-                                <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                <li><Link to="/identité-de-marque" className="dropdown-item">Identite De Marque</Link></li>
+                                <li><Link to="/markting" className="dropdown-item">Marketing</Link></li>
                                 <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
                                 <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
                                 <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
-                        <li>Realisation</li>
-                        <li>Contact</li>
+                        <li><Link to="/realisation" className="dropdown-item">Realisation</Link></li>
+                        <li><Link to="/contact" className="dropdown-item">Contact</Link></li>
                     </ul>
                 </nav>
                 <button className="rejoignez-nous-button relative mx-10 my-3 bg-[#6A71B3] text-white rounded-full shadow-md hover:shadow-lg overflow-hidden cursor-pointer">
@@ -103,13 +102,15 @@ const Header = () => {
                                 Expertise <FontAwesomeIcon icon={faChevronDown} />
                                 <ul className={`dropdown-content text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out mr-64 mt-32 ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
                                     <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
-                                    <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                    <li><Link to="/markting" className="dropdown-item">Marketing</Link></li>
                                     <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
                                     <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
                                     <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                                 </ul>
                             </li>
-                            <li>Contact</li>
+                            
+                            <li><Link to="/contact" className="dropdown-item">Contact</Link></li>
+
                         </ul>
                         <button onClick={toggleMenu} className="absolute top-16 right-7">
                             <FontAwesomeIcon icon={faTimes} className="text-blue-900" />
@@ -127,4 +128,3 @@ const Header = () => {
 };
  
 export default Header;
- 
