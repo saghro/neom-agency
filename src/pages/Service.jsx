@@ -5,7 +5,7 @@ import Video from '../components/Services/Social/Video';
 import Actualités from '../components/Services/Social/Actualités';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
-import DevCases from "../components/Services/Social/DevCases";
+import SocCases from '../components/Services/Social/SocCases';
 
 const service = () => {
   return (
@@ -14,7 +14,7 @@ const service = () => {
     <Service/>
     <Media />
     <Video/>
-    <DevCases/>
+    <SocCases/>
     <Actualités/>
     <Footer/>
    

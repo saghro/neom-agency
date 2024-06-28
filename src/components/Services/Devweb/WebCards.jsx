@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import TimelineObserver from "react-timeline-animation";
-import Timeline from "./Confetti";
+import Timeline from "./Confetti"; // Updated import to reflect the correct file
 import "./Confetti.css";
 
-export default function WebCards() {
+export default function WebDev() {
   const [message, setMessage] = useState("");
 
   const onCallback = () => {
     console.log("awesome");
   };
 
+
   return (
-    <div className="App pt-20">
+    <div className="Drop pt-20">
       <style>
         {`
           .header-gradient {
@@ -33,7 +34,7 @@ export default function WebCards() {
           }
         `}
       </style>
-      <h3 className="mb-4 text-5xl font-bold header-gradient">Nos Services</h3>
+      <h3 className="mb-4 text-5xl font-bold header-gradient text-center">Nos Services</h3>
       <TimelineObserver
         initialColor="#e5e5e5"
         fillColor="#C7A2CB"
@@ -48,4 +49,4 @@ export default function WebCards() {
       <div className="mb-32">{message}</div>
     </div>
   );
-};
+}

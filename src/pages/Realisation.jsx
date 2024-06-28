@@ -6,7 +6,7 @@ import Hero from '../components/Gallery/Hero';
 function Realisation() {
   return (
     <>
-        <Header/>
+        <Header />
         <Hero/>
         <ImageGallery/>
         <Footer />

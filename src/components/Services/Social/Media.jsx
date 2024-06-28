@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion'; 
+import { motion, useAnimation } from 'framer-motion'; // Importer motion et useAnimation depuis framer-motion
 import image from '../../../assests/identi5.png';
 
 const Video = () => {

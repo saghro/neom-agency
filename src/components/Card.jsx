@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ title, description, icon }) => {
   return (
-    <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg p-6 bg-white transform transition duration-300 hover:bg-gradient-to-r hover:from-[#c7a2cb] hover:to-[#6a71b3] hover:text-white flex flex-col justify-between m-4">
+    <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg p-6 bg-[#fdfcfe] transform transition duration-300 hover:bg-gradient-to-r hover:from-[#c7a2cb] hover:to-[#6a71b3] hover:text-white flex flex-col justify-between m-4">
       <style>
         {`
           .hover\\:bg-gradient-to-r:hover {
@@ -27,6 +27,7 @@ const Card = ({ title, description, icon }) => {
           </div>
         </div>
         <div className="font-bold text-xl mb-2 text-center">{title}</div>
+        <div className="text-center mt-2">{description}</div>
       </div>
     </div>
   );

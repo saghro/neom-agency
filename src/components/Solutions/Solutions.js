@@ -22,14 +22,14 @@ function ChevronRightIcon(props) {
 export default function Solutions({ small }) {
     return (
         <div className={`flex flex-col md:flex-row  md:h-screen ${small ? 'text-sm' : ''}`}>
-            <div className={`w-full md:w-1/2 bg-[#6A71B3] p-8 text-white flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
+            <div className={`w-full md:w-1/2 bg-[#6A71C9] p-8 text-white flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
                 <h1 className={`font-bold mb-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'} ${small ? '' : 'md:ml-7'}`}>
                     Sublimez votre <br /> image, avec<br /> <span className="text-[#A8D9E0]">Neom</span>
                 </h1>
             </div>
             <div className={`w-full md:w-1/2 p-8 flex flex-col justify-center ${small ? 'p-4' : 'p-8'}`}>
-                <ul className={`space-y-0 ${small ? 'space-y-2' : 'space-y-5'}`}>
-                    <li className="flex flex-col md:flex-row items-center gap-4 md:gap-6 transition-transform duration-300 hover:translate-x-2 border-b border-gray-300 last:border-0 pb-4 md:pb-6">
+                <ul className={`space-y-0 ${small ? 'space-y-0' : 'space-y-6'}`}>
+                    <li className="flex flex-col md:flex-row items-center gap-4 md:gap-4 transition-transform duration-300 hover:translate-x-2 border-b border-gray-300 last:border-0 pb-4 md:pb-6">
                         <span className={`font-bold text-gray-300 mr-4 ${small ? 'text-2xl' : 'text-4xl md:text-5xl'}`}>01</span>
                         <div className="flex-1">
                             <Link to="/Social_Media" className="no-underline">

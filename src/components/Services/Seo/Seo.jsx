@@ -1,5 +1,6 @@
+
 import React from 'react';
-import personPlaceholder from '../../../assests/view.png';  
+import personPlaceholder from '../../../assests/view - Copie.png';  
 
 const Hero = () => {
     const handleDownload = () => {

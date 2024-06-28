@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TimelineObserver from "react-timeline-animation";
-import Timeline from "./Points"; // Updated import to reflect the correct file
+import Timeline from "./Points"; 
 import "./Points.css";
  
 export default function WebDev() {

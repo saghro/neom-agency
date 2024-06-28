@@ -116,21 +116,21 @@ const CarouselItem = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   transition: background 0.3s;
- 
+
   &:hover {
     background: linear-gradient(to right, #A8D9E0, #6A71B3, #C7A2CB);
   }
- 
+
   .icon {
-    font-size: 2rem; /* Adjusted font size */
+    font-size: 4rem;
     margin-bottom: 1rem;
   }
- 
+
   .title {
     font-size: 1.25rem;
     font-weight: bold;
   }
- 
+
   @media (max-width: 768px) {
     width: 100%; /* Full width on smaller screens */
   }
