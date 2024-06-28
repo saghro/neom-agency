@@ -80,11 +80,11 @@ const Header = () => {
                         <li className="relative" onClick={toggleDropdown}>
                             Expertise <FontAwesomeIcon icon={faChevronDown} />
                             <ul className={`dropdown-content absolute hidden text-gray-500 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                <li><a href="/identité-de-marque" className="dropdown-item">Identite De Marque</a></li>
-                                <li><a href="/markting" className="dropdown-item">Marketing</a></li>
-                                <li><a href="/web" className="dropdown-item">Développement Web et Mobile</a></li>
-                                <li><a href="/Formation" className="dropdown-item">Formations</a></li>
-                                <li><a href="/communication" className="dropdown-item">Communication</a></li>
+                                <li><Link to="/identité-de-marque" className="dropdown-item">Identite De Marque</Link></li>
+                                <li><Link to="/markting" className="dropdown-item">Marketing</Link></li>
+                                <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/realisation" className="dropdown-item">Realisation</Link></li>
@@ -101,11 +101,11 @@ const Header = () => {
                             <li className="relative ml-6" onClick={toggleDropdown}>
                                 Expertise <FontAwesomeIcon icon={faChevronDown} />
                                 <ul className={`dropdown-content text-gray-700 pt-1 bg-gray-100 backdrop-blur transition-all duration-300 ease-in-out mr-64 mt-32 ${dropdownOpen ? 'block opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-                                    <li><a href="/Social_Media" className="dropdown-item">Identite De Marque</a></li>
-                                    <li><a href="/Seo" className="dropdown-item">Marketing</a></li>
-                                    <li><a href="/web" className="dropdown-item">Développement Web et Mobile</a></li>
-                                    <li><a href="/Formation" className="dropdown-item">Formations</a></li>
-                                    <li><a href="/communication" className="dropdown-item">Communication</a></li>
+                                    <li><Link to="/Social_Media" className="dropdown-item">Identite De Marque</Link></li>
+                                    <li><Link to="/Seo" className="dropdown-item">Marketing</Link></li>
+                                    <li><Link to="/web" className="dropdown-item">Développement Web et Mobile</Link></li>
+                                    <li><Link to="/Formation" className="dropdown-item">Formations</Link></li>
+                                    <li><Link to="/communication" className="dropdown-item">Communication</Link></li>
                                 </ul>
                             </li>
                             
