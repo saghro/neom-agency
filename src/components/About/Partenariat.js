@@ -51,7 +51,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-top: -4rem;
   padding-top: 4rem;
 `;
 
@@ -60,7 +61,7 @@ const Text = styled.h1`
   font-weight: bold;
   color: #272D4E;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   
   @media (max-width: 768px) {
     font-size: 2rem;
