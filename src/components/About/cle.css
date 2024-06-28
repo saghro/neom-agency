@@ -1,0 +1,98 @@
+section.hero {
+    margin-top: 3rem;
+    padding: 0 1rem; /* Add padding for better spacing on mobile */
+  }
+  
+  section.hero .parent-avatar.flex {
+    align-items: end;
+    gap: 0.6rem;
+    min-height: 88px;
+  }
+  
+  section.hero .left-section {
+    flex-grow: 1;
+  }
+  
+  section.hero .right-section {
+    position: relative;
+    z-index: 1; /* Assurez-vous que l'image de profil a un z-index inférieur */
+  }
+  
+  section.hero .icon-verified {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  section.hero .avatar {
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid var(--blue);
+    padding: 0.5px;
+    box-shadow: 2px 2px 10px gray;
+  }
+  
+  section.hero h1.title {
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+  }
+  
+  section.hero p.sub-title {
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+  }
+  
+  section.hero .icons {
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+  }
+  
+  section.hero .icons .icon:hover {
+    font-size: 1.3rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--icon-hover);
+  }
+  
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.25) rotate(1deg);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 1250px) {
+    section.hero .animation {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    section.hero {
+      padding: 1rem; /* Additional padding for smaller screens */
+    }
+  
+    section.hero h1.title {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin: 16px 0;
+    }
+  
+    section.hero .parent-avatar.flex {
+      flex-direction: column; /* Stack elements vertically */
+      gap: 1rem;
+    }
+  
+    .card {
+      width: 100%; /* Make cards full width */
+      margin: 1rem 0; /* Add vertical margin for spacing */
+    }
+  }
+  

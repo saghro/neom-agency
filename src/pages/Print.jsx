@@ -3,18 +3,19 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import MiddleSection from '../components/Services/print/MiddleSection'
 import WebCards from '../components/Services/print/WebCards'
-import PageCards from '../components/Services/print/LinkCard'
 import Hero from '../components/Services/print/Hero'
-const Webdev = () => {
+import ComCases from '../components/Services/print/ComCases'
+
+const Print = () => {
     return (
         <>
             <Header />
             <Hero/>
             <MiddleSection/>
             <WebCards/>
-            <PageCards/>
+            <ComCases/>
             <Footer />
         </>)
-}
+} 
+export default Print;
 
-export default Webdev

@@ -1,0 +1,53 @@
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.timeline {
+  height: 150px;
+  width: 5px;
+  background-color: #e5e5e5;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.circleWrapper {
+  position: relative;
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+}
+
+.message-container.left {
+  left: calc(100% + 20px);
+}
+
+.message-container.right {
+  right: calc(100% + 20px);
+}
+
+.message {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.static-image {
+  width: 200px; /* Adjust as necessary */
+  height: auto;
+}

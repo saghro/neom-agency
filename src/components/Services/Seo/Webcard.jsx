@@ -1,46 +1,51 @@
-import React from 'react';
-import { RiBodyScanFill } from "react-icons/ri";
-import { IoEyeSharp } from "react-icons/io5";
-
-const WebCards = () => {
-  const Cards = ({ title, description, icon }) => {
-    return (
-      <div className="-mt-36 max-w-sm rounded overflow-hidden shadow-lg p-4 bg-white transform transition duration-300 hover:bg-[#6A71B3] hover:text-white flex flex-col justify-between ">
-        <div>
-          <div className="flex justify-center mb-4 text-5xl">
-            {icon}
-          </div>
-          <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-base">
-            {description}
-          </p>
-        </div>
-        <button className="mt-4 px-4 py-2 bg-[#6A71B3] border-2 border-white text-white rounded-full hover:bg-white hover:text-[#FFA288] transition duration-300.">
-          Savoir Plus
-        </button>
-      </div>
-    );
+import React, { useState } from "react";
+import TimelineObserver from "react-timeline-animation";
+import Timeline from "./Points"; 
+import "./Points.css";
+ 
+export default function WebDev() {
+  const [message, setMessage] = useState("");
+ 
+  const onCallback = () => {
+    console.log("awesome");
   };
-
+ 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center my-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-        <Cards
-          title="Référencement SEO"
-          description="Élaborer une stratégie de référencement sur mesure en identifiant vos mots-clés, optimisant votre contenu et en structurant votre site web."
-          icon={<RiBodyScanFill />}
-        />
-        <Cards
-          title="Référencement SEA"
-          description="Créer et optimiser des publicités payantes dans les pages de résultats des moteurs de recherche, qui vous permettent d’obtenir des résultats plus rapides."
-          icon={<IoEyeSharp />}
-        />
-      </div>
-      <button className="mt-8 px-8 py-3 bg-[#6A71B3] hover:bg-[#C7A2CB] text-white rounded-full">
-        Vous avez un Projet?
-      </button>
+    <div className="Drop pt-20">
+      <style>
+        {`
+          .header-gradient {
+            background: linear-gradient(to right, #A8D9E0, #C7A2CB, #6A71B3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .fill-gradient {
+            background: linear-gradient(116deg, #A8D9E0, #C7A2CB, #6A71B3);
+            background-size: 600% 600%;
+            animation: fillAnimation 6s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          @keyframes fillAnimation {
+            0% { background-position: 0% 30%; }
+            50% { background-position: 100% 71%; }
+            100% { background-position: 0% 30%; }
+          }
+        `}
+      </style>
+      <h3 className="mb-4 text-5xl font-bold header-gradient">Nos Services</h3>
+      <TimelineObserver
+        initialColor="#e5e5e5"
+        fillColor="#C7A2CB"
+        handleObserve={(setObserver) => (
+          <Timeline
+            callback={onCallback}
+            className="timeline fill-gradient"
+            setObserver={setObserver}
+          />
+        )}
+      />
+      <div className="mb-32">{message}</div>
     </div>
   );
-};
-
-export default WebCards;
+}
