@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between p-8 h-screen text-white font-poppins" style={{ background: 'linear-gradient(-45deg, #A8D9E0, #C7A2CB, #6A71B3)', backgroundSize: '400% 400%', animation: 'Gradient 15s ease infinite' }}>
+    <div className="flex flex-col lg:flex-row items-center justify-between p-8 h-[80vh] text-white font-poppins relative" style={{ background: 'linear-gradient(-45deg, #A8D9E0, #C7A2CB, #6A71B3)', backgroundSize: '400% 400%', animation: 'Gradient 15s ease infinite' }}>
       <motion.div 
         className="max-w-xl mb-8 lg:mb-0 text-center mx-auto" 
         style={{ marginTop: '20vh' }}
