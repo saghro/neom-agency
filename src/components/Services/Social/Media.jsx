@@ -23,7 +23,7 @@ const Video = () => {
         <img className="h-80 lg:h-96 w-full object-cover" src={image} alt="Description de l'image" />
       </div>
 
-      <div className="lg:ml-4 lg:mr-32 text-center">
+      <div className="lg:ml-4 lg:mr-32 -mt-12 text-center">
         <h1 className="text-3xl font-bold font-Rammetto-One bg-gradient-to-r from-[#C7A2CB] via-[#A8D9E0] to-[#6A71B3] text-transparent bg-clip-text text-center mb-4 lg:mb-0">
           Sous les projecteurs
         </h1>

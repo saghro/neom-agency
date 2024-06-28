@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='bg-white text-black' style={{ fontFamily: 'Poppins, sans-serif' }}>
       <div
-        className="flex flex-col lg:flex-row items-center justify-between p-8 min-h-screen text-white font-poppins"
+        className="flex flex-col lg:flex-row items-center justify-between p-8 h-[80vh] text-white font-poppins"
         style={{ background: 'linear-gradient(-45deg, #A8D9E0, #C7A2CB, #6A71B3)', backgroundSize: '400% 400%', animation: 'Gradient 5s ease infinite' }}
       >
         <motion.div
@@ -15,7 +15,7 @@ const Contact = () => {
           animate={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 50 }}
         >
-          <h1 className='text-white text-4xl sm:text-6xl lg:text-8xl font-bold'>Contactez-nous</h1>
+          <h1 className='text-white text-4xl sm:text-6xl lg:text-6xl font-bold'>Contactez-nous</h1>
           <motion.p
             className="mt-4 text-white"
             initial={{ scale: 0 }}

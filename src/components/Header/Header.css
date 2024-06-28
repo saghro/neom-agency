@@ -13,6 +13,7 @@ body.no-scroll {
 .header {
     position: fixed;
     top: 0;
+    margin-bottom: -1rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -159,7 +160,7 @@ li:hover .dropdown-content {
     }
  
     .header {
-        margin-top: 32px;
+        padding-top: 32px;
     }
  
     .nav {

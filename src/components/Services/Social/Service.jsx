@@ -1,6 +1,6 @@
 import React from 'react';
 import personPlaceholder from '../../../assests/isometric.png';  
- 
+
 const Hero = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -10,7 +10,7 @@ const Hero = () => {
         link.click();
         document.body.removeChild(link);
     };
- 
+
     return (
         <div className="flex bg-gradient-to-r from-[#A8D9E0] via-[#6A71B3] to-[#C7A2CB] flex-col lg:flex-row items-center justify-between p-8 bg-cover bg-center h-screen text-white font-poppins">
             <div className="max-w-xl mb-8 lg:mb-0 ml-6 text-center lg:text-left mx-auto" style={{ marginTop: '17vh' }}>
@@ -37,12 +37,12 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
- 
+
             <div className="animate-right-to-left hidden lg:block lg:flex-shrink-0 lg:h-full mt-16">
                 <img src={personPlaceholder} alt="Person holding a laptop" className="h-full object-cover" />
             </div>
         </div>
     );
 };
- 
+
 export default Hero;

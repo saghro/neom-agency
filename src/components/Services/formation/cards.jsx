@@ -5,7 +5,7 @@ import { MdDesktopMac } from "react-icons/md";
 
 const Cards = () => {
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 mt-9">
+        <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12 -mt-32">
             <div className="flex flex-col items-center p-6 border border-gray-200 cursor-pointer shadow-lg rounded-lg transform transition-transform duration-300 hover:scale-105 w-72">
                 <FaCloud className="text-5xl text-[#C7A2CB]" />
                 <h2 className="text-xl font-bold text-center mt-9">Formations en ligne et présentiel</h2>
