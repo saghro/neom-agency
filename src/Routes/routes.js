@@ -26,7 +26,6 @@ const Router = () => {
                     <Route path="/web" element={<Webdev />} />
                     <Route path="/realisation" element={<Realisation />} />
                     <Route path="/communication" element={<Print />} />
-                    <Route path="/formation" element={<Formations />} />
                     <Route path="/identité-de-marque" element={<Service />} />
                     <Route path="/markting" element={<Seo />} />
                     <Route path="/solutions" element={<Solutions />} />
