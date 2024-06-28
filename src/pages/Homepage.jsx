@@ -115,8 +115,11 @@ const HomePage = () => {
       <MotionComponent delay={0.4}>
         <About />
       </MotionComponent>
-   
-        <MultiCardCarousel />
+      <MotionComponent delay={0.6}>
+        <Cle />
+      </MotionComponent>
+        
+        
         <Footer />
     </>
   );
@@ -124,3 +127,4 @@ const HomePage = () => {
  
 export default HomePage;
  
+
