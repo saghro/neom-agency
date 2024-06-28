@@ -80,7 +80,6 @@ const Timeline = ({ setObserver, callback }) => {
               The ref attribute assigns the DOM element to the timelines.current array at the current index. */}
           <div id={`timeline${index + 1}`} ref={(el) => (timelines.current[index] = el)} className="timeline" />
           
-          // This div wraps around the circle and message elements, providing a relative positioning context.
           <div className="circleWrapper">
             <div id={`circle${index + 1}`} ref={(el) => (circles.current[index] = el)} className="circle">
               {index + 1}

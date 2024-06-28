@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+ 
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between p-8 h-[80vh] text-white font-poppins relative" style={{ background: 'linear-gradient(-45deg, #A8D9E0, #C7A2CB, #6A71B3)', backgroundSize: '400% 400%', animation: 'Gradient 15s ease infinite' }}>
@@ -25,5 +25,5 @@ const Hero = () => {
     </div>
   );
 };
-
+ 
 export default Hero;

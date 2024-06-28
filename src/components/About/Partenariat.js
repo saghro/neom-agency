@@ -6,7 +6,6 @@ import tof2 from '../../images/az.png';
 import tof3 from '../../images/allianz.png';
 import tof4 from '../../images/cafe.png';
 import tof5 from '../../images/gnc.png';
-import tof6 from '../../images/point.png';
 import tof7 from '../../images/erkan.png';
 import tof8 from '../../images/rma.png';
 import tof10 from '../../images/tac.png';
@@ -17,7 +16,7 @@ import tof15 from '../../images/yek.png';
 import tof16 from '../../images/group.png';
  
 const items = [
-  tof, tof2, tof3, tof4, tof5, tof6, tof7, tof8,
+  tof, tof2, tof3, tof4, tof5, tof7, tof8,
   tof10, tof11, tof13, tof14, tof15, tof16,
 ];
  
@@ -62,12 +61,12 @@ const Text = styled.h1`
   color: #272D4E;
   text-align: center;
   margin-bottom: 3rem;
- 
+  
   @media (max-width: 768px) {
     font-size: 2rem;
     margin-bottom: 3rem;
   }
- 
+  
   @media (max-width: 480px) {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -99,24 +98,24 @@ const Marquee = styled.div`
  
 const Image = styled.img`
   object-fit: contain;
-  width: 200px;
+  width: 100px;
   height: auto;
-  margin: 0 15px;
+  margin: 0 30px;
   transition: all 0.3s ease;
   filter: brightness(0.7) grayscale(100%);
   space-between : 1px;
- 
+
   &:hover {
     filter: brightness(1) grayscale(0%);
   }
  
   @media (max-width: 768px) {
     width: 160px;
-    margin: 0 10px;
+    margin: 0 20px;
   }
  
   @media (max-width: 480px) {
     width: 120px;
-    margin: 0 5px;
+    margin: 0 15px;
   }
 `;

@@ -14,7 +14,7 @@ const images = [
   'ii11.jpg',
   'ii12.png',
 ];
-
+ 
 const imageDescriptions = {
   'ii5.jpg': "Conception d'une application mobile",
   'ii3.png': "élaboration de la carte RMA",
@@ -28,7 +28,7 @@ const imageDescriptions = {
   'ii10.jpg': "Conception de mock-up TacBox",
   'ii7.jpg': "Conception de couverture pour AZ matériaux",
 };
-
+ 
 const getRandomHeight = () => {
   const minHeight = 150;
   const maxHeight = 500;
