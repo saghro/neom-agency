@@ -1,6 +1,5 @@
 {
   "name": "econocom",
-  "homepage": "https://neom-agency.onrender.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,9 +40,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "build": "NODE_ENV=production npm run build:css && react-scripts build",
+    "build:css": "postcss src/index.css -o src/tailwind.css"
   },
   "eslintConfig": {
     "extends": [
