@@ -28,8 +28,8 @@ const Router = () => {
                     <Route path="/realisation" element={<Realisation />} />
                     <Route path="/communication" element={<Print />} />
                     <Route path="/formation" element={<Formations />} />
-                    <Route path="/Social_Media" element={<Service />} />
-                    <Route path="/Seo" element={<Seo />} />
+                    <Route path="/identité-de-marque" element={<Service />} />
+                    <Route path="/markting" element={<Seo />} />
                     <Route path="/solutions" element={<Solutions />} />
                     <Route path="/contact" element={<ContactPage />} />
                 </Routes>
