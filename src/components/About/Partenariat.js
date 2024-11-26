@@ -95,6 +95,8 @@ const MarqueeContainer = styled.div`
 const Marquee = styled.div`
   display: flex;
   animation: ${marqueeAnimation} ${props => props.scrollWidth / 100}s linear infinite;
+  will-change: transform;
+  animation-timing-function: linear;
 `;
 
 const Image = styled.img`
